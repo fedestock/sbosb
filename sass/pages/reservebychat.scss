@@ -1,0 +1,62 @@
+// variables
+@use "../utilities/variables" as *;
+
+.intro {
+    h3 {
+        font-family: "caveat";
+        font-size: 21px;
+        text-align: center;
+        font-weight: 700;
+        color: $ladrillo;
+    }
+
+    h1 {
+        font-family: "raleway";
+        font-size: 34px;
+        text-align: center;
+        font-weight: 700;
+        color: $ocean;
+    }
+
+    p {
+        font-family: "nunito sans";
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .eco-friendly {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.tarjeta {
+    margin-bottom: 55px;
+
+    h2 {
+        text-align: center;
+        font-family: "raleway";
+        font-size: 26px;
+        text-align: center;
+        font-weight: 700;
+        color: $pasto;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul li {
+        font-family: "nunito sans";
+        list-style: none;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        font-weight: 500;
+    }
+}

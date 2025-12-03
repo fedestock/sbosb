@@ -1,0 +1,41 @@
+@use "../utilities/variables" as *;
+
+// reservar
+.gallery {
+    padding-top: 190px;
+}
+
+.intro {
+    padding-top: 50px;
+
+    h3 {
+        font-family: "caveat";
+        font-size: 26px;
+        text-align: center;
+        font-weight: 700;
+        color: $ladrillo;
+    }
+
+    h1 {
+        font-family: "raleway";
+        font-size: 55px;
+        text-align: center;
+        font-weight: 700;
+        color: $ocean;
+    }
+
+    p {
+        font-family: "nunito sans";
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        font-weight: 500;
+        color: $pasto;
+    }
+
+    .eco-friendly {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+}

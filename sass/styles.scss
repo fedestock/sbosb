@@ -1,0 +1,28 @@
+// RESET
+@use "base/reset";
+// VARIABLES
+@use "utilities/variables";
+// MIXIN
+@use "utilities/mixin";
+// COMPONENTS
+@use "components/buttons";
+
+// HOME
+@use "pages/home";
+// ABOUT
+@use "pages/about";
+// EXPERIENCES
+@use "pages/experiences";
+// PRIVATE SAILING
+@use "pages/private-sailing";
+// JUNGLE ADVENTURE
+@use "pages/jungle-adventure";
+
+//RESERVAR
+@use "pages/reservar";
+// RESERVE BY CHAT
+@use "pages/reservebychat";
+// SUCCESS
+@use "pages/success";
+// CANCEL
+@use "pages/cancel";

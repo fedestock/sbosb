@@ -15,6 +15,7 @@
   border-radius: 16px;
   font-size: 18px;
   line-height: 18px;
+  text-decoration: none;
 }
 .btn-div__btn--primary {
   background-color: #20373B;
@@ -22,9 +23,16 @@
   color: white;
 }
 .btn-div__btn--phantom {
+  width: max-content;
   border: solid 1px #ffffff;
   color: white;
   background-color: transparent;
+  align-self: center;
+}
+.btn-div__btn--phantom:hover {
+  background-color: white;
+  color: #20373B;
+  font-weight: bold;
 }
 
 .btn--accent {
@@ -595,8 +603,88 @@
   font-weight: 500;
 }
 
-.hero {
-  background-color: #519CAB;
+.jungle-hero {
+  background-image: url(../img/friends-jumping-river-sanblas-on-sailboats.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 0px 16px;
+}
+.jungle-hero h2 {
+  font-family: "caveat";
+  font-size: 21px;
+  line-height: 55px;
+  text-shadow: 5px 5px 5px black;
+}
+.jungle-hero h1 {
+  font-family: "raleway";
+  font-size: 55px;
+  line-height: 55px;
+  text-shadow: 5px 5px 5px black;
+  font-weight: 700.3;
+}
+.jungle-hero p {
+  font-family: "nunito sans";
+  font-size: 18px;
+  line-height: 26px;
+}
+
+#included {
+  padding-top: 122px;
+}
+#included h2 {
+  font-size: 55px;
+  line-height: 55px;
+  color: #519CAB;
+}
+#included ul {
+  font-family: "nunito-sans";
+  font-size: 16px;
+  line-height: 26px;
+}
+#included p {
+  font-size: "nunito-sans";
+  font-size: 16px;
+  line-height: 26px;
+}
+
+#itinerary {
+  margin-top: 55px;
+  padding-top: 150px;
+}
+
+.tarjeta .it {
+  font-family: "caveat";
+  color: #BF5841;
+  font-size: 21px;
+  line-height: 26px;
+}
+.tarjeta .hour {
+  color: #20373B;
+  font-weight: bold;
+}
+
+#pricing {
+  padding-top: 150px;
+}
+#pricing h3 {
+  font-family: "caveat";
+  color: #197359;
+}
+#pricing h2 {
+  font-family: "raleway";
+  font-size: 55px;
+  line-height: 55px;
+  color: #20373B;
+}
+#pricing .tarjeta--color {
+  background-color: linear-gradient(135deg, #20373B, #519CAB 100%);
 }
 
 .gallery {

@@ -12,6 +12,7 @@
         border-radius: 16px;
         font-size: 18px;
         line-height: 18px;
+        text-decoration: none;
 
         &--primary {
             background-color: $ocean;
@@ -20,9 +21,17 @@
         }
 
         &--phantom {
+            width: max-content;
             border: solid 1px #ffffff;
             color: white;
             background-color: transparent;
+            align-self: center;
+
+            &:hover {
+                background-color: white;
+                color: $ocean;
+                font-weight: bold;
+            }
         }
     }
 }

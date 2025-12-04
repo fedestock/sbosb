@@ -1,6 +1,101 @@
 @use "../utilities/variables" as *;
 
 // hero
-.hero {
-    background-color: $aqua;
+.jungle-hero {
+    background-image: url(../img/friends-jumping-river-sanblas-on-sailboats.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    // distribution
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 0px 16px;
+
+    h2 {
+        font-family: "caveat";
+        font-size: 21px;
+        line-height: 55px;
+        text-shadow: 5px 5px 5px black;
+    }
+
+    h1 {
+        font-family: "raleway";
+        font-size: 55px;
+        line-height: 55px;
+        text-shadow: 5px 5px 5px black;
+        font-weight: 700+0.3;
+    }
+
+    p {
+        font-family: "nunito sans";
+        font-size: 18px;
+        line-height: 26px;
+    }
+
 }
+
+#included {
+    padding-top: 122px;
+
+    h2 {
+        font-size: 55px;
+        line-height: 55px;
+        color: $aqua;
+    }
+
+    ul {
+        font-family: "nunito-sans";
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    p {
+        font-size: "nunito-sans";
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+#itinerary{
+margin-top: 55px;
+padding-top: 150px; 
+}
+.tarjeta {
+     .it {
+        font-family: "caveat";
+        color: $ladrillo;
+        font-size: 21px;
+        line-height: 26px;
+    }
+
+    .hour {
+        color: $ocean;
+        font-weight: bold;
+    }
+}
+
+#pricing {
+    padding-top: 150px;
+
+    h3 {
+        font-family: "caveat";
+        color: $pasto;
+    }
+
+    h2 {
+        font-family: "raleway";
+        font-size: 55px;
+        line-height: 55px;
+        color: $ocean;
+
+    }
+    
+    .tarjeta--color {
+        background-color: linear-gradient(135deg, $ocean, $aqua 100%);
+    }
+}
+

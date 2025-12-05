@@ -8,29 +8,33 @@
     gap: 16px;
 
     &__btn {
-        padding: 9px 16px;
+        padding: 12px 21px;
         border-radius: 16px;
         font-size: 18px;
         line-height: 18px;
         text-decoration: none;
 
         &--primary {
-            background-color: $ocean;
+            background-color: $aqua;
             border: none;
             color: white;
+
+             &:hover {
+                background-color: $ocean;
+                color: white;
+            }
         }
 
         &--phantom {
             width: max-content;
-            border: solid 1px #ffffff;
+            border: solid 1px white;
             color: white;
-            background-color: transparent;
+            background-color: rgba($ocean,0.5);
             align-self: center;
 
             &:hover {
                 background-color: white;
                 color: $ocean;
-                font-weight: bold;
             }
         }
     }

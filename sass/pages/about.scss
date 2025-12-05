@@ -1,8 +1,5 @@
 // variables
 @use "../utilities/variables" as *;
-// componentes
-@use "../components/buttons" as *;
-@use "../components/cards" as *;
 
 // hero
 .about-hero {
@@ -44,6 +41,9 @@
 }
 
 // section intro about
+#captain {
+  padding-top: 160px;
+}
 .intro-bio {
   display: flex;
   flex-direction: column;

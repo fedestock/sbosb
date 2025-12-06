@@ -215,6 +215,7 @@
   font-weight: 500;
 }
 .hero .hero__content h3 {
+  font-family: "caveat";
   font-size: 26px;
 }
 .hero .hero__content p {

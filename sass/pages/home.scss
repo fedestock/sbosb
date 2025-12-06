@@ -231,6 +231,57 @@
     }
 }
 
+// modal pop-up
+// header
+.modal-content {
+    font-family: "nunito sans";
+
+    #yachtModalLabel {
+        font-family: "raleway";
+        font-size: 34px;
+        line-height: 34px;
+        font-weight: bold;
+        color: $ocre;
+    }
+
+    h3 {
+        font-family: "raleway";
+        font-size: 21px;
+        font-weight: bold;
+        color: $ocean;
+    }
+
+    h4 {
+        font-family: "raleway";
+        font-size: 21px;
+        font-weight: bold;
+        color: $aqua;
+    }
+
+    .btn-modal {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 12px 21px;
+        border-radius: 16px;
+        font-size: 18px;
+        line-height: 18px;
+        text-decoration: none;
+        background-color: $aqua;
+        border: none;
+        color: white;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: $ocean;
+            color: white;
+        }
+    }
+
+
+
+}
+
 // destination seccion
 .destination {
     h2 {
@@ -367,39 +418,39 @@
         }
     }
 
-        .divthree {
-            padding-top: 16px;
-        }
-
-        .ftblock-bottom {
-            color: rgba(white, 0.3);
-            padding-top: 16px;
-            text-align: center;
-        }
-
-        a,
-        a:visited,
-        a:focus,
-        a:active {
-            text-decoration: none;
-            color: inherit; // usa el color definido en i
-            outline: none;
-        }
+    .divthree {
+        padding-top: 16px;
     }
 
-    .ft-social {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 16px;
+    .ftblock-bottom {
+        color: rgba(white, 0.3);
+        padding-top: 16px;
+        text-align: center;
+    }
 
-        i {
-            font-size: 26px;
-            color: rgba(white, 0.5);
-            transition: .3s ease;
+    a,
+    a:visited,
+    a:focus,
+    a:active {
+        text-decoration: none;
+        color: inherit; // usa el color definido en i
+        outline: none;
+    }
+}
 
-            &:hover {
-                color: white;
-            }
+.ft-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+
+    i {
+        font-size: 26px;
+        color: rgba(white, 0.5);
+        transition: .3s ease;
+
+        &:hover {
+            color: white;
         }
     }
+}

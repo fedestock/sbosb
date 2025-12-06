@@ -64,7 +64,9 @@
 
         <div class="hero">
             <div class="hero__videobg">
-                <iframe src="https://www.youtube.com/embed/F1LHwYkB7eE?autoplay=1&mute=1&loop=1&playlist=F1LHwYkB7eE&controls=0&modestbranding=1&rel=0&iv_load_policy=3&start=2" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                <iframe
+                    src="https://www.youtube.com/embed/F1LHwYkB7eE?autoplay=1&mute=1&loop=1&playlist=F1LHwYkB7eE&controls=0&modestbranding=1&rel=0&iv_load_policy=3&start=2"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
                 </iframe>
             </div>
 
@@ -118,7 +120,7 @@
     </section>
 
 
-    <!-- interes -->
+    <!-- interes - modal popup-->
     <section class="interest">
         <h2>Meet Your Sailboat</h2>
 
@@ -158,8 +160,84 @@
             <p class="tagsa">Dinghy</p>
             <p class="tagsi">Kitchen & chef</p>
         </div>
-        <button class="btn--accent">See Full Yacht Info</button>
+        <button class="btn--accent open-modal" data-bs-toggle="modal" data-bs-target="#yachtModal">
+            See Full Yacht Info
+        </button>
     </section>
+
+    <!-- Modal Full Yacht Info -->
+    <div class="modal fade" id="yachtModal" tabindex="-1" aria-labelledby="yachtModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+
+                <!-- HEADER -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="yachtModalLabel">Full Yacht Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- BODY -->
+                <div class="modal-body">
+
+                    <h3>Your floating home in San Blas.</h3>
+
+                    <p>
+                        Lady Lou is a 42-foot sailing yacht, designed for intimate adventures, she combines modern
+                        comforts with the charm of the sea.
+                    </p>
+
+                    <h4>Details</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-people me-2"></i> Max passengers: 12</li>
+                        <li><i class="bi bi-house-door me-2"></i> 3 Cabins + Bathroom</li>
+                        <li><i class="bi bi-speaker me-2"></i> Sound system</li>
+                        <li><i class="bi bi-cup-straw me-2"></i> Snacks & drinks included</li>
+                        <li><i class="bi bi-person-badge me-2"></i> Professional crew</li>
+                    </ul>
+
+                    <h4 class="mt-4">Gallery</h4>
+                    <!-- slider -->
+                    <div id="yachtSlidermodal" class="carousel slide" data-bs-ride="carousel">
+
+                        <!-- Dots -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#yachtSlider" data-bs-slide-to="0"
+                                class="active"></button>
+                            <button type="button" data-bs-target="#yachtSlider" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#yachtSlider" data-bs-slide-to="2"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/ladylou-sanblasonsailboats.jpg" class="d-block w-100" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/dinnerboat-sanblasonsailboats.jpg" class="d-block w-100" alt="">
+                            </div>
+                        </div>
+
+                        <!-- Flechas -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#yachtSlidermodal"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#yachtSlidermodal"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- FOOTER -->
+                <div class="modal-footer">
+                    <a href="reservar.html" class="btn-modal">Book here</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <!-- experiencias -->
     <section class="experiences">

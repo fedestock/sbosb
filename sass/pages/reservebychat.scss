@@ -4,10 +4,9 @@
 .intro {
     h3 {
         font-family: "caveat";
-        font-size: 21px;
+        font-size: 34px;
         text-align: center;
-        font-weight: 700;
-        color: $ladrillo;
+        color: rgba($ocre, 0.9);
     }
 
     h1 {
@@ -24,6 +23,8 @@
         line-height: 26px;
         text-align: center;
         font-weight: 500;
+        color: $ocean;
+        padding: 0 21px;
     }
 
     .eco-friendly {
@@ -43,7 +44,7 @@
         font-size: 26px;
         text-align: center;
         font-weight: 700;
-        color: $pasto;
+        color: $aqua;
     }
 
     ul {
@@ -59,4 +60,13 @@
         text-align: center;
         font-weight: 500;
     }
+}
+
+.pay-safe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 55px;
+    font-family: "raleway";
 }

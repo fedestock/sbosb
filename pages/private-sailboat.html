@@ -62,9 +62,13 @@
 
     <!-- hero -->
     <section class="hero">
+        <iframe class="about-hero__videobg"
+            src="https://player.vimeo.com/video/1142372447?background=1&autoplay=1&loop=1&muted=1" frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture">
+        </iframe>
         <h1>Private Cabin Ensuite Bathroom</h1>
         <p>Book now your next sailboat experience exclusive for couples</p>
-        <a class="btn btn--accent" href="wa.me/50722457777">Book now</a>
+        <a class="btn-div__btn btn-div__btn--phantom" href="/reservar.html">Book now</a>
     </section>
 
     <!-- intro experiences -->
@@ -75,17 +79,17 @@
             seeking an intimate, comfortable, and peaceful 2026 escape.</p>
 
         <!-- benefits icons -->
-        <div>
+        <div class="benefits">
             <div>
-                <img src="./img/" alt="">
+                <img src="./img/" alt="icon">
                 <p>Only 4 guests max, never mixed groups</p>
             </div>
             <div>
-                <img src="./img/" alt="">
+                <img src="./img/" alt="icon">
                 <p>Ensuite bathroom, double bed, spacious cabin</p>
             </div>
             <div>
-                <img src="./img/" alt="">
+                <img src="./img/" alt="icon">
                 <p> Real sailing, healthy meals, local culture</p>
             </div>
         </div>
@@ -116,9 +120,24 @@
 
     <!-- pricing -->
     <section class="pricing">
-        <div class="tarjeta">
-            <h4>calendario aqui</h4>
-        </div>
+        <!-- formulario de reservas -->
+    <section class="container my-5">
+        <form id="booking-form" action="checkout.php" method="POST" class="p-3">
+            <div class="mb-3">
+                <label for="date" class="form-label">Select date</label>
+                <input type="date" id="date" name="date" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="experience" class="form-label">Select experience</label>
+                <select id="experience" name="experience" class="form-select" required>
+                    <option value="private">Private Suite bathroom</option>
+                    <option value="friends">Private shared bathroom</option>
+                    <option value="jungle">Private Sailboat</option>
+                </select>
+            </div>
+            <button type="submit" class="btn--accent">Reserve and pay</button>
+        </form>
+    </section>
     </section>
 
     <!-- testimonial -->
@@ -359,7 +378,7 @@
             <div class="row">
                 <div class="col-12">
                     <h2>Ready to book your adventure?</h2>
-                    <a href="">Book here</a>
+                    <a class="btn--accent" href="/reservar.html">Book here</a>
                 </div>
             </div>
         </div>

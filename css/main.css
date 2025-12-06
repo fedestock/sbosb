@@ -82,7 +82,7 @@
   padding: 16px;
   width: calc(100vh - margin);
   height: inherit;
-  border-radius: 30px;
+  border-radius: 16px;
   background: white;
   box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
   text-align: center;
@@ -615,6 +615,92 @@
   font-weight: 500;
 }
 
+.intro-experiences {
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro-experiences h3 {
+  font-family: "caveat";
+  color: #BF820F;
+}
+.intro-experiences h2 {
+  font-family: "raleway";
+  font-size: 34px;
+  text-align: center;
+}
+.intro-experiences p {
+  font-family: "nunito sans";
+  text-align: center;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loopcarousel h3 {
+  text-align: center;
+  font-family: "caveat";
+  font-size: 34px;
+  background: linear-gradient(135deg, #519CAB, #20373B);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.loopcarousel h2 {
+  text-align: center;
+  font-family: "raleway";
+  font-weight: bold;
+  font-size: 34px;
+  padding: 0 34px;
+  background: linear-gradient(135deg, #519CAB, #20373B);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.faqs {
+  padding: 34px 16px;
+}
+.faqs h3 {
+  font-family: "caveat";
+  font-size: 34px;
+  text-align: center;
+  color: #BF5841;
+}
+.faqs h2 {
+  font-family: "Raleway";
+  font-size: 34px;
+  text-align: center;
+  color: #20373B;
+}
+
+.booknow {
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 55px 0;
+}
+.booknow .col-12 {
+  padding-bottom: 55px;
+  display: flex;
+  flex-direction: column;
+}
+.booknow .col-12 h2 {
+  text-align: center;
+  font-family: "raleway";
+  font-weight: bold;
+  font-size: 55px;
+  background: linear-gradient(135deg, #519CAB, #20373B);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .jungle-hero {
   background-image: url(../img/friends-jumping-river-sanblas-on-sailboats.jpg);
   height: 100vh;
@@ -703,43 +789,35 @@
   padding-top: 190px;
 }
 
-.intro {
-  padding-top: 50px;
-}
-.intro h3 {
-  font-family: "caveat";
-  font-size: 26px;
-  text-align: center;
-  font-weight: 700;
-  color: #BF5841;
-}
-.intro h1 {
-  font-family: "raleway";
-  font-size: 55px;
-  text-align: center;
-  font-weight: 700;
-  color: #20373B;
-}
-.intro p {
-  font-family: "nunito sans";
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  font-weight: 500;
-  color: #197359;
-}
-.intro .eco-friendly {
+.eco-friendly {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
+#booking-form {
+  font-family: "nunito sans";
+  margin: 16px;
+  padding: 16px;
+  width: calc(100vh - margin);
+  height: inherit;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  text-align: center;
+}
+#booking-form .form-label {
+  font-family: "raleway";
+  font-size: 21px;
+  font-weight: bold;
+  color: #519CAB;
+}
+
 .intro h3 {
   font-family: "caveat";
-  font-size: 21px;
+  font-size: 34px;
   text-align: center;
-  font-weight: 700;
-  color: #BF5841;
+  color: rgba(191, 130, 15, 0.9);
 }
 .intro h1 {
   font-family: "raleway";
@@ -754,6 +832,8 @@
   line-height: 26px;
   text-align: center;
   font-weight: 500;
+  color: #20373B;
+  padding: 0 21px;
 }
 .intro .eco-friendly {
   display: flex;
@@ -771,7 +851,7 @@
   font-size: 26px;
   text-align: center;
   font-weight: 700;
-  color: #197359;
+  color: #519CAB;
 }
 .tarjeta ul {
   margin: 0;
@@ -784,6 +864,15 @@
   line-height: 26px;
   text-align: center;
   font-weight: 500;
+}
+
+.pay-safe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 55px;
+  font-family: "raleway";
 }
 
 .herosuccess {

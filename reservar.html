@@ -88,7 +88,7 @@
 
     <!-- formulario de reservas -->
     <section class="container my-5">
-        <form id="booking-form" action="checkout.php" method="POST" class="p-3 border rounded">
+        <form id="booking-form" action="checkout.php" method="POST" class="p-3">
             <div class="mb-3">
                 <label for="date" class="form-label">Select date</label>
                 <input type="date" id="date" name="date" class="form-control" required>
@@ -101,21 +101,42 @@
                     <option value="jungle">Private Sailboat</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary w-100">Reserve and pay</button>
+            <button type="submit" class="btn--accent">Reserve and pay</button>
         </form>
     </section>
 
     <!-- secure payments -->
-    <div>
-        <p>Pay securely with Stripe</p>
+    <div class="pay-safe">
+          <img src="./img/eco-icon.png" alt="payoneer">
+        <p>Pay safely with Payoneer</p>
         <div class="eco-friendly">
-            <img src="./img/eco-icon.png" alt="eco-icon">
-            <img src="./img/eco-icon.png" alt="eco-icon">
-            <img src="./img/eco-icon.png" alt="eco-icon">
+            <img src="./img/eco-icon.png" alt="mastercard">
+            <img src="./img/eco-icon.png" alt="visa">
+            <img src="./img/eco-icon.png" alt="american">
         </div>
     </div>
 
+ <!-- bootstrap scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
+    <!-- toogle de bs -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggler = document.querySelector('.navbar-toggler');
+            const collapse = document.querySelector('#navbarNav');
+
+            // alterna la clase .open cuando el menú se abre o se cierra
+            collapse.addEventListener('show.bs.collapse', () => {
+                toggler.classList.add('open');
+            });
+
+            collapse.addEventListener('hide.bs.collapse', () => {
+                toggler.classList.remove('open');
+            });
+        });
+    </script>
 </body>
 
 </html>

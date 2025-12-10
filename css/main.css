@@ -855,6 +855,21 @@
   justify-content: space-between;
 }
 
+.intro {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.intro .eco-friendly {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.intro .eco-friendly img {
+  width: 50px;
+}
 .intro h3 {
   font-family: "caveat";
   font-size: 34px;
@@ -866,7 +881,7 @@
   font-size: 34px;
   text-align: center;
   font-weight: 700;
-  color: #20373B;
+  color: #519CAB;
 }
 .intro p {
   font-family: "nunito sans";
@@ -878,38 +893,65 @@
   padding: 0 21px;
 }
 
+.gallery {
+  padding-top: 0px;
+}
+
 .tarjeta {
   margin-bottom: 55px;
-}
-.tarjeta .eco-friendly {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.tarjeta .eco-friendly img {
-  gap: 25px;
-  width: 50px;
 }
 .tarjeta h2 {
   text-align: center;
   font-family: "raleway";
   font-size: 26px;
-  text-align: center;
   font-weight: 700;
   color: #519CAB;
 }
 .tarjeta ul {
   margin: 0;
   padding: 0;
+  text-align: center;
+  /* centrar la lista entera */
 }
 .tarjeta ul li {
-  font-family: "nunito sans";
   list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-family: "nunito sans";
   font-size: 16px;
   line-height: 26px;
-  text-align: center;
   font-weight: 500;
+  /* quitar el background antiguo */
+  background: none;
+  padding-left: 0;
+}
+.tarjeta ul li::before {
+  content: "";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  background: url("../img/check-icon-san-blas-on-sailboats.png") no-repeat center;
+  background-size: contain;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cta p {
+  font-family: "caveat";
+  font-size: 18px;
+  line-height: 26px;
+  text-align: left;
+  font-weight: 500;
+  color: #BF820F;
 }
 
 .pay-safe {

@@ -877,19 +877,19 @@
   color: #20373B;
   padding: 0 21px;
 }
-.intro .eco-friendly {
+
+.tarjeta {
+  margin-bottom: 55px;
+}
+.tarjeta .eco-friendly {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.intro .eco-friendly img {
+.tarjeta .eco-friendly img {
   gap: 25px;
   width: 50px;
-}
-
-.tarjeta {
-  margin-bottom: 55px;
 }
 .tarjeta h2 {
   text-align: center;

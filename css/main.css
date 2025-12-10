@@ -900,12 +900,15 @@
 .tarjeta {
   margin-bottom: 55px;
 }
+.tarjeta--ocean {
+  background: linear-gradient(135deg, #519CAB, #20373B);
+}
 .tarjeta h2 {
   text-align: center;
   font-family: "raleway";
   font-size: 26px;
   font-weight: 700;
-  color: #519CAB;
+  color: white;
 }
 .tarjeta ul {
   margin: 0;
@@ -926,6 +929,7 @@
   /* quitar el background antiguo */
   background: none;
   padding-left: 0;
+  color: rgba(255, 255, 255, 0.8);
 }
 .tarjeta ul li::before {
   content: "";
@@ -951,7 +955,16 @@
   line-height: 26px;
   text-align: left;
   font-weight: 500;
-  color: #BF820F;
+  color: white;
+}
+.cta .cta-btn {
+  background-color: transparent;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.cta .cta-btn:hover {
+  background-color: #BF820F;
+  color: white;
 }
 
 .pay-safe {

@@ -884,7 +884,8 @@
   align-items: center;
 }
 .intro .eco-friendly img {
-  width: 80px;
+  gap: 25px;
+  width: 50px;
 }
 
 .tarjeta {

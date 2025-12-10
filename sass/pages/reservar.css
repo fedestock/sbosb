@@ -1,0 +1,29 @@
+.gallery {
+  padding-top: 190px;
+}
+
+#booking-form {
+  font-family: "nunito sans";
+  margin: 16px;
+  padding: 16px;
+  width: calc(100vh - margin);
+  height: inherit;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  text-align: center;
+}
+#booking-form .form-label {
+  font-family: "raleway";
+  font-size: 21px;
+  font-weight: bold;
+  color: #519CAB;
+}
+
+.eco-friendly {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=reservar.css.map */

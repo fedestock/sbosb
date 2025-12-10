@@ -1,0 +1,98 @@
+.about-hero {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+  text-align: center;
+}
+.about-hero__videobg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  z-index: -1;
+  pointer-events: none;
+  object-fit: cover;
+}
+.about-hero h1 {
+  margin-top: 100px;
+  font-family: "raleway";
+  color: white;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 700;
+  padding-top: 55px;
+}
+.about-hero p {
+  font-family: "nunito sans";
+  font-size: 16px;
+  color: white;
+  line-height: 26px;
+}
+
+#captain {
+  padding-top: 160px;
+}
+
+.intro-bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+}
+.intro-bio h3 {
+  font-family: "caveat";
+  font-size: 21px;
+}
+.intro-bio h2 {
+  font-family: "raleway";
+  font-size: 34px;
+}
+.intro-bio h4 {
+  font-family: "nunito sans";
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+.intro-bio p {
+  text-align: center;
+}
+
+.letschat {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.community {
+  padding: 55px 16px;
+  text-align: center;
+}
+.community img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+.community h2 {
+  font-family: "raleway";
+  font-size: 34px;
+  line-height: 34px;
+  font-weight: 700;
+  color: #519CAB;
+}
+.community .description {
+  font-family: "nunito sans";
+  line-height: 26px;
+  font-size: 16px;
+  margin-top: 1rem;
+  color: #20373B;
+}
+
+/*# sourceMappingURL=about.css.map */

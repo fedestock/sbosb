@@ -1,0 +1,87 @@
+.intro-experiences {
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro-experiences h3 {
+  font-family: "caveat";
+  color: #BF820F;
+}
+.intro-experiences h2 {
+  font-family: "raleway";
+  font-size: 34px;
+  text-align: center;
+}
+.intro-experiences p {
+  font-family: "nunito sans";
+  text-align: center;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loopcarousel h3 {
+  text-align: center;
+  font-family: "caveat";
+  font-size: 34px;
+  background: linear-gradient(135deg, #519CAB, #20373B);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.loopcarousel h2 {
+  text-align: center;
+  font-family: "raleway";
+  font-weight: bold;
+  font-size: 34px;
+  padding: 0 34px;
+  background: linear-gradient(135deg, #519CAB, #20373B);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.faqs {
+  padding: 34px 16px;
+}
+.faqs h3 {
+  font-family: "caveat";
+  font-size: 34px;
+  text-align: center;
+  color: #BF5841;
+}
+.faqs h2 {
+  font-family: "Raleway";
+  font-size: 34px;
+  text-align: center;
+  color: #20373B;
+}
+
+.booknow {
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 55px 0;
+}
+.booknow .col-12 {
+  padding-bottom: 55px;
+  display: flex;
+  flex-direction: column;
+}
+.booknow .col-12 h2 {
+  text-align: center;
+  font-family: "raleway";
+  font-weight: bold;
+  font-size: 55px;
+  background: linear-gradient(135deg, #519CAB, #20373B);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/*# sourceMappingURL=private-sailing.css.map */

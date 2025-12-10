@@ -1,0 +1,66 @@
+.intro h3 {
+  font-family: "caveat";
+  font-size: 34px;
+  text-align: center;
+  color: rgba(191, 130, 15, 0.9);
+}
+.intro h1 {
+  font-family: "raleway";
+  font-size: 34px;
+  text-align: center;
+  font-weight: 700;
+  color: #20373B;
+}
+.intro p {
+  font-family: "nunito sans";
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  font-weight: 500;
+  color: #20373B;
+  padding: 0 21px;
+}
+.intro .eco-friendly {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.intro .eco-friendly img {
+  width: 80px;
+}
+
+.tarjeta {
+  margin-bottom: 55px;
+}
+.tarjeta h2 {
+  text-align: center;
+  font-family: "raleway";
+  font-size: 26px;
+  text-align: center;
+  font-weight: 700;
+  color: #519CAB;
+}
+.tarjeta ul {
+  margin: 0;
+  padding: 0;
+}
+.tarjeta ul li {
+  font-family: "nunito sans";
+  list-style: none;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.pay-safe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 55px;
+  font-family: "raleway";
+}
+
+/*# sourceMappingURL=reservebychat.css.map */

@@ -856,7 +856,7 @@
 }
 
 .intro {
-  height: 60vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: end;

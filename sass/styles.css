@@ -855,6 +855,21 @@
   justify-content: space-between;
 }
 
+.intro {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.intro .eco-friendly {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.intro .eco-friendly img {
+  width: 50px;
+}
 .intro h3 {
   font-family: "caveat";
   font-size: 34px;
@@ -866,7 +881,7 @@
   font-size: 34px;
   text-align: center;
   font-weight: 700;
-  color: #20373B;
+  color: #519CAB;
 }
 .intro p {
   font-family: "nunito sans";
@@ -877,38 +892,95 @@
   color: #20373B;
   padding: 0 21px;
 }
-.intro .eco-friendly {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.intro .eco-friendly img {
-  width: 80px;
+
+.line {
+  width: 2px; /* grosor */
+  height: 200px; /* alto */
+  background: black; /* color */
 }
 
-.tarjeta {
-  margin-bottom: 55px;
+.content h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
 }
-.tarjeta h2 {
+.content p {
+  margin: 0;
+  color: #c4c7d4;
+  line-height: 1.5;
+}
+
+.gallery {
+  padding-top: 0px;
+}
+
+.includes {
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+.includes h2 {
   text-align: center;
   font-family: "raleway";
   font-size: 26px;
-  text-align: center;
   font-weight: 700;
-  color: #519CAB;
+  color: #20373B;
 }
-.tarjeta ul {
+.includes ul {
   margin: 0;
   padding: 0;
+  text-align: center;
+  /* centrar la lista entera */
 }
-.tarjeta ul li {
-  font-family: "nunito sans";
+.includes ul li {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-family: "nunito sans";
   font-size: 16px;
   line-height: 26px;
-  text-align: center;
   font-weight: 500;
+  /* quitar el background antiguo */
+  background: none;
+  padding-left: 0;
+  color: rgba(32, 55, 59, 0.8);
+}
+.includes ul li::before {
+  content: "";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  background: url("../img/check-icon-san-blas-on-sailboats.png") no-repeat center;
+  background-size: contain;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cta p {
+  font-family: "caveat";
+  font-size: 21px;
+  line-height: 26px;
+  text-align: left;
+  font-weight: 500;
+  color: white;
+}
+.cta .cta-btn {
+  background-color: transparent;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.cta .cta-btn:hover {
+  background-color: #BF820F;
+  color: white;
 }
 
 .pay-safe {

@@ -44,12 +44,22 @@
 #captain {
   padding-top: 160px;
 }
+
 .intro-bio {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 16px;
+
+  img {
+    width: 75%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    border-radius: 555px
+  }
 
   h3 {
     font-family: "caveat";

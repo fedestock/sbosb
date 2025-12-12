@@ -547,6 +547,14 @@
   align-items: center;
   padding: 0 16px;
 }
+.intro-bio img {
+  width: 75%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  border-radius: 555px;
+}
 .intro-bio h3 {
   font-family: "caveat";
   font-size: 21px;
@@ -605,6 +613,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 16px;
 }
 .hero .experiences-hero__videobg {
   position: absolute;
@@ -744,11 +753,12 @@
 }
 
 .jungle-hero {
-  background-image: url(../img/friends-jumping-river-sanblas-on-sailboats.jpg);
+  background-image: url(../img/jungle-jumping-sanblas-on-sailboats.png);
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -779,14 +789,17 @@
   padding-top: 122px;
 }
 #included h2 {
+  font-family: "raleway";
   font-size: 55px;
   line-height: 55px;
   color: #519CAB;
 }
 #included ul {
-  font-family: "nunito-sans";
+  font-family: "nunito sans";
   font-size: 16px;
   line-height: 26px;
+  list-style: none;
+  padding-left: 0px;
 }
 #included p {
   font-size: "nunito-sans";
@@ -801,8 +814,8 @@
 
 .tarjeta .it {
   font-family: "caveat";
-  color: #BF5841;
-  font-size: 21px;
+  color: #BF820F;
+  font-size: 34px;
   line-height: 26px;
 }
 .tarjeta .hour {
@@ -815,16 +828,53 @@
 }
 #pricing h3 {
   font-family: "caveat";
-  color: #197359;
+  color: #519CAB;
+  font-weight: bold;
 }
 #pricing h2 {
   font-family: "raleway";
-  font-size: 55px;
-  line-height: 55px;
+  font-size: 34px;
+  line-height: 34px;
   color: #20373B;
+}
+#pricing p {
+  font-family: "nunito sans";
+  font-size: 16px;
+  line-height: 26px;
+}
+#pricing ul {
+  list-style: none;
+  padding-left: 0px;
 }
 #pricing .tarjeta--color {
   background-color: linear-gradient(135deg, #20373B, #519CAB 100%);
+}
+
+.benefits {
+  padding-top: 34px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  font-family: "caveat";
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #20373B;
+  gap: 20px;
+}
+.benefits img {
+  width: 50px;
+}
+
+.gallery-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.gallery-img img:hover {
+  transform: scale(1.05);
 }
 
 .gallery {
@@ -893,30 +943,41 @@
   padding: 0 21px;
 }
 
+.content h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+.content p {
+  margin: 0;
+  color: #c4c7d4;
+  line-height: 1.5;
+}
+
 .gallery {
   padding-top: 0px;
 }
 
-.tarjeta {
-  margin-bottom: 55px;
+.includes {
+  gap: 50px;
+  padding-top: 55px;
+  padding-bottom: 55px;
 }
-.tarjeta--ocean {
-  background: linear-gradient(135deg, #519CAB, #20373B);
-}
-.tarjeta h2 {
+.includes h2 {
   text-align: center;
   font-family: "raleway";
   font-size: 26px;
   font-weight: 700;
-  color: white;
+  color: #20373B;
 }
-.tarjeta ul {
+.includes ul {
   margin: 0;
   padding: 0;
   text-align: center;
   /* centrar la lista entera */
 }
-.tarjeta ul li {
+.includes ul li {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -929,9 +990,9 @@
   /* quitar el background antiguo */
   background: none;
   padding-left: 0;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(32, 55, 59, 0.8);
 }
-.tarjeta ul li::before {
+.includes ul li::before {
   content: "";
   display: flex;
   flex-direction: column;

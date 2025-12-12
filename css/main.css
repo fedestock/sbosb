@@ -686,12 +686,16 @@
   font-family: "nunito sans";
   text-align: center;
 }
-
-.benefits {
+.intro-experiences .benefits {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "nunito sans";
+  font-size: 21px;
+}
+.intro-experiences .benefits img {
+  width: 50px;
 }
 
 .loopcarousel h3 {

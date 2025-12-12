@@ -23,13 +23,19 @@
         font-family: "nunito sans";
         text-align: center;
     }
-}
 
-.benefits {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    .benefits {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "nunito sans";
+        font-size: 21px;
+
+        img {
+            width: 50px;
+        }
+    }
 }
 
 .loopcarousel {
@@ -84,6 +90,7 @@
         padding-bottom: 55px;
         display: flex;
         flex-direction: column;
+
         h2 {
             text-align: center;
             font-family: "raleway";

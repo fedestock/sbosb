@@ -9,8 +9,13 @@
     align-items: center;
 
     h3 {
-        font-family: "caveat";
+        font-family: "nunito sans";
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
         color: $ocre;
+        text-align: center;
     }
 
     h2 {
@@ -29,11 +34,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-family: "nunito sans";
-        font-size: 21px;
 
         img {
             width: 50px;
+        }
+
+        p {
+            font-family: "nunito sans";
+            font-size: 21px;
         }
     }
 }
@@ -67,7 +75,7 @@
         font-family: "caveat";
         font-size: 34px;
         text-align: center;
-        color: $ladrillo;
+        color: $aqua;
     }
 
     h2 {
@@ -75,6 +83,37 @@
         font-size: 34px;
         text-align: center;
         color: $ocean;
+    }
+
+    .accordion {
+        border: solid 1px $ocre;
+        border-radius: 16px;
+        background-color: transparent;
+        overflow: hidden;
+    }
+
+    .accordion-item {
+        border: none;
+        background-color: transparent;
+    }
+
+    .accordion-body {
+        background-color: transparent;
+
+        p {
+            font-family: "nunito sans";
+        }
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: transparent;
+        color: $aqua;
+    }
+
+    .accordion-button:focus {
+        border-color: transparent !important;
+        box-shadow: none !important;
+        outline: none !important;
     }
 }
 
@@ -95,7 +134,7 @@
             text-align: center;
             font-family: "raleway";
             font-weight: bold;
-            font-size: 55px;
+            font-size: 34px;
             background: linear-gradient(135deg, $aqua, $ocean);
             -webkit-background-clip: text;
             color: transparent;

@@ -1,6 +1,7 @@
 // variables
 @use "../utilities/variables" as *;
-
+@use "../components/cards" as *;
+@use "../components/buttons" as *;
 
 // header
 .navbar {

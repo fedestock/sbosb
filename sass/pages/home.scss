@@ -384,7 +384,7 @@
         h4 {
             font-family: "raleway";
             font-weight: 700;
-            color: rgba(white, 0.5);
+            color: white;
         }
 
         nav ul {
@@ -400,6 +400,9 @@
             color: rgba(whitesmoke, 0.7);
             ;
             text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+
         }
     }
 
@@ -418,6 +421,13 @@
 
     .divthree {
         padding-top: 16px;
+
+        a {
+            font-family: "raleway";
+            font-size: 21px;
+            font-weight: 700;
+            color: white;
+        }
     }
 
     .ftblock-bottom {

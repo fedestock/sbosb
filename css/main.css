@@ -418,7 +418,7 @@
 .footer .ftblock-top h4 {
   font-family: "raleway";
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.5);
+  color: white;
 }
 .footer .ftblock-top nav ul {
   padding: 0;
@@ -430,6 +430,8 @@
   font-family: "nunito sans";
   color: rgba(245, 245, 245, 0.7);
   text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
 }
 .footer .divone img {
   width: 150px;
@@ -442,6 +444,12 @@
 }
 .footer .divthree {
   padding-top: 16px;
+}
+.footer .divthree a {
+  font-family: "raleway";
+  font-size: 21px;
+  font-weight: 700;
+  color: white;
 }
 .footer .ftblock-bottom {
   color: rgba(255, 255, 255, 0.3);

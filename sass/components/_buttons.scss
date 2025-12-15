@@ -19,7 +19,7 @@
             border: none;
             color: white;
 
-             &:hover {
+            &:hover {
                 background-color: $ocean;
                 color: white;
             }
@@ -29,7 +29,7 @@
             width: max-content;
             border: solid 1px white;
             color: white;
-            background-color: rgba($ocean,0.5);
+            background-color: rgba($ocean, 0.5);
             align-self: center;
 
             &:hover {
@@ -78,4 +78,23 @@
 
 .btn--accent:hover::before {
     width: 100%;
+}
+
+.tagsa {
+    display: inline-flex;
+    background-color: $sky;
+    color: $ocean;
+    border-radius: 16px;
+    border: $ocean 1px solid;
+    padding: 3px 7px;
+
+}
+
+.tagsi {
+    display: inline-flex;
+    background-color: rgba($sky, 0.5);
+    color: $ocean;
+    border-radius: 16px;
+    border: $ocean 1px solid;
+    padding: 3px 7px;
 }

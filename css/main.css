@@ -77,6 +77,24 @@
   width: 100%;
 }
 
+.tagsa {
+  display: inline-flex;
+  background-color: #C3E7F1;
+  color: #20373B;
+  border-radius: 16px;
+  border: #20373B 1px solid;
+  padding: 3px 7px;
+}
+
+.tagsi {
+  display: inline-flex;
+  background-color: rgba(195, 231, 241, 0.5);
+  color: #20373B;
+  border-radius: 16px;
+  border: #20373B 1px solid;
+  padding: 3px 7px;
+}
+
 .tarjeta {
   margin: 16px;
   padding: 16px;
@@ -664,6 +682,37 @@
   line-height: 26px;
   text-align: center;
   font-weight: 500;
+}
+
+.blog-hero {
+  height: 65vh;
+  background: linear-gradient(180deg, #20373B, #519CAB, white);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+}
+.blog-hero h1 {
+  font-family: "raleway";
+  font-size: 55px;
+  line-height: 65px;
+  font-weight: 700;
+  padding-top: 55px;
+  background: linear-gradient(135deg, #20373B, #2e4f54);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.blog-hero p {
+  font-family: "nunito sans";
+  font-size: 21px;
+  color: #20373B;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.tagsi {
+  margin-top: 16px;
 }
 
 .intro-experiences {

@@ -183,6 +183,36 @@
   background-image: url("../img/menu-close.svg");
 }
 
+.lang-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1055;
+}
+.lang-float .lang-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #519CAB;
+  border: none;
+}
+.lang-float .lang-btn:hover {
+  background-color: #20373B;
+}
+.lang-float .lang-btn:active {
+  background-color: #BF820F;
+}
+.lang-float .lang-btn i {
+  font-size: 1.3rem;
+}
+.lang-float .lang-btn .dropdown-menu {
+  font-family: "nunito sans";
+}
+
 .hero {
   position: relative;
   height: 100vh;

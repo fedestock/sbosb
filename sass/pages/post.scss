@@ -2,23 +2,38 @@
 @use "../utilities/variables" as *;
 
 .hero-post {
-    padding: 55px 16px;
     height: 85vh;
-    background: linear-gradient(180deg, $ocean, $aqua, white);
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: center;
     text-align: center;
 
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+
+        -webkit-mask-image: linear-gradient(to bottom,
+                rgba(0, 0, 0, 1) 70%,
+                rgba(0, 0, 0, 0) 100%);
+
+        mask-image: linear-gradient(to bottom,
+                rgba(0, 0, 0, 1) 70%,
+                rgba(0, 0, 0, 0) 100%);
+    }
+
+
     h1 {
         font-family: raleway;
         font-size: 34px;
-        line-height: 45px;
+        line-height: 44px;
         font-weight: 700;
         background: linear-gradient(135deg, $ocean, $oceanb);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        padding: 0 16px;
     }
 
     h2 {

@@ -694,13 +694,20 @@
 }
 
 .blog-hero {
-  height: 65vh;
-  background: linear-gradient(180deg, #20373B, #519CAB, white);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: center;
   text-align: center;
+}
+.blog-hero__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
 }
 .blog-hero h1 {
   font-family: "raleway";
@@ -725,23 +732,30 @@
 }
 
 .hero-post {
-  padding: 55px 16px;
   height: 85vh;
-  background: linear-gradient(180deg, #20373B, #519CAB, white);
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: center;
   text-align: center;
 }
+.hero-post__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
+}
 .hero-post h1 {
   font-family: raleway;
   font-size: 34px;
-  line-height: 45px;
+  line-height: 44px;
   font-weight: 700;
   background: linear-gradient(135deg, #20373B, #2e4f54);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding: 0 16px;
 }
 .hero-post h2 {
   font-family: raleway;

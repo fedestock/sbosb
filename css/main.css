@@ -858,11 +858,15 @@ article h3.night {
   align-items: center;
 }
 .intro-experiences .benefits img {
-  width: 50px;
+  width: 150px;
 }
 .intro-experiences .benefits p {
   font-family: "nunito sans";
   font-size: 21px;
+  font-weight: 400;
+  width: 65%;
+  text-align: center;
+  transform: translate(25%);
 }
 
 .loopcarousel h3 {
@@ -900,7 +904,7 @@ article h3.night {
   color: #20373B;
 }
 .faqs .accordion {
-  border: solid 1px #BF820F;
+  border: solid 1px #20373B;
   border-radius: 16px;
   background-color: transparent;
   overflow: hidden;

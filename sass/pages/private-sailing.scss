@@ -36,12 +36,16 @@
         align-items: center;
 
         img {
-            width: 50px;
+            width: 150px;
         }
 
         p {
             font-family: "nunito sans";
             font-size: 21px;
+            font-weight: 400;
+            width: 65%;
+            text-align: center;
+            transform: translate(25%);
         }
     }
 }
@@ -86,7 +90,7 @@
     }
 
     .accordion {
-        border: solid 1px $ocre;
+        border: solid 1px $ocean;
         border-radius: 16px;
         background-color: transparent;
         overflow: hidden;

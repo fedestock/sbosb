@@ -162,31 +162,48 @@
     justify-content: center;
     align-items: center;
 
+    .eco-friendly {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .eco-friendly img {
+        width: 70px;
+    }
+
     h2 {
-        font-family: "raleway";
-        color: $ocean;
+        font-family: "caveat";
+        color: $ladrillo;
+        background: linear-gradient(135deg, $ladrillo, $ocre);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-size: 34px;
-        line-height: 34px;
-        font-weight: 700;
+        line-height: 44px;
+        font-weight: 900;
         text-align: center;
+        padding: 0 7px;
     }
 
     h3 {
-        font-family: "raleway";
+        font-family: "caveat";
         color: white;
-        font-size: 34px;
-        line-height: 41px;
+        font-size: 44px;
+        line-height: 44px;
         font-weight: 700;
         text-align: center;
         z-index: 2;
+        text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.7);
     }
 
     p {
+        font-family: "raleway";
         font-size: 16px;
         line-height: 26px;
         text-align: center;
         color: $ocean;
-
+        padding: 0 16px;
     }
 
     .tarjeta h2 {
@@ -195,29 +212,25 @@
 
     .tarjeta-fullbg p {
         font-size: 21px;
+        line-height: 31px;
         text-align: center;
         color: white;
         z-index: 2;
     }
 
     .tarjeta-fullbg--captain {
-        background-image: url(../img/trekking-sanblas-on-sailboats.jpg);
+        background-image: url(../img/sailing-san-blas-action-sailboats.webp);
         background-size: cover;
     }
 
 
     .tarjeta-fullbg--yatch {
-        background-image: url(../img/dinnerboat-sanblasonsailboats.jpg);
+        background-image: url(../img/paella-mariscos-langosta-san-blas-on-sailboats.webp);
         background-size: cover;
     }
 
     .tarjeta-fullbg--experiences {
         background-image: url(../img/snorkeling-sanblasonsailboats.jpg);
-        background-size: cover;
-    }
-
-    .tarjeta-fullbg--island {
-        background-image: url(../img/friends-archipielago-sanblas-on-sailboats.jpg);
         background-size: cover;
     }
 }
@@ -230,13 +243,36 @@
     justify-content: center;
     padding-bottom: 55px;
 
-    h2 {
-        font-family: "raleway";
-        color: $ocean;
-        font-size: 34px;
-        line-height: 34px;
-        font-weight: 700;
-        text-align: center;
+    .tarjeta {
+        overflow: hidden;
+        /* oculta lo que se salga */
+        position: relative;
+
+        h2 {
+            position: absolute;
+            /* se superpone sobre el video */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* lo centra */
+            font-family: "caveat";
+            color: white;
+            font-size: 62px;
+            line-height: 62px;
+            font-weight: 700;
+            text-align: center;
+            z-index: 1;
+            text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.7);
+        }
+    }
+
+    .tarjeta video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* hace que el video llene el div y se recorte */
+        display: block;
+        border-radius: 12px;
     }
 
     .flex-tags {
@@ -247,23 +283,18 @@
         justify-content: center;
         gap: 6px;
 
-        .tagsa {
-            display: inline-flex;
-            background-color: $sky;
-            color: $ocean;
-            border-radius: 16px;
-            border: $ocean 1px solid;
-            padding: 3px 7px;
-
-        }
-
         .tagsi {
             display: inline-flex;
-            background-color: rgba($sky, 0.5);
-            color: $ocean;
+            background: linear-gradient(135deg #4B280D,#EA5F17, #FEB923, #89A550);
+            color: white;
+            font-weight: 700;
             border-radius: 16px;
             border: $ocean 1px solid;
             padding: 3px 7px;
+
+            p {
+                margin-bottom: 0px;
+            }
         }
     }
 }
@@ -278,14 +309,14 @@
         font-size: 34px;
         line-height: 34px;
         font-weight: bold;
-        color: $ocre;
+        color: $ocean;
     }
 
     h3 {
-        font-family: "raleway";
-        font-size: 21px;
+        font-family: "caveat";
+        font-size: 26px;
         font-weight: bold;
-        color: $ocean;
+        color: $ocre;
     }
 
     h4 {
@@ -293,6 +324,33 @@
         font-size: 21px;
         font-weight: bold;
         color: $aqua;
+    }
+
+    .material-icons {
+        font-size: 34px;
+        line-height: 32px;
+        color: $ocean;
+        vertical-align: middle;
+    }
+
+    p {
+        display: inline;
+    }
+    .list-unstyled {
+        gap: 21px;
+    }
+
+    .bi {
+        font-size: 26px;
+        color: $ocean;
+        vertical-align: middle;
+    }
+
+    .lucide {
+        color: $ocean;
+        /* naranja */
+        width: 26px;
+        vertical-align: middle;
     }
 
     .btn-modal {
@@ -304,7 +362,7 @@
         font-size: 18px;
         line-height: 18px;
         text-decoration: none;
-        background-color: $aqua;
+        background-color: $ocre;
         border: none;
         color: white;
         transition: 0.3s;
@@ -315,12 +373,25 @@
         }
     }
 
+    .offer {
+        font-family: "caveat";
+        font-size: 34px;
+    }
 
-
+    .price {
+        font-size: 21px;
+        color: $ocean;
+        align-self: center;
+    }
+    
+    .card h3 {
+        align-self: center;
+        color: $ladrillo;
+    }
 }
 
 // destination seccion
-.destination {
+.experiences {
     h2 {
         font-family: "raleway";
         color: $ocean;

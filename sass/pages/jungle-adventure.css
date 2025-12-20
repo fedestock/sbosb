@@ -1,9 +1,10 @@
 .jungle-hero {
-  background-image: url(../img/friends-jumping-river-sanblas-on-sailboats.jpg);
+  background-image: url(../img/jungle-jumping-sanblas-on-sailboats.png);
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,14 +35,17 @@
   padding-top: 122px;
 }
 #included h2 {
+  font-family: "raleway";
   font-size: 55px;
   line-height: 55px;
   color: #519CAB;
 }
 #included ul {
-  font-family: "nunito-sans";
+  font-family: "nunito sans";
   font-size: 16px;
   line-height: 26px;
+  list-style: none;
+  padding-left: 0px;
 }
 #included p {
   font-size: "nunito-sans";
@@ -56,8 +60,8 @@
 
 .tarjeta .it {
   font-family: "caveat";
-  color: #BF5841;
-  font-size: 21px;
+  color: #BF820F;
+  font-size: 34px;
   line-height: 26px;
 }
 .tarjeta .hour {
@@ -70,16 +74,53 @@
 }
 #pricing h3 {
   font-family: "caveat";
-  color: #197359;
+  color: #519CAB;
+  font-weight: bold;
 }
 #pricing h2 {
   font-family: "raleway";
-  font-size: 55px;
-  line-height: 55px;
+  font-size: 34px;
+  line-height: 34px;
   color: #20373B;
+}
+#pricing p {
+  font-family: "nunito sans";
+  font-size: 16px;
+  line-height: 26px;
+}
+#pricing ul {
+  list-style: none;
+  padding-left: 0px;
 }
 #pricing .tarjeta--color {
   background-color: linear-gradient(135deg, #20373B, #519CAB 100%);
+}
+
+.benefits {
+  padding-top: 34px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  font-family: "caveat";
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #20373B;
+  gap: 20px;
+}
+.benefits img {
+  width: 50px;
+}
+
+.gallery-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.gallery-img img:hover {
+  transform: scale(1.05);
 }
 
 /*# sourceMappingURL=jungle-adventure.css.map */

@@ -36,12 +36,6 @@
   padding: 0 21px;
 }
 
-.line {
-  width: 2px; /* grosor */
-  height: 200px; /* alto */
-  background: black; /* color */
-}
-
 .content h3 {
   margin: 0 0 8px 0;
   font-size: 18px;
@@ -59,6 +53,7 @@
 }
 
 .includes {
+  gap: 50px;
   padding-top: 55px;
   padding-bottom: 55px;
 }

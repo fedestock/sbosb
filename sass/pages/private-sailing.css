@@ -6,8 +6,13 @@
   align-items: center;
 }
 .intro-experiences h3 {
-  font-family: "caveat";
+  font-family: "nunito sans";
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
   color: #BF820F;
+  text-align: center;
 }
 .intro-experiences h2 {
   font-family: "raleway";
@@ -18,12 +23,22 @@
   font-family: "nunito sans";
   text-align: center;
 }
-
-.benefits {
+.intro-experiences .benefits {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.intro-experiences .benefits img {
+  width: 150px;
+}
+.intro-experiences .benefits p {
+  font-family: "nunito sans";
+  font-size: 21px;
+  font-weight: 400;
+  width: 65%;
+  text-align: center;
+  transform: translate(25%);
 }
 
 .loopcarousel h3 {
@@ -52,13 +67,38 @@
   font-family: "caveat";
   font-size: 34px;
   text-align: center;
-  color: #BF5841;
+  color: #519CAB;
 }
 .faqs h2 {
   font-family: "Raleway";
   font-size: 34px;
   text-align: center;
   color: #20373B;
+}
+.faqs .accordion {
+  border: solid 1px #20373B;
+  border-radius: 16px;
+  background-color: transparent;
+  overflow: hidden;
+}
+.faqs .accordion-item {
+  border: none;
+  background-color: transparent;
+}
+.faqs .accordion-body {
+  background-color: transparent;
+}
+.faqs .accordion-body p {
+  font-family: "nunito sans";
+}
+.faqs .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: #519CAB;
+}
+.faqs .accordion-button:focus {
+  border-color: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
 }
 
 .booknow {
@@ -78,7 +118,7 @@
   text-align: center;
   font-family: "raleway";
   font-weight: bold;
-  font-size: 55px;
+  font-size: 34px;
   background: linear-gradient(135deg, #519CAB, #20373B);
   -webkit-background-clip: text;
   color: transparent;

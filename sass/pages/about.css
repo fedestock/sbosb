@@ -44,6 +44,14 @@
   align-items: center;
   padding: 0 16px;
 }
+.intro-bio img {
+  width: 75%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  border-radius: 555px;
+}
 .intro-bio h3 {
   font-family: "caveat";
   font-size: 21px;

@@ -77,17 +77,6 @@
   width: 100%;
 }
 
-.tagsi {
-  display: inline-flex;
-  width: fit-content;
-  background: linear-gradient(135deg, #7A3E1D 0%, #F28C28 35%, #FFB347 55%, #FFD166 70%, #6B7B2D 100%);
-  font-weight: 700;
-  border-radius: 16px;
-  padding: 3px 3px;
-  align-self: center;
-  box-shadow: 8px 0 24px rgba(128, 128, 128, 0.5);
-}
-
 .tarjeta {
   margin: 16px;
   padding: 16px;
@@ -453,33 +442,19 @@
   background-color: #20373B;
   color: white;
 }
-.modal-content .card {
-  padding: 16px 0;
-}
 .modal-content .offer {
-  font-family: "raleway";
-  font-size: 21px;
+  font-family: "caveat";
+  font-size: 34px;
 }
 .modal-content .price {
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #BF820F;
+  font-size: 21px;
+  color: #20373B;
   align-self: center;
-  font-weight: 700;
+  font-weight: 500;
 }
 .modal-content .card h3 {
   align-self: center;
   color: #519CAB;
-}
-.modal-content h5 {
-  margin: 0;
-}
-.modal-content h3 {
-  margin: 0;
-}
-.modal-content h4 {
-  margin: 0;
 }
 
 .experiences h2 {
@@ -1223,7 +1198,7 @@ article h3.night {
 }
 
 .intro {
-  height: 60vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -1235,52 +1210,17 @@ article h3.night {
   align-items: center;
 }
 .intro .eco-friendly img {
-  width: 65px;
-}
-.intro .gallery-reserve {
-  padding: 0;
-}
-.intro .gallery-reserve .tira-wrapper {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-.intro .gallery-reserve .tira {
-  display: flex;
-  gap: 20px;
-  width: max-content;
-  animation: scroll 2s linear infinite;
-}
-.intro .gallery-reserve .tira img {
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px;
-  flex-shrink: 0;
-}
-.intro .gallery-reserve {
-  /* Animación infinita */
-}
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
+  width: 50px;
 }
 .intro h3 {
-  font-family: "nunito sans";
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 700;
+  font-family: "caveat";
+  font-size: 34px;
   text-align: center;
   color: rgba(191, 130, 15, 0.9);
-  margin: 0;
 }
 .intro h1 {
-  font-family: "caveat";
-  font-size: 55px;
+  font-family: "raleway";
+  font-size: 34px;
   text-align: center;
   font-weight: 700;
   color: #519CAB;
@@ -1307,73 +1247,53 @@ article h3.night {
   line-height: 1.5;
 }
 
+.gallery {
+  padding-top: 0px;
+}
+
 .includes {
-  padding-top: 34px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  gap: 50px;
+  padding-top: 55px;
   padding-bottom: 55px;
-}
-.includes .material-icons {
-  color: #519CAB;
-  vertical-align: center;
-  font-size: 28px;
-}
-.includes img {
-  width: 190px;
-  align-self: center;
 }
 .includes h2 {
   text-align: center;
   font-family: "raleway";
   font-size: 26px;
   font-weight: 700;
-  color: #BF820F;
+  color: #20373B;
 }
 .includes ul {
   margin: 0;
   padding: 0;
-  text-align: left;
-  padding: 0 34px;
+  text-align: center;
   /* centrar la lista entera */
 }
 .includes ul li {
   list-style: none;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   gap: 8px;
   font-family: "nunito sans";
   font-size: 16px;
   line-height: 26px;
   font-weight: 500;
-  padding-bottom: 16px;
   /* quitar el background antiguo */
   background: none;
   padding-left: 0;
   color: rgba(32, 55, 59, 0.8);
 }
-.includes .not-included p {
-  font-family: "nunito sans";
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #20373B;
-  text-align: center;
-  font-weight: 700;
-  margin: 0;
-  padding-top: 21px;
-}
-.includes .not-included .material-icons {
-  color: #BF5841;
-}
-.includes p {
-  text-align: center;
-  padding: 0 55px;
-  color: #197359;
-  font-family: "nunito sans";
-  font-size: 16px;
-  line-height: 26px;
+.includes ul li::before {
+  content: "";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  background: url("../img/check-icon-san-blas-on-sailboats.png") no-repeat center;
+  background-size: contain;
 }
 
 .cta {
@@ -1391,44 +1311,13 @@ article h3.night {
   color: white;
 }
 .cta .cta-btn {
-  margin-bottom: 21px;
-  background-color: #BF820F;
-  color: whitesmoke;
-  font-weight: 500;
+  background-color: transparent;
+  color: white;
   transition: all 0.3s ease-in-out;
 }
 .cta .cta-btn:hover {
-  background-color: #519CAB;
+  background-color: #BF820F;
   color: white;
-}
-
-.pricing-card {
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.pricing-card p {
-  color: white;
-  font-weight: 700;
-}
-.pricing-card img {
-  width: 100%;
-  object-fit: cover;
-}
-.pricing-card .price {
-  font-family: "raleway";
-  color: #20373B;
-  text-align: center;
-  padding-top: 16px;
-}
-.pricing-card h3 {
-  font-family: "nunito sans";
-  font-size: 14px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 1;
 }
 
 .pay-safe {

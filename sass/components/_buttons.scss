@@ -80,21 +80,18 @@
     width: 100%;
 }
 
-.tagsa {
-    display: inline-flex;
-    background-color: $sky;
-    color: $ocean;
-    border-radius: 16px;
-    border: $ocean 1px solid;
-    padding: 3px 7px;
-
-}
-
 .tagsi {
     display: inline-flex;
-    background-color: rgba($sky, 0.5);
-    color: $ocean;
+    width: fit-content;
+    background: linear-gradient(135deg,
+            #7A3E1D 0%,
+            #F28C28 35%,
+            #FFB347 55%,
+            #FFD166 70%,
+            #6B7B2D 100%);
+    font-weight: 700;
     border-radius: 16px;
-    border: $ocean 1px solid;
-    padding: 3px 7px;
+    padding: 3px 3px;
+    align-self: center;
+    box-shadow: 8px 0 24px rgba( grey, 0.5)
 }

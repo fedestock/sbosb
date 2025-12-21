@@ -77,24 +77,6 @@
   width: 100%;
 }
 
-.tagsa {
-  display: inline-flex;
-  background-color: #C3E7F1;
-  color: #20373B;
-  border-radius: 16px;
-  border: #20373B 1px solid;
-  padding: 3px 7px;
-}
-
-.tagsi {
-  display: inline-flex;
-  background-color: rgba(195, 231, 241, 0.5);
-  color: #20373B;
-  border-radius: 16px;
-  border: #20373B 1px solid;
-  padding: 3px 7px;
-}
-
 .tarjeta {
   margin: 16px;
   padding: 16px;
@@ -391,7 +373,6 @@
   color: white;
   font-weight: 700;
   border-radius: 16px;
-  border: #20373B 1px solid;
   padding: 3px 7px;
 }
 .interest .flex-tags .tagsi p {
@@ -469,10 +450,11 @@
   font-size: 21px;
   color: #20373B;
   align-self: center;
+  font-weight: 500;
 }
 .modal-content .card h3 {
   align-self: center;
-  color: #BF5841;
+  color: #519CAB;
 }
 
 .experiences h2 {

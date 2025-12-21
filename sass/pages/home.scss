@@ -289,7 +289,6 @@
             color: white;
             font-weight: 700;
             border-radius: 16px;
-            border: $ocean 1px solid;
             padding: 3px 7px;
 
             p {
@@ -373,20 +372,39 @@
         }
     }
 
+    .card {
+        padding: 16px 0;
+    }
+
     .offer {
-        font-family: "caveat";
-        font-size: 34px;
+        font-family: "raleway";
+        font-size: 21px;
     }
 
     .price {
-        font-size: 21px;
-        color: $ocean;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: $ocre;
         align-self: center;
+        font-weight: 700;
     }
     
     .card h3 {
         align-self: center;
-        color: $ladrillo;
+        color: $aqua;
+    }
+
+    h5 {
+        margin: 0;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    h4 {
+        margin: 0;
     }
 }
 

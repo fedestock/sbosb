@@ -1,8 +1,10 @@
 // variables
 @use "../utilities/variables" as *;
+// componentes
+@use "../components/buttons" as *;
 
 .intro {
-    height: 50vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -15,19 +17,59 @@
     }
 
     .eco-friendly img {
-        width: 50px;
+        width: 65px;
+    }
+
+    // galeria en loop
+    .gallery-reserve {
+        padding: 0;
+
+        .tira-wrapper {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .tira {
+            display: flex;
+            gap: 20px;
+            width: max-content;
+            animation: scroll 2s linear infinite;
+        }
+
+        .tira img {
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+            flex-shrink: 0;
+        }
+
+        /* Animación infinita */
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
     }
 
     h3 {
-        font-family: "caveat";
-        font-size: 34px;
+        font-family: "nunito sans";
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 700;
         text-align: center;
         color: rgba($ocre, 0.9);
+        margin: 0;
     }
 
     h1 {
-        font-family: "raleway";
-        font-size: 34px;
+        font-family: "caveat";
+        font-size: 55px;
         text-align: center;
         font-weight: 700;
         color: $aqua;
@@ -59,63 +101,86 @@
     }
 }
 
-
-.gallery {
-    padding-top: 0px;
-}
-
 .includes {
-    gap: 50px;
-    padding-top: 55px;
+    padding-top: 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding-bottom: 55px;
+
+    .material-icons {
+        color: $aqua;
+        vertical-align: center;
+        font-size: 28px;
+    }
+
+    img {
+        width: 190px;
+        align-self: center;
+    }
 
     h2 {
         text-align: center;
         font-family: "raleway";
         font-size: 26px;
         font-weight: 700;
-        color: $ocean;
+        color: $ocre;
     }
 
     ul {
         margin: 0;
         padding: 0;
-        text-align: center;
+        text-align: left;
+        padding: 0 34px;
         /* centrar la lista entera */
     }
 
     ul li {
         list-style: none;
         display: flex;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
         gap: 8px;
-
         font-family: "nunito sans";
         font-size: 16px;
         line-height: 26px;
         font-weight: 500;
+        padding-bottom: 16px;
 
         /* quitar el background antiguo */
         background: none;
         padding-left: 0;
         color: rgba($ocean, 0.8);
+    }
 
-        &::before {
-            content: "";
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 18px;
-            height: 18px;
-            background: url('../img/check-icon-san-blas-on-sailboats.png') no-repeat center;
-            background-size: contain;
+    .not-included {
+
+        p {
+            font-family: "nunito sans";
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: $ocean;
+            text-align: center;
+            font-weight: 700;
+            margin: 0;
+            padding-top: 21px;
+        }
+
+        .material-icons {
+            color: $ladrillo;
         }
     }
+
+    p {
+        text-align: center;
+        padding: 0 55px;
+        color: $pasto;
+        font-family: "nunito sans";
+        font-size: 16px;
+        line-height: 26px;
+    }
 }
-
-
 
 .cta {
     display: flex;
@@ -133,17 +198,53 @@
     }
 
     .cta-btn {
-        background-color: transparent;
-        color: white;
+        margin-bottom: 21px;
+        background-color: $ocre;
+        color: whitesmoke;
+        font-weight: 500;
         transition: all 0.3s ease-in-out;
 
         &:hover {
-            background-color: $ocre;
+            background-color: $aqua;
             color: white;
         }
     }
 }
 
+// pricing
+.pricing-card {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+        color: white;
+        font-weight: 700;
+    }
+ 
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .price {
+        font-family: "raleway";
+        color: $ocean;
+        text-align: center;
+        padding-top: 16px;
+    }
+
+    h3 {
+        font-family: "nunito sans";
+        font-size: 14px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1;
+    }
+}
 
 .pay-safe {
     display: flex;

@@ -70,10 +70,10 @@
 
     <!-- about-main-hero -->
     <main class="about-hero">
-        <iframe class="about-hero__videobg"
-            src="https://player.vimeo.com/video/1142372447?background=1&autoplay=1&loop=1&muted=1" frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture">
-        </iframe>
+        <video class="about-hero__videobg" autoplay loop muted playsinline>
+            <source src="/video/san-blas-on-sailboats-lady-you.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
         <section>
             <h1>Welcome to San Blas on Sailboats</h1>
             <p>With Lady Lou, our 43-foot Beneteau, we invite you to discover the San Blas islands through eco-friendly
@@ -85,7 +85,7 @@
     <!-- captain card -->
     <div id="captain"></div>
     <div class="intro-bio">
-        <img src="../img/guadalupe-san-blas-on-sailboats.jpeg" alt="guada-profile">
+        <img src="../img/guada-captain-san-blas-on-sailboats.webp" alt="guada-profile">
         <h3>Guadalupe Guirado</h3>
         <h2>Meet the Captain</h2>
         <h4>Founder | Sailor | Explorer</h4>
@@ -103,7 +103,62 @@
     </div>
 
     <div class="community">
-        <img src="../img/trekking-local-sanblas-on-sailboats.jpg" alt="">
+        <!-- slider -->
+        <div id="sailingSlider" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#sailingSlider" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#sailingSlider" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#sailingSlider" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#sailingSlider" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/community-san-blas-on.-sailboats.webp" class="d-block w-100"
+                        alt="sailboat-sanblas-community">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="../img/community-san-blas-on.-sailboats02.webp" class="d-block w-100"
+                        alt="sailboat-sanblas-community-sailing">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="../img/community-san-blas-on.-sailboats03.jpg" class="d-block w-100"
+                        alt="sailboat-sanblas-sailor">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="../img/community-san-blas-on.-sailboats04.jpg" class="d-block w-100"
+                        alt="sailboat-sanblas-panama-sailing-tour">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#sailingSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#sailingSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+
+        <!-- Flechas -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#yachtSlidermodal" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#yachtSlidermodal" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+
         <h2>Our Sailing Community</h2>
         <p>More than a boat, we are a community united by a passion for San Blas, eco-friendly
             living, and ocean
@@ -113,6 +168,8 @@
             connection with nature and the sea.</p>
         <a class="btn btn--accent" href="reservebychat.html">Sail with us</a>
     </div>
+    </div>
+
 
     <!-- footer -->
     <footer class="footer">

@@ -80,12 +80,12 @@
 .tagsi {
   display: inline-flex;
   width: fit-content;
-  background: linear-gradient(135deg, #7A3E1D 0%, #F28C28 35%, #FFB347 55%, #FFD166 70%, #6B7B2D 100%);
+  background: linear-gradient(135deg, #6B7B2D 0%, #FFD166 55%, #FFB347 75%, #F28C28 100%);
   font-weight: 700;
   border-radius: 16px;
   padding: 3px 3px;
   align-self: center;
-  box-shadow: 8px 0 24px rgba(128, 128, 128, 0.5);
+  box-shadow: 8px 0 16px rgba(128, 128, 128, 0.5);
 }
 
 .tarjeta {
@@ -1409,7 +1409,7 @@ article h3.night {
   justify-content: center;
 }
 .pricing-card p {
-  color: white;
+  color: #20373B;
   font-weight: 700;
 }
 .pricing-card img {

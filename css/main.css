@@ -18,7 +18,7 @@
   text-decoration: none;
 }
 .btn-div__btn--primary {
-  background-color: #519CAB;
+  background-color: #E27D60;
   border: none;
   color: white;
 }
@@ -44,17 +44,17 @@
   align-items: center;
   text-decoration: none;
   width: inline;
-  color: #20373B;
+  color: #FFFCF7;
+  background-color: #6B8F8B;
   height: 3em;
   border-radius: 30em;
   font-size: 18px;
-  font-family: "nunito sans";
-  font-weight: 500;
+  font-family: "open sans";
+  font-weight: 600;
   border: none;
   position: relative;
   overflow: hidden;
   z-index: 1;
-  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
   align-self: center;
   padding: 0px 34px;
 }
@@ -67,7 +67,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to right, #C3E7F1 0%, #519CAB 100%);
+  background-image: linear-gradient(to right, #E27D60 0%, #BF5841 100%);
   transition: 0.5s ease;
   display: block;
   z-index: -1;
@@ -75,17 +75,6 @@
 
 .btn--accent:hover::before {
   width: 100%;
-}
-
-.tagsi {
-  display: inline-flex;
-  width: fit-content;
-  background: linear-gradient(135deg, #6B7B2D 0%, #FFD166 55%, #FFB347 75%, #F28C28 100%);
-  font-weight: 700;
-  border-radius: 16px;
-  padding: 3px 3px;
-  align-self: center;
-  box-shadow: 8px 0 16px rgba(128, 128, 128, 0.5);
 }
 
 .tarjeta {
@@ -135,15 +124,18 @@
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
+body {
+  background: linear-gradient(135deg, #FFFCF7, #D9BB96);
+}
+
 .navbar {
-  font-family: "raleway";
-  font-weight: 500;
-  color: #20373B;
-  margin: 16px;
-  width: calc(100% - 32px);
+  font-family: "open sans";
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
   padding: 5px 16px;
   background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 7px;
+  border-radius: 0px 0px 7px 7px;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
   /* blur */
   backdrop-filter: blur(12px);
@@ -222,11 +214,12 @@
   height: 100%;
   overflow: hidden;
   z-index: 1;
+  margin: 0;
 }
-.hero .hero__videobg iframe {
+.hero .hero__videobg video {
   position: absolute;
-  width: 120vw;
-  height: 120vh;
+  width: 100vw;
+  height: 100vh;
   pointer-events: none;
 }
 .hero .hero__overlay {
@@ -235,7 +228,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0));
   z-index: 2;
 }
 .hero {
@@ -247,23 +240,28 @@
   justify-content: center;
   align-items: center;
   z-index: 3;
-  color: white;
   text-align: center;
   padding: 16px;
 }
 .hero .hero__content h1 {
-  font-family: "raleway";
+  font-family: "open sans";
   font-size: 55px;
-  font-weight: 500;
+  font-weight: 700;
+  color: #FFFCF7;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
 }
 .hero .hero__content h3 {
-  font-family: "caveat";
-  font-size: 26px;
+  font-family: "amatic sc";
+  font-size: 34px;
+  color: white;
+  font-weight: 600;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
 }
 .hero .hero__content p {
-  font-family: "nunito sans";
-  font-size: 21px;
-  line-height: 34px;
+  font-family: "open sans";
+  font-size: 18px;
+  line-height: 26px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
 }
 
 .experiences {
@@ -272,6 +270,33 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.experiences h2 {
+  font-family: "amatic sc";
+  color: #E27D60;
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 900;
+  text-align: center;
+  padding: 0 7px;
+}
+.experiences h3 {
+  font-family: "amatic sc";
+  color: white;
+  font-size: 44px;
+  line-height: 44px;
+  font-weight: 700;
+  text-align: center;
+  z-index: 2;
+  text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.7);
+}
+.experiences p {
+  font-family: "open sans";
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: black;
+  padding: 0 16px;
 }
 .experiences .eco-friendly {
   display: flex;
@@ -282,40 +307,15 @@
 .experiences .eco-friendly img {
   width: 70px;
 }
-.experiences h2 {
-  font-family: "caveat";
-  color: #BF5841;
-  background: linear-gradient(135deg, #BF5841, #BF820F);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.experiences .tarjeta h2 {
+  font-family: "open sans";
+  font-weight: 700;
   font-size: 34px;
   line-height: 44px;
-  font-weight: 900;
-  text-align: center;
-  padding: 0 7px;
-}
-.experiences h3 {
-  font-family: "caveat";
-  color: white;
-  font-size: 44px;
-  line-height: 44px;
-  font-weight: 700;
-  text-align: center;
-  z-index: 2;
-  text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.7);
-}
-.experiences p {
-  font-family: "raleway";
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  color: #20373B;
-  padding: 0 16px;
-}
-.experiences .tarjeta h2 {
   color: #20373B;
 }
 .experiences .tarjeta-fullbg p {
+  font-family: "open sans";
   font-size: 21px;
   line-height: 31px;
   text-align: center;
@@ -353,10 +353,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   /* lo centra */
-  font-family: "caveat";
+  font-family: "amatic sc";
   color: white;
-  font-size: 62px;
-  line-height: 62px;
+  font-size: 84px;
+  line-height: 94px;
   font-weight: 700;
   text-align: center;
   z-index: 1;
@@ -380,13 +380,27 @@
 }
 .interest .flex-tags .tagsi {
   display: inline-flex;
-  background: linear-gradient(135deg #4B280D, #EA5F17, #FEB923, #89A550);
+  background-color: #DEF2F1;
+  color: #20373B;
+  font-weight: 500;
+  border: solid 1px;
+  border-radius: 16px;
+  padding: 5px 12px;
+  margin: 0;
+}
+.interest .flex-tags .tagsi p {
+  margin-bottom: 0px;
+}
+.interest .flex-tags .tagsa {
+  display: inline-flex;
+  background-color: #20373B;
   color: white;
   font-weight: 700;
   border-radius: 16px;
-  padding: 3px 7px;
+  padding: 5px 12px;
+  margin: 0;
 }
-.interest .flex-tags .tagsi p {
+.interest .flex-tags .tagsa p {
   margin-bottom: 0px;
 }
 
@@ -483,9 +497,11 @@
 }
 
 .experiences h2 {
-  font-family: "raleway";
-  color: #20373B;
-  font-size: 21px;
+  font-family: "amatic sc";
+  color: #E27D60;
+  font-size: 42px;
+  font-weight: 500;
+  letter-spacing: 1px;
   line-height: 34px;
   font-weight: 700;
   text-align: center;
@@ -555,8 +571,7 @@
   width: 100vw;
   height: inherit;
   border-radius: 16px 16px 0 0;
-  background: linear-gradient(135deg, #519CAB, #20373B);
-  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  background: linear-gradient(135deg, #6B8F8B, #197359);
   text-align: center;
 }
 .footer .ftblock-top {
@@ -567,7 +582,7 @@
   text-align: center;
 }
 .footer .ftblock-top h4 {
-  font-family: "raleway";
+  font-family: "open sans";
   font-weight: 700;
   color: white;
 }
@@ -578,7 +593,7 @@
   list-style: none;
 }
 .footer .ftblock-top nav ul li a {
-  font-family: "nunito sans";
+  font-family: "open sans";
   color: rgba(245, 245, 245, 0.7);
   text-decoration: none;
   font-size: 16px;
@@ -588,7 +603,7 @@
   width: 150px;
 }
 .footer .divone p {
-  font-family: "nunito sans";
+  font-family: "open sans";
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
   width: 85vw;
@@ -597,7 +612,7 @@
   padding-top: 16px;
 }
 .footer .divthree a {
-  font-family: "raleway";
+  font-family: "open sanss";
   font-size: 21px;
   font-weight: 700;
   color: white;

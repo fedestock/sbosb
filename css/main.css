@@ -29,9 +29,9 @@
 }
 .btn-div__btn--phantom {
   width: max-content;
-  font-family: "amatic sc";
+  font-family: "open sans";
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 500;
   border: solid 1px white;
   color: white;
   background-color: rgba(32, 55, 59, 0.5);
@@ -50,17 +50,16 @@
   width: inline;
   color: white;
   background-color: #6B8F8B;
-  height: 3em;
   border-radius: 30em;
-  font-size: 21px;
-  font-family: "amatic sc";
-  font-weight: 800;
+  font-size: 18px;
+  font-family: "open sans";
+  font-weight: 500;
   border: none;
   position: relative;
   overflow: hidden;
   z-index: 1;
   align-self: center;
-  padding: 0px 34px;
+  padding: 9px 34px;
   letter-spacing: 1px;
 }
 
@@ -72,7 +71,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to right, #E27D60 0%, #BF5841 100%);
+  background-image: linear-gradient(to right, #6B8F8B 0%, #197359 100%);
   transition: 0.5s ease;
   display: block;
   z-index: -1;
@@ -932,7 +931,7 @@ body {
   font-size: 55px;
   text-align: center;
   font-weight: 700;
-  color: #20373B;
+  color: #BF820F;
 }
 .tarjeta p {
   font-family: "open sans";
@@ -940,6 +939,83 @@ body {
   line-height: 26px;
   text-align: center;
   font-weight: 500;
+}
+
+.container .flavor {
+  padding-top: 55px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.container .flavor h2 {
+  text-align: center;
+  color: #BF820F;
+  font-family: "amatic sc";
+  font-size: 55px;
+}
+.container .flavor p {
+  text-align: center;
+}
+
+.activities {
+  padding: 55px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 84px;
+}
+.activities h3 {
+  font-family: "amatic sc";
+  color: white;
+  font-size: 55px;
+  line-height: 44px;
+  font-weight: 900;
+  text-align: center;
+  padding: 0 7px;
+  z-index: 3;
+}
+.activities h2 {
+  font-family: "amatic sc";
+  color: #BF820F;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 900;
+  text-align: center;
+  padding: 0 7px;
+}
+.activities .act {
+  font-family: "open sans";
+  color: #20373B;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 7px;
+  z-index: 3;
+}
+.activities p {
+  color: white;
+  z-index: 3;
+  text-align: center;
+}
+.activities .build {
+  text-align: center;
+  color: #20373B;
+}
+.activities .tarjeta-fullbg--yoga {
+  background-image: url("../../img/yoga-san-blas-on-sailboats.jpg");
+}
+.activities .tarjeta-fullbg--snork {
+  background-image: url("../../img/snorkeling-sanblasonsailboats.jpg");
+}
+.activities .tarjeta-fullbg--jungle {
+  background-image: url("../../img/jungle-jumping-sanblas-on-sailboats.png");
+}
+.activities .activities-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 55px;
 }
 
 .blog-hero {
@@ -1100,6 +1176,9 @@ article h3.night {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+.hero h1 {
+  line-height: 76px;
 }
 .hero video {
   position: absolute;

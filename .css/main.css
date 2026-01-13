@@ -15,10 +15,11 @@
   border-radius: 16px;
   font-size: 18px;
   line-height: 18px;
+  font-weight: 800;
   text-decoration: none;
 }
 .btn-div__btn--primary {
-  background-color: #519CAB;
+  background-color: #E27D60;
   border: none;
   color: white;
 }
@@ -28,6 +29,9 @@
 }
 .btn-div__btn--phantom {
   width: max-content;
+  font-family: "amatic sc";
+  font-size: 18px;
+  font-weight: 800;
   border: solid 1px white;
   color: white;
   background-color: rgba(32, 55, 59, 0.5);
@@ -44,19 +48,20 @@
   align-items: center;
   text-decoration: none;
   width: inline;
-  color: #20373B;
+  color: white;
+  background-color: #6B8F8B;
   height: 3em;
   border-radius: 30em;
-  font-size: 18px;
-  font-family: "nunito sans";
-  font-weight: 500;
+  font-size: 21px;
+  font-family: "amatic sc";
+  font-weight: 800;
   border: none;
   position: relative;
   overflow: hidden;
   z-index: 1;
-  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
   align-self: center;
   padding: 0px 34px;
+  letter-spacing: 1px;
 }
 
 .btn--accent::before {
@@ -67,7 +72,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to right, #C3E7F1 0%, #519CAB 100%);
+  background-image: linear-gradient(to right, #E27D60 0%, #BF5841 100%);
   transition: 0.5s ease;
   display: block;
   z-index: -1;
@@ -79,20 +84,20 @@
 
 .tarjeta {
   margin: 16px;
-  padding: 16px;
   width: calc(100vh - margin);
   height: inherit;
-  border-radius: 16px;
+  border-radius: 9px;
   background: white;
-  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
   text-align: center;
+  padding: 16px;
 }
 .tarjeta img {
   width: 100%;
-  border-radius: 16px;
+  border-radius: 16px 16px 0 0;
 }
 .tarjeta h2 {
-  font-size: 34px;
+  font-family: "amatic sc";
+  font-size: 32px;
   font-weight: 700;
   margin-top: 16px;
 }
@@ -105,7 +110,7 @@
   width: calc(100% - 32px);
   max-width: 400px;
   height: 350px;
-  border-radius: 21px;
+  border-radius: 16px;
   overflow: hidden;
   position: relative;
   text-align: left;
@@ -124,15 +129,18 @@
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
+body {
+  background: linear-gradient(135deg, #FFFCF7, #f8f1e9, #FFFCF7);
+}
+
 .navbar {
-  font-family: "raleway";
-  font-weight: 500;
-  color: #20373B;
-  margin: 16px;
-  width: calc(100% - 32px);
+  font-family: "open sans";
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
   padding: 5px 16px;
   background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 7px;
+  border-radius: 0px 0px 7px 7px;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
   /* blur */
   backdrop-filter: blur(12px);
@@ -211,11 +219,12 @@
   height: 100%;
   overflow: hidden;
   z-index: 1;
+  margin: 0;
 }
-.hero .hero__videobg iframe {
+.hero .hero__videobg video {
   position: absolute;
-  width: 120vw;
-  height: 120vh;
+  width: 100vw;
+  height: 100vh;
   pointer-events: none;
 }
 .hero .hero__overlay {
@@ -224,7 +233,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0));
   z-index: 2;
 }
 .hero {
@@ -236,23 +245,30 @@
   justify-content: center;
   align-items: center;
   z-index: 3;
-  color: white;
   text-align: center;
   padding: 16px;
 }
 .hero .hero__content h1 {
-  font-family: "raleway";
-  font-size: 55px;
-  font-weight: 500;
+  font-family: "amatic sc";
+  font-size: 84px;
+  font-weight: 800;
+  color: #FFFCF7;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.65);
 }
 .hero .hero__content h3 {
-  font-family: "caveat";
-  font-size: 26px;
+  font-family: "open sans";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: white;
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
 }
 .hero .hero__content p {
-  font-family: "nunito sans";
-  font-size: 21px;
-  line-height: 34px;
+  font-family: "open sans";
+  font-size: 18px;
+  line-height: 26px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
 }
 
 .experiences {
@@ -261,6 +277,33 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.experiences h2 {
+  font-family: "amatic sc";
+  color: #E27D60;
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 900;
+  text-align: center;
+  padding: 0 7px;
+}
+.experiences h3 {
+  font-family: "amatic sc";
+  color: white;
+  font-size: 44px;
+  line-height: 44px;
+  font-weight: 700;
+  text-align: center;
+  z-index: 2;
+  text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.7);
+}
+.experiences p {
+  font-family: "open sans";
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: black;
+  padding: 0 16px;
 }
 .experiences .eco-friendly {
   display: flex;
@@ -271,40 +314,21 @@
 .experiences .eco-friendly img {
   width: 70px;
 }
-.experiences h2 {
-  font-family: "caveat";
-  color: #BF5841;
-  background: linear-gradient(135deg, #BF5841, #BF820F);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 34px;
-  line-height: 44px;
-  font-weight: 900;
-  text-align: center;
-  padding: 0 7px;
-}
-.experiences h3 {
-  font-family: "caveat";
-  color: white;
-  font-size: 44px;
-  line-height: 44px;
-  font-weight: 700;
-  text-align: center;
-  z-index: 2;
-  text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.7);
-}
-.experiences p {
-  font-family: "raleway";
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  color: #20373B;
-  padding: 0 16px;
-}
 .experiences .tarjeta h2 {
+  font-family: "open sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 44px;
   color: #20373B;
+}
+.experiences .tarjeta p {
+  font-family: "open sans";
+  font-size: 16px;
+  color: #20373B;
+  font-weight: 400;
 }
 .experiences .tarjeta-fullbg p {
+  font-family: "open sans";
   font-size: 21px;
   line-height: 31px;
   text-align: center;
@@ -330,34 +354,38 @@
   justify-content: center;
   padding-bottom: 55px;
 }
-.interest .tarjeta {
+.interest .div-tarjeta {
   overflow: hidden;
-  /* oculta lo que se salga */
   position: relative;
+  margin: 16px;
+  width: calc(100vh - margin);
+  height: 450px;
+  border-radius: 9px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
-.interest .tarjeta h2 {
-  position: absolute;
-  /* se superpone sobre el video */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* lo centra */
-  font-family: "caveat";
-  color: white;
-  font-size: 62px;
-  line-height: 62px;
-  font-weight: 700;
-  text-align: center;
-  z-index: 1;
-  text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.7);
-}
-.interest .tarjeta video {
+.interest .div-tarjeta video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   /* hace que el video llene el div y se recorte */
   display: block;
   border-radius: 12px;
+}
+.interest .div-tarjeta h2 {
+  position: absolute;
+  /* se superpone sobre el video */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* lo centra */
+  font-family: "amatic sc";
+  color: white;
+  font-size: 84px;
+  line-height: 94px;
+  font-weight: 700;
+  text-align: center;
+  z-index: 1;
+  text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.7);
 }
 .interest .flex-tags {
   padding: 16px;
@@ -369,13 +397,27 @@
 }
 .interest .flex-tags .tagsi {
   display: inline-flex;
-  background: linear-gradient(135deg #4B280D, #EA5F17, #FEB923, #89A550);
+  background-color: #DEF2F1;
+  color: #20373B;
+  font-weight: 500;
+  border: solid 1px;
+  border-radius: 16px;
+  padding: 5px 12px;
+  margin: 0;
+}
+.interest .flex-tags .tagsi p {
+  margin-bottom: 0px;
+}
+.interest .flex-tags .tagsa {
+  display: inline-flex;
+  background-color: #20373B;
   color: white;
   font-weight: 700;
   border-radius: 16px;
-  padding: 3px 7px;
+  padding: 5px 12px;
+  margin: 0;
 }
-.interest .flex-tags .tagsi p {
+.interest .flex-tags .tagsa p {
   margin-bottom: 0px;
 }
 
@@ -442,25 +484,40 @@
   background-color: #20373B;
   color: white;
 }
+.modal-content .card {
+  padding: 16px 0;
+}
 .modal-content .offer {
-  font-family: "caveat";
-  font-size: 34px;
+  font-family: "raleway";
+  font-size: 21px;
 }
 .modal-content .price {
-  font-size: 21px;
-  color: #20373B;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #BF820F;
   align-self: center;
-  font-weight: 500;
+  font-weight: 700;
 }
 .modal-content .card h3 {
   align-self: center;
   color: #519CAB;
 }
+.modal-content h5 {
+  margin: 0;
+}
+.modal-content h3 {
+  margin: 0;
+}
+.modal-content h4 {
+  margin: 0;
+}
 
 .experiences h2 {
-  font-family: "raleway";
-  color: #20373B;
-  font-size: 21px;
+  font-family: "amatic sc";
+  color: #E27D60;
+  font-size: 42px;
+  font-weight: 500;
   line-height: 34px;
   font-weight: 700;
   text-align: center;
@@ -472,6 +529,24 @@
   display: none;
 }
 
+.gallery-img h2 {
+  font-family: "amatic sc";
+  color: #20373B;
+  font-size: 34px;
+  text-align: center;
+  font-weight: 700;
+}
+.gallery-img .row img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.gallery-img .row img:hover {
+  transform: scale(1.05);
+}
+
+/* Evita scroll horizontal y limita el tamaño del lightbox */
 /* testimonial */
 .testimonial-card {
   width: 100%;
@@ -530,9 +605,77 @@
   width: 100vw;
   height: inherit;
   border-radius: 16px 16px 0 0;
-  background: linear-gradient(135deg, #519CAB, #20373B);
-  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  background: linear-gradient(135deg, #6B8F8B, #197359);
   text-align: center;
+}
+.footer .faqs {
+  padding: 34px 16px;
+}
+.footer .faqs h3 {
+  font-family: "open sans";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: white;
+  font-weight: 700;
+}
+.footer .faqs h2 {
+  font-family: "amatic sc";
+  font-size: 55px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+}
+.footer .faqs .accordion {
+  border-radius: 16px;
+  background-color: #20373B;
+  overflow: hidden;
+}
+.footer .faqs .accordion-item {
+  border: none;
+  background-color: #20373B;
+}
+.footer .faqs .accordion-item h2 {
+  font-family: "open sans";
+}
+.footer .faqs .accordion-body {
+  background-color: #E27D60;
+}
+.footer .faqs .accordion-body p {
+  font-family: "open sans";
+  color: white;
+  text-align: left;
+}
+.footer .faqs .accordion-button:not(.collapsed) {
+  background-color: #E27D60;
+  color: white;
+}
+.footer .faqs .accordion-button:focus {
+  border-color: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.footer .booknow {
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 55px 0;
+}
+.footer .booknow .col-12 {
+  padding-bottom: 55px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .booknow .col-12 h2 {
+  text-align: center;
+  font-family: "open sans";
+  font-weight: bold;
+  font-size: 34px;
+  background: linear-gradient(135deg, #519CAB, #20373B);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .footer .ftblock-top {
   display: flex;
@@ -542,7 +685,7 @@
   text-align: center;
 }
 .footer .ftblock-top h4 {
-  font-family: "raleway";
+  font-family: "open sans";
   font-weight: 700;
   color: white;
 }
@@ -553,8 +696,8 @@
   list-style: none;
 }
 .footer .ftblock-top nav ul li a {
-  font-family: "nunito sans";
-  color: rgba(245, 245, 245, 0.7);
+  font-family: "open sans";
+  color: whitesmoke;
   text-decoration: none;
   font-size: 16px;
   font-weight: 400;
@@ -563,7 +706,7 @@
   width: 150px;
 }
 .footer .divone p {
-  font-family: "nunito sans";
+  font-family: "open sans";
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
   width: 85vw;
@@ -572,10 +715,23 @@
   padding-top: 16px;
 }
 .footer .divthree a {
-  font-family: "raleway";
+  font-family: "open sans";
   font-size: 21px;
   font-weight: 700;
   color: white;
+}
+.footer .divfour {
+  padding-top: 16px;
+}
+.footer .divfour a {
+  font-family: "open sans";
+  font-size: 21px;
+  font-weight: 700;
+  color: white;
+}
+.footer img {
+  width: 26px;
+  padding-top: 6px;
 }
 .footer .ftblock-bottom {
   color: rgba(255, 255, 255, 0.3);
@@ -587,7 +743,6 @@
 .footer a:focus,
 .footer a:active {
   text-decoration: none;
-  color: inherit;
   outline: none;
 }
 
@@ -599,7 +754,7 @@
 }
 .ft-social i {
   font-size: 26px;
-  color: rgba(255, 255, 255, 0.5);
+  color: white;
   transition: 0.3s ease;
 }
 .ft-social i:hover {
@@ -627,18 +782,20 @@
 }
 .about-hero h1 {
   margin-top: 100px;
-  font-family: "raleway";
+  font-family: "amatic sc";
   color: white;
-  font-size: 55px;
-  line-height: 55px;
+  font-size: 84px;
+  line-height: 94px;
   font-weight: 700;
   padding-top: 55px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
 }
 .about-hero p {
-  font-family: "nunito sans";
+  font-family: "open sans";
   font-size: 16px;
   color: white;
   line-height: 26px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
 }
 
 #captain {
@@ -661,18 +818,24 @@
   border-radius: 555px;
 }
 .intro-bio h3 {
-  font-family: "caveat";
-  font-size: 21px;
+  font-family: "open sans";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: #20373B;
+  font-weight: 700;
 }
 .intro-bio h2 {
-  font-family: "raleway";
-  font-size: 34px;
+  font-family: "amatic sc";
+  font-size: 55px;
+  font-weight: 800;
 }
 .intro-bio h4 {
-  font-family: "nunito sans";
-  font-size: 12px;
+  font-family: "open sans";
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: #20373B;
   font-weight: 700;
 }
 .intro-bio p {
@@ -697,11 +860,10 @@
   margin-bottom: 16px;
 }
 .community h2 {
-  font-family: "raleway";
-  font-size: 34px;
-  line-height: 34px;
-  font-weight: 700;
-  color: #519CAB;
+  font-family: "amatic sc";
+  font-size: 55px;
+  font-weight: 800;
+  color: #E27D60;
 }
 .community .description {
   font-family: "nunito sans";
@@ -733,42 +895,78 @@
   object-fit: cover;
 }
 .hero h1 {
-  font-family: "raleway";
-  font-size: 55px;
+  font-family: "amatic sc";
+  font-size: 84px;
   text-align: center;
   font-weight: 700;
   color: white;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
 }
 .hero h2 {
+  font-family: "open sans";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
   color: white;
-  font-family: "caveat";
-  font-size: 26px;
-  text-align: center;
-  font-weight: 500;
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
+  align-self: center;
+  display: flex;
+  justify-content: center;
 }
 .hero p {
   color: white;
-  font-family: "nunito sans";
+  font-family: "open sans";
   width: 100%;
   font-size: 18px;
+  line-height: 28px;
   text-align: center;
   font-weight: 500;
+  padding: 0 16px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
 }
 
 .tarjeta h5 {
   margin-top: 16px;
-  font-family: "raleway";
-  font-size: 26px;
+  font-family: "amatic sc";
+  font-size: 55px;
   text-align: center;
   font-weight: 700;
   color: #20373B;
 }
 .tarjeta p {
-  font-family: "nunito sans";
-  font-size: 18px;
+  font-family: "open sans";
+  font-size: 16px;
   line-height: 26px;
   text-align: center;
   font-weight: 500;
+}
+
+.activities {
+  padding: 55px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 84px;
+}
+.activities h2 {
+  font-family: "amatic sc";
+  color: #E27D60;
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 900;
+  text-align: center;
+  padding: 0 7px;
+}
+.activities .tarjeta-fullbg--yoga {
+  background-image: url("../../img/yoga-san-blas-on-sailboats.jpg");
+}
+.activities .tarjeta-fullbg--snork {
+  background-image: url("../../img/snorkeling-sanblasonsailboats.jpg");
+}
+.activities .tarjeta-fullbg--jungle {
+  background-image: url("../../img/jungle-jumping-sanblas-on-sailboats.png");
 }
 
 .blog-hero {
@@ -918,6 +1116,29 @@ article h3.night {
   align-self: center;
 }
 
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* o el alto que quieras */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
 .intro-experiences {
   padding: 34px;
   display: flex;
@@ -926,7 +1147,7 @@ article h3.night {
   align-items: center;
 }
 .intro-experiences h3 {
-  font-family: "nunito sans";
+  font-family: "open sans";
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -935,13 +1156,16 @@ article h3.night {
   text-align: center;
 }
 .intro-experiences h2 {
-  font-family: "raleway";
+  font-family: "amatic sc";
+  font-weight: 1000;
   font-size: 34px;
   text-align: center;
 }
 .intro-experiences p {
-  font-family: "nunito sans";
+  font-family: "open sans";
   text-align: center;
+  font-size: 16px;
+  line-height: 26px;
 }
 .intro-experiences .benefits {
   display: flex;
@@ -953,9 +1177,10 @@ article h3.night {
   width: 150px;
 }
 .intro-experiences .benefits p {
-  font-family: "nunito sans";
-  font-size: 21px;
-  font-weight: 400;
+  font-family: "amatic sc";
+  font-size: 34px;
+  line-height: 39px;
+  font-weight: 900;
   width: 65%;
   text-align: center;
   transform: translate(25%);
@@ -963,85 +1188,90 @@ article h3.night {
 
 .loopcarousel h3 {
   text-align: center;
-  font-family: "caveat";
-  font-size: 34px;
-  background: linear-gradient(135deg, #519CAB, #20373B);
-  -webkit-background-clip: text;
-  color: transparent;
+  font-family: "open sans";
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #E27D60;
 }
 .loopcarousel h2 {
   text-align: center;
-  font-family: "raleway";
-  font-weight: bold;
-  font-size: 34px;
+  font-family: "amatic sc";
+  font-weight: 900;
+  font-size: 84px;
+  line-height: 84px;
   padding: 0 34px;
   background: linear-gradient(135deg, #519CAB, #20373B);
   -webkit-background-clip: text;
   color: transparent;
 }
 
-.faqs {
-  padding: 34px 16px;
-}
-.faqs h3 {
-  font-family: "caveat";
-  font-size: 34px;
-  text-align: center;
-  color: #519CAB;
-}
-.faqs h2 {
-  font-family: "Raleway";
-  font-size: 34px;
-  text-align: center;
-  color: #20373B;
-}
-.faqs .accordion {
-  border: solid 1px #20373B;
-  border-radius: 16px;
-  background-color: transparent;
+.video .v-wrapper {
   overflow: hidden;
+  position: relative;
+  margin: 16px;
+  width: calc(100vh - margin);
+  height: 450px;
+  border-radius: 9px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
-.faqs .accordion-item {
-  border: none;
-  background-color: transparent;
-}
-.faqs .accordion-body {
-  background-color: transparent;
-}
-.faqs .accordion-body p {
-  font-family: "nunito sans";
-}
-.faqs .accordion-button:not(.collapsed) {
-  background-color: transparent;
-  color: #519CAB;
-}
-.faqs .accordion-button:focus {
-  border-color: transparent !important;
-  box-shadow: none !important;
-  outline: none !important;
+.video .v-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* hace que el video llene el div y se recorte */
+  display: block;
+  border-radius: 12px;
 }
 
 .booknow {
-  height: 35vh;
+  margin: 21px 0;
+}
+
+.cta-v {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 55px 0;
-}
-.booknow .col-12 {
-  padding-bottom: 55px;
-  display: flex;
-  flex-direction: column;
-}
-.booknow .col-12 h2 {
   text-align: center;
-  font-family: "raleway";
-  font-weight: bold;
-  font-size: 34px;
-  background: linear-gradient(135deg, #519CAB, #20373B);
-  -webkit-background-clip: text;
-  color: transparent;
+  position: relative;
+  width: 100%;
+  height: 450px;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  /* VIDEO DE FONDO */
+}
+.cta-v video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.cta-v {
+  /* CONTENIDO */
+}
+.cta-v h2 {
+  font-family: "amatic sc";
+  font-weight: 800;
+  font-size: 55px;
+  color: white;
+  z-index: 3;
+}
+.cta-v {
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+a {
+  font-family: "open sans";
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0;
+  position: relative;
+  z-index: 3;
+  color: #fff;
 }
 
 .jungle-hero {
@@ -1198,7 +1428,7 @@ article h3.night {
 }
 
 .intro {
-  height: 50vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -1210,23 +1440,59 @@ article h3.night {
   align-items: center;
 }
 .intro .eco-friendly img {
-  width: 50px;
+  width: 65px;
+}
+.intro .gallery-reserve {
+  padding: 0;
+}
+.intro .gallery-reserve .tira-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.intro .gallery-reserve .tira {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: scroll 2s linear infinite;
+}
+.intro .gallery-reserve .tira img {
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+.intro .gallery-reserve {
+  /* Animación infinita */
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 .intro h3 {
-  font-family: "caveat";
-  font-size: 34px;
+  font-family: "open sans";
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
   text-align: center;
   color: rgba(191, 130, 15, 0.9);
+  margin: 0;
 }
 .intro h1 {
-  font-family: "raleway";
-  font-size: 34px;
+  font-family: "amatic sc";
+  font-size: 84px;
+  font-weight: 900;
   text-align: center;
-  font-weight: 700;
-  color: #519CAB;
+  line-height: 84px;
+  color: #6B8F8B;
 }
 .intro p {
-  font-family: "nunito sans";
+  font-family: "open sans";
   font-size: 16px;
   line-height: 26px;
   text-align: center;
@@ -1247,53 +1513,73 @@ article h3.night {
   line-height: 1.5;
 }
 
-.gallery {
-  padding-top: 0px;
-}
-
 .includes {
-  gap: 50px;
-  padding-top: 55px;
+  padding-top: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding-bottom: 55px;
+}
+.includes .material-icons {
+  color: #519CAB;
+  vertical-align: center;
+  font-size: 28px;
+}
+.includes img {
+  width: 190px;
+  align-self: center;
 }
 .includes h2 {
   text-align: center;
-  font-family: "raleway";
-  font-size: 26px;
+  font-family: "amatic sc";
+  font-size: 55px;
   font-weight: 700;
-  color: #20373B;
+  color: #BF820F;
 }
 .includes ul {
   margin: 0;
   padding: 0;
-  text-align: center;
+  text-align: left;
+  padding: 0 34px;
   /* centrar la lista entera */
 }
 .includes ul li {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   gap: 8px;
-  font-family: "nunito sans";
+  font-family: "open sans";
   font-size: 16px;
   line-height: 26px;
   font-weight: 500;
+  padding-bottom: 16px;
   /* quitar el background antiguo */
   background: none;
   padding-left: 0;
   color: rgba(32, 55, 59, 0.8);
 }
-.includes ul li::before {
-  content: "";
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 18px;
-  height: 18px;
-  background: url("../img/check-icon-san-blas-on-sailboats.png") no-repeat center;
-  background-size: contain;
+.includes .not-included p {
+  font-family: "open sans";
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #20373B;
+  text-align: center;
+  font-weight: 700;
+  margin: 0;
+  padding-top: 21px;
+}
+.includes .not-included .material-icons {
+  color: #E27D60;
+}
+.includes p {
+  text-align: center;
+  padding: 0 55px;
+  color: #197359;
+  font-family: "open sans";
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .cta {
@@ -1303,7 +1589,7 @@ article h3.night {
   align-items: center;
 }
 .cta p {
-  font-family: "caveat";
+  font-family: "open sans";
   font-size: 21px;
   line-height: 26px;
   text-align: left;
@@ -1311,13 +1597,49 @@ article h3.night {
   color: white;
 }
 .cta .cta-btn {
-  background-color: transparent;
-  color: white;
+  font-family: "open sans";
+  margin-bottom: 21px;
+  background-color: #BF820F;
+  color: whitesmoke;
+  font-weight: 500;
   transition: all 0.3s ease-in-out;
 }
 .cta .cta-btn:hover {
-  background-color: #BF820F;
+  background-color: #519CAB;
   color: white;
+}
+
+.pricing-card {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pricing-card p {
+  color: #20373B;
+  font-weight: 700;
+}
+.pricing-card img {
+  width: 100%;
+  object-fit: cover;
+}
+.pricing-card .price {
+  font-family: "open sans";
+  text-transform: uppercase;
+  color: #BF820F;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 16px;
+}
+.pricing-card h3 {
+  font-family: "amatic sc";
+  font-size: 34px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1;
 }
 
 .pay-safe {

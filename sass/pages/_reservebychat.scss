@@ -57,10 +57,10 @@
     }
 
     h3 {
-        font-family: "nunito sans";
-        font-size: 16px;
+        font-family: "open sans";
+        font-size: 12px;
         text-transform: uppercase;
-        letter-spacing: 3px;
+        letter-spacing: 1px;
         font-weight: 700;
         text-align: center;
         color: rgba($ocre, 0.9);
@@ -68,15 +68,16 @@
     }
 
     h1 {
-        font-family: "caveat";
-        font-size: 55px;
+        font-family: "amatic sc";
+        font-size: 84px;
+        font-weight: 900;
         text-align: center;
-        font-weight: 700;
-        color: $aqua;
+        line-height: 84px;
+        color: $opasto;
     }
 
     p {
-        font-family: "nunito sans";
+        font-family: "open sans";
         font-size: 16px;
         line-height: 26px;
         text-align: center;
@@ -121,8 +122,8 @@
 
     h2 {
         text-align: center;
-        font-family: "raleway";
-        font-size: 26px;
+        font-family: "amatic sc";
+        font-size: 55px;
         font-weight: 700;
         color: $ocre;
     }
@@ -141,7 +142,7 @@
         justify-content: left;
         align-items: center;
         gap: 8px;
-        font-family: "nunito sans";
+        font-family: "open sans";
         font-size: 16px;
         line-height: 26px;
         font-weight: 500;
@@ -156,7 +157,7 @@
     .not-included {
 
         p {
-            font-family: "nunito sans";
+            font-family: "open sans";
             font-size: 16px;
             text-transform: uppercase;
             letter-spacing: 3px;
@@ -168,7 +169,7 @@
         }
 
         .material-icons {
-            color: $ladrillo;
+            color: $oladrillo;
         }
     }
 
@@ -176,7 +177,7 @@
         text-align: center;
         padding: 0 55px;
         color: $pasto;
-        font-family: "nunito sans";
+        font-family: "open sans";
         font-size: 16px;
         line-height: 26px;
     }
@@ -189,7 +190,7 @@
     align-items: center;
 
     p {
-        font-family: "caveat";
+        font-family: "open sans";
         font-size: 21px;
         line-height: 26px;
         text-align: left;
@@ -198,6 +199,7 @@
     }
 
     .cta-btn {
+        font-family: "open sans";
         margin-bottom: 21px;
         background-color: $ocre;
         color: whitesmoke;
@@ -230,15 +232,19 @@
     }
 
     .price {
-        font-family: "raleway";
-        color: $ocean;
+        font-family: "open sans";
+        text-transform: uppercase;
+        color: $ocre;
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 700;
         text-align: center;
         padding-top: 16px;
     }
 
     h3 {
-        font-family: "nunito sans";
-        font-size: 14px;
+        font-family: "amatic sc";
+        font-size: 34px;
         text-align: center;
         text-transform: uppercase;
         font-weight: 700;

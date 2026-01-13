@@ -1447,24 +1447,25 @@ a {
   }
 }
 .intro h3 {
-  font-family: "nunito sans";
-  font-size: 16px;
+  font-family: "open sans";
+  font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   font-weight: 700;
   text-align: center;
   color: rgba(191, 130, 15, 0.9);
   margin: 0;
 }
 .intro h1 {
-  font-family: "caveat";
-  font-size: 55px;
+  font-family: "amatic sc";
+  font-size: 84px;
+  font-weight: 900;
   text-align: center;
-  font-weight: 700;
-  color: #519CAB;
+  line-height: 84px;
+  color: #6B8F8B;
 }
 .intro p {
-  font-family: "nunito sans";
+  font-family: "open sans";
   font-size: 16px;
   line-height: 26px;
   text-align: center;
@@ -1503,8 +1504,8 @@ a {
 }
 .includes h2 {
   text-align: center;
-  font-family: "raleway";
-  font-size: 26px;
+  font-family: "amatic sc";
+  font-size: 55px;
   font-weight: 700;
   color: #BF820F;
 }
@@ -1521,7 +1522,7 @@ a {
   justify-content: left;
   align-items: center;
   gap: 8px;
-  font-family: "nunito sans";
+  font-family: "open sans";
   font-size: 16px;
   line-height: 26px;
   font-weight: 500;
@@ -1532,7 +1533,7 @@ a {
   color: rgba(32, 55, 59, 0.8);
 }
 .includes .not-included p {
-  font-family: "nunito sans";
+  font-family: "open sans";
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -1543,13 +1544,13 @@ a {
   padding-top: 21px;
 }
 .includes .not-included .material-icons {
-  color: #BF5841;
+  color: #E27D60;
 }
 .includes p {
   text-align: center;
   padding: 0 55px;
   color: #197359;
-  font-family: "nunito sans";
+  font-family: "open sans";
   font-size: 16px;
   line-height: 26px;
 }
@@ -1561,7 +1562,7 @@ a {
   align-items: center;
 }
 .cta p {
-  font-family: "caveat";
+  font-family: "open sans";
   font-size: 21px;
   line-height: 26px;
   text-align: left;
@@ -1569,6 +1570,7 @@ a {
   color: white;
 }
 .cta .cta-btn {
+  font-family: "open sans";
   margin-bottom: 21px;
   background-color: #BF820F;
   color: whitesmoke;
@@ -1595,14 +1597,18 @@ a {
   object-fit: cover;
 }
 .pricing-card .price {
-  font-family: "raleway";
-  color: #20373B;
+  font-family: "open sans";
+  text-transform: uppercase;
+  color: #BF820F;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 700;
   text-align: center;
   padding-top: 16px;
 }
 .pricing-card h3 {
-  font-family: "nunito sans";
-  font-size: 14px;
+  font-family: "amatic sc";
+  font-size: 34px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;

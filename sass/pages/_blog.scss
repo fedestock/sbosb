@@ -25,19 +25,19 @@
     }
 
     h1 {
-        font-family: "raleway";
+        font-family: "amatic sc";
         font-size: 55px;
         line-height: 65px;
         font-weight: 700;
         padding-top: 55px;
-        background: linear-gradient(135deg, $ocean, $oceanb);
+        background: linear-gradient(135deg, $ocre, $lemon);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
     p {
-        font-family: "nunito sans";
-        font-size: 21px;
+        font-family: "open sans";
+        font-size: 16px;
         color: $ocean;
         line-height: 26px;
         font-weight: 400;
@@ -46,6 +46,11 @@
 
 .tagsi {
     margin-top: 16px;
+    background-color: $arena;
+    border-radius: 16px;
+    padding: 7px 12px;
+    color: $ocean;
+    font-weight: 600;
 }
 
 // paginacion

@@ -15,6 +15,7 @@
   border-radius: 16px;
   font-size: 18px;
   line-height: 18px;
+  font-weight: 800;
   text-decoration: none;
 }
 .btn-div__btn--primary {
@@ -29,6 +30,8 @@
 .btn-div__btn--phantom {
   width: max-content;
   font-family: "amatic sc";
+  font-size: 18px;
+  font-weight: 800;
   border: solid 1px white;
   color: white;
   background-color: rgba(32, 55, 59, 0.5);
@@ -526,6 +529,13 @@ body {
   display: none;
 }
 
+.gallery-img h2 {
+  font-family: "amatic sc";
+  color: #20373B;
+  font-size: 34px;
+  text-align: center;
+  font-weight: 700;
+}
 .gallery-img .row img {
   width: 100%;
   height: 250px;
@@ -602,18 +612,19 @@ body {
   padding: 34px 16px;
 }
 .footer .faqs h3 {
-  font-family: "amatic sc";
-  font-size: 34px;
-  text-align: center;
-  color: rgba(245, 245, 245, 0.7);
+  font-family: "open sans";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: white;
   font-weight: 700;
 }
 .footer .faqs h2 {
-  font-family: "open sans";
-  font-size: 34px;
+  font-family: "amatic sc";
+  font-size: 55px;
   font-weight: 600;
   text-align: center;
-  color: rgba(255, 255, 255, 0.8);
+  color: white;
 }
 .footer .faqs .accordion {
   border-radius: 16px;
@@ -623,6 +634,9 @@ body {
 .footer .faqs .accordion-item {
   border: none;
   background-color: #20373B;
+}
+.footer .faqs .accordion-item h2 {
+  font-family: "open sans";
 }
 .footer .faqs .accordion-body {
   background-color: #E27D60;
@@ -683,7 +697,7 @@ body {
 }
 .footer .ftblock-top nav ul li a {
   font-family: "open sans";
-  color: rgba(245, 245, 245, 0.7);
+  color: whitesmoke;
   text-decoration: none;
   font-size: 16px;
   font-weight: 400;
@@ -701,10 +715,14 @@ body {
   padding-top: 16px;
 }
 .footer .divthree a {
-  font-family: "open sanss";
+  font-family: "open sans";
   font-size: 21px;
   font-weight: 700;
   color: white;
+}
+.footer img {
+  width: 26px;
+  padding-top: 6px;
 }
 .footer .ftblock-bottom {
   color: rgba(255, 255, 255, 0.3);
@@ -728,7 +746,7 @@ body {
 }
 .ft-social i {
   font-size: 26px;
-  color: rgba(255, 255, 255, 0.5);
+  color: white;
   transition: 0.3s ease;
 }
 .ft-social i:hover {

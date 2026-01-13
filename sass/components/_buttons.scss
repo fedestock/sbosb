@@ -12,6 +12,7 @@
         border-radius: 16px;
         font-size: 18px;
         line-height: 18px;
+        font-weight: 800;
         text-decoration: none;
 
         &--primary {
@@ -28,6 +29,8 @@
         &--phantom {
             width: max-content;
             font-family: "amatic sc";
+            font-size: 18px;
+            font-weight: 800;
             border: solid 1px white;
             color: white;
             background-color: rgba($ocean, 0.5);

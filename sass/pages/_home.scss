@@ -478,6 +478,15 @@ body {
 
 // galeria
 .gallery-img {
+
+    h2{
+        font-family: "amatic sc";
+        color: $ocean;
+        font-size: 34px;
+        text-align: center;
+        font-weight: 700;
+    }
+
     .row {
         img {
             width: 100%;
@@ -570,19 +579,20 @@ body {
         padding: 34px 16px;
 
         h3 {
-            font-family: "amatic sc";
-            font-size: 34px;
-            text-align: center;
-            color: rgba(whitesmoke, 0.7);
+            font-family: "open sans";
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 12px;
+            color: white;
             font-weight: 700;
         }
 
         h2 {
-            font-family: "open sans";
-            font-size: 34px;
+            font-family: "amatic sc";
+            font-size: 55px;
             font-weight: 600;
             text-align: center;
-            color: rgba(#ffffff, 0.8)
+            color: white;
         }
 
         .accordion {
@@ -594,6 +604,10 @@ body {
         .accordion-item {
             border: none;
             background-color: $ocean;
+
+            h2 {
+                font-family: "open sans";
+            }
         }
 
         .accordion-body {
@@ -666,7 +680,7 @@ body {
 
         nav ul li a {
             font-family: "open sans";
-            color: rgba(whitesmoke, 0.7);
+            color: rgba(whitesmoke, 1);
             text-decoration: none;
             font-size: 16px;
             font-weight: 400;
@@ -691,11 +705,16 @@ body {
         padding-top: 16px;
 
         a {
-            font-family: "open sanss";
+            font-family: "open sans";
             font-size: 21px;
             font-weight: 700;
             color: white;
         }
+    }
+
+    img {
+        width: 26px;
+        padding-top: 6px;
     }
 
     .ftblock-bottom {
@@ -722,7 +741,7 @@ body {
 
     i {
         font-size: 26px;
-        color: rgba(white, 0.5);
+        color: rgba(white, 1);
         transition: .3s ease;
 
         &:hover {

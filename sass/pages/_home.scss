@@ -712,6 +712,17 @@ body {
         }
     }
 
+     .divfour {
+        padding-top: 16px;
+
+        a {
+            font-family: "open sans";
+            font-size: 21px;
+            font-weight: 700;
+            color: white;
+        }
+    }
+
     img {
         width: 26px;
         padding-top: 6px;
@@ -728,7 +739,6 @@ body {
     a:focus,
     a:active {
         text-decoration: none;
-        color: inherit; // usa el color definido en i
         outline: none;
     }
 }

@@ -25,28 +25,37 @@
     }
 
     h1 {
-        font-family: "raleway";
-        font-size: 55px;
+        font-family: "amatic sc";
+        font-size: 84px;
         text-align: center;
         font-weight: 700;
         color: white;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
     }
 
     h2 {
+        font-family: "open sans";
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 12px;
         color: white;
-        font-family: "caveat";
-        font-size: 26px;
-        text-align: center;
-        font-weight: 500;
+        font-weight: 700;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
+        align-self: center;
+        display: flex;
+        justify-content: center;
     }
 
     p {
         color: white;
-        font-family: "nunito sans";
+        font-family: "open sans";
         width: 100%;
         font-size: 18px;
+        line-height: 28px;
         text-align: center;
         font-weight: 500;
+        padding: 0 16px;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
     }
 }
 

@@ -28,6 +28,7 @@
 }
 .btn-div__btn--phantom {
   width: max-content;
+  font-family: "amatic sc";
   border: solid 1px white;
   color: white;
   background-color: rgba(32, 55, 59, 0.5);
@@ -44,19 +45,20 @@
   align-items: center;
   text-decoration: none;
   width: inline;
-  color: #FFFCF7;
+  color: white;
   background-color: #6B8F8B;
   height: 3em;
   border-radius: 30em;
-  font-size: 16px;
-  font-family: "open sans";
-  font-weight: 500;
+  font-size: 21px;
+  font-family: "amatic sc";
+  font-weight: 800;
   border: none;
   position: relative;
   overflow: hidden;
   z-index: 1;
   align-self: center;
   padding: 0px 34px;
+  letter-spacing: 1px;
 }
 
 .btn--accent::before {
@@ -91,7 +93,7 @@
   border-radius: 16px 16px 0 0;
 }
 .tarjeta h2 {
-  font-family: "open sans";
+  font-family: "amatic sc";
   font-size: 32px;
   font-weight: 700;
   margin-top: 16px;
@@ -754,18 +756,20 @@ body {
 }
 .about-hero h1 {
   margin-top: 100px;
-  font-family: "raleway";
+  font-family: "amatic sc";
   color: white;
-  font-size: 55px;
-  line-height: 55px;
+  font-size: 84px;
+  line-height: 94px;
   font-weight: 700;
   padding-top: 55px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
 }
 .about-hero p {
-  font-family: "nunito sans";
+  font-family: "open sans";
   font-size: 16px;
   color: white;
   line-height: 26px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
 }
 
 #captain {
@@ -788,18 +792,24 @@ body {
   border-radius: 555px;
 }
 .intro-bio h3 {
-  font-family: "caveat";
-  font-size: 21px;
+  font-family: "open sans";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: #20373B;
+  font-weight: 700;
 }
 .intro-bio h2 {
-  font-family: "raleway";
-  font-size: 34px;
+  font-family: "amatic sc";
+  font-size: 55px;
+  font-weight: 800;
 }
 .intro-bio h4 {
-  font-family: "nunito sans";
-  font-size: 12px;
+  font-family: "open sans";
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: #20373B;
   font-weight: 700;
 }
 .intro-bio p {
@@ -824,11 +834,10 @@ body {
   margin-bottom: 16px;
 }
 .community h2 {
-  font-family: "raleway";
-  font-size: 34px;
-  line-height: 34px;
-  font-weight: 700;
-  color: #519CAB;
+  font-family: "amatic sc";
+  font-size: 55px;
+  font-weight: 800;
+  color: #E27D60;
 }
 .community .description {
   font-family: "nunito sans";
@@ -860,26 +869,35 @@ body {
   object-fit: cover;
 }
 .hero h1 {
-  font-family: "raleway";
-  font-size: 55px;
+  font-family: "amatic sc";
+  font-size: 84px;
   text-align: center;
   font-weight: 700;
   color: white;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
 }
 .hero h2 {
+  font-family: "open sans";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
   color: white;
-  font-family: "caveat";
-  font-size: 26px;
-  text-align: center;
-  font-weight: 500;
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
+  align-self: center;
+  display: flex;
+  justify-content: center;
 }
 .hero p {
   color: white;
-  font-family: "nunito sans";
+  font-family: "open sans";
   width: 100%;
   font-size: 18px;
+  line-height: 28px;
   text-align: center;
   font-weight: 500;
+  padding: 0 16px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
 }
 
 .tarjeta h5 {

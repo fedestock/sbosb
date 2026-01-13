@@ -24,19 +24,21 @@
 
   h1 {
     margin-top: 100px;
-    font-family: "raleway";
+    font-family: "amatic sc";
     color: white;
-    font-size: 55px;
-    line-height: 55px;
+    font-size: 84px;
+    line-height: 94px;
     font-weight: 700;
     padding-top: 55px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
   }
 
   p {
-    font-family: "nunito sans";
+    font-family: "open sans";
     font-size: 16px;
     color: white;
     line-height: 26px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
   }
 }
 
@@ -62,20 +64,26 @@
   }
 
   h3 {
-    font-family: "caveat";
-    font-size: 21px;
+    font-family: "open sans";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: $ocean;
+    font-weight: 700;
   }
 
   h2 {
-    font-family: "raleway";
-    font-size: 34px;
+    font-family: "amatic sc";
+    font-size: 55px;
+    font-weight: 800;
   }
 
   h4 {
-    font-family: "nunito sans";
-    font-size: 12px;
+    font-family: "open sans";
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: $ocean;
     font-weight: 700;
   }
 
@@ -104,11 +112,10 @@
   }
 
   h2 {
-    font-family: "raleway";
-    font-size: 34px;
-    line-height: 34px;
-    font-weight: 700;
-    color: $aqua;
+    font-family: "amatic sc";
+    font-size: 55px;
+    font-weight: 800;
+    color: $oladrillo;
   }
 
   .description {

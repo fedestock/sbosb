@@ -268,10 +268,11 @@ body {
   font-size: 18px;
   line-height: 26px;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
+  font-weight: 600;
 }
 
 .experiences {
-  padding: 55px 16px;
+  padding: 55px 3px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -289,7 +290,7 @@ body {
 .experiences h3 {
   font-family: "amatic sc";
   color: white;
-  font-size: 44px;
+  font-size: 34px;
   line-height: 44px;
   font-weight: 700;
   text-align: center;
@@ -302,7 +303,7 @@ body {
   line-height: 26px;
   text-align: center;
   color: black;
-  padding: 0 16px;
+  padding: 0 6px;
 }
 .experiences .eco-friendly {
   display: flex;
@@ -328,8 +329,8 @@ body {
 }
 .experiences .tarjeta-fullbg p {
   font-family: "open sans";
-  font-size: 21px;
-  line-height: 31px;
+  font-size: 16px;
+  line-height: 24px;
   text-align: center;
   color: white;
   z-index: 2;
@@ -352,6 +353,15 @@ body {
   flex-direction: column;
   justify-content: center;
   padding-bottom: 55px;
+}
+.interest h2 {
+  font-family: "amatic sc";
+  color: #6B8F8B;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 700;
+  text-align: center;
+  z-index: 1;
 }
 .interest .div-tarjeta {
   overflow: hidden;
@@ -394,30 +404,12 @@ body {
   justify-content: center;
   gap: 6px;
 }
-.interest .flex-tags .tagsi {
-  display: inline-flex;
-  background-color: #DEF2F1;
+.interest .flex-tags p {
+  margin-bottom: 0px;
+  text-align: center;
+  font-family: "open sans";
+  line-height: 26px;
   color: #20373B;
-  font-weight: 500;
-  border: solid 1px;
-  border-radius: 16px;
-  padding: 5px 12px;
-  margin: 0;
-}
-.interest .flex-tags .tagsi p {
-  margin-bottom: 0px;
-}
-.interest .flex-tags .tagsa {
-  display: inline-flex;
-  background-color: #20373B;
-  color: white;
-  font-weight: 700;
-  border-radius: 16px;
-  padding: 5px 12px;
-  margin: 0;
-}
-.interest .flex-tags .tagsa p {
-  margin-bottom: 0px;
 }
 
 .modal-content {

@@ -218,10 +218,10 @@ body {
 
     .tarjeta {
         h2 {
-            font-family: "open sans";
+            font-family: "amatic sc";
             font-weight: 700;
-            font-size: 21px;
-            line-height: 44px;
+            font-size: 55px;
+            line-height: 55px;
             color: $ocean;
         }
 
@@ -243,19 +243,22 @@ body {
     }
 
     .tarjeta-fullbg--captain {
-        background-image: url(../img/sailing-san-blas-action-sailboats.webp);
+        background-image: url(../../img/lady-you-san-blas-sailboats-mobile.webp);
         background-size: cover;
+        background-position: top center;
     }
 
 
     .tarjeta-fullbg--yatch {
-        background-image: url(../img/paella-mariscos-langosta-san-blas-on-sailboats.webp);
+        background-image: url(../../img/san-blas-on-sailboats-food-sandia.jpeg);
         background-size: cover;
+        background-position: top;
     }
 
     .tarjeta-fullbg--experiences {
-        background-image: url(../img/snorkeling-sanblasonsailboats.jpg);
+        background-image: url(../../img/san-blas-on-sailboats-snorkel-benefits.jpeg);
         background-size: cover;
+        background-position: top;
     }
 }
 
@@ -533,7 +536,7 @@ body {
     display: flex;
     gap: 20px;
     width: max-content;
-    animation: scroll 25s linear infinite;
+    animation: scroll 11s linear infinite;
 }
 
 .tira img {
@@ -554,6 +557,18 @@ body {
     }
 }
 
+.testis {
+    padding-top: 55px;
+    padding-bottom: 55px;
+
+    h2 {
+        text-align: center;
+        font-family: "amatic sc";
+        font-size: 34px;
+        font-weight: 700;
+        color: $oladrillo;
+    }
+}
 
 
 

@@ -38,7 +38,8 @@
   align-self: center;
 }
 .btn-div__btn--phantom:hover {
-  background-color: white;
+  background-color: #20373B;
+  border: none;
   color: white;
 }
 
@@ -49,7 +50,7 @@
   text-decoration: none;
   width: inline;
   color: white;
-  background-color: #6B8F8B;
+  background-color: #E27D60;
   border-radius: 30em;
   font-size: 18px;
   font-family: "open sans";
@@ -60,25 +61,10 @@
   z-index: 1;
   align-self: center;
   padding: 9px 34px;
+  transition: 0.3s;
 }
-
-.btn--accent::before {
-  content: "";
-  width: 0;
-  height: 3em;
-  border-radius: 30em;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: linear-gradient(to right, #6B8F8B 0%, #197359 100%);
-  transition: 0.5s ease;
-  display: block;
-  z-index: -1;
-  color: white;
-}
-
-.btn--accent:hover::before {
-  width: 100%;
+.btn--accent:hover {
+  background-color: #BF5841;
 }
 
 .tarjeta {
@@ -315,10 +301,10 @@ body {
   width: 70px;
 }
 .experiences .tarjeta h2 {
-  font-family: "open sans";
+  font-family: "amatic sc";
   font-weight: 700;
-  font-size: 21px;
-  line-height: 44px;
+  font-size: 55px;
+  line-height: 55px;
   color: #20373B;
 }
 .experiences .tarjeta p {
@@ -336,16 +322,19 @@ body {
   z-index: 2;
 }
 .experiences .tarjeta-fullbg--captain {
-  background-image: url(../img/sailing-san-blas-action-sailboats.webp);
+  background-image: url(../../img/lady-you-san-blas-sailboats-mobile.webp);
   background-size: cover;
+  background-position: top center;
 }
 .experiences .tarjeta-fullbg--yatch {
-  background-image: url(../img/paella-mariscos-langosta-san-blas-on-sailboats.webp);
+  background-image: url(../../img/san-blas-on-sailboats-food-sandia.jpeg);
   background-size: cover;
+  background-position: top;
 }
 .experiences .tarjeta-fullbg--experiences {
-  background-image: url(../img/snorkeling-sanblasonsailboats.jpg);
+  background-image: url(../../img/san-blas-on-sailboats-snorkel-benefits.jpeg);
   background-size: cover;
+  background-position: top;
 }
 
 .interest {
@@ -572,7 +561,7 @@ body {
   display: flex;
   gap: 20px;
   width: max-content;
-  animation: scroll 25s linear infinite;
+  animation: scroll 11s linear infinite;
 }
 
 .tira img {
@@ -591,6 +580,18 @@ body {
     transform: translateX(-50%);
   }
 }
+.testis {
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+.testis h2 {
+  text-align: center;
+  font-family: "amatic sc";
+  font-size: 34px;
+  font-weight: 700;
+  color: #E27D60;
+}
+
 .footer {
   padding: 16px;
   width: 100vw;

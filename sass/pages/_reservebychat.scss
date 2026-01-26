@@ -28,13 +28,18 @@
             width: 100%;
             overflow: hidden;
             position: relative;
+
+            &:active {
+                cursor: grabbing;
+            }
         }
 
         .tira {
             display: flex;
             gap: 20px;
             width: max-content;
-            animation: scroll 2s linear infinite;
+            animation: scroll 3s linear infinite;
+
         }
 
         .tira img {
@@ -110,7 +115,7 @@
     padding-bottom: 55px;
 
     .material-icons {
-        color: $aqua;
+        color: $opasto;
         vertical-align: center;
         font-size: 28px;
     }
@@ -213,6 +218,29 @@
     }
 }
 
+#yachtSlidermodal {
+    margin-top: 34px;
+    height: 45vh; // altura base mobile
+    overflow: hidden;
+
+    .carousel-inner {
+        height: 100%;
+    }
+
+    .carousel-item {
+        height: 100%;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+}
+
+
 // pricing
 .pricing-card {
     padding: 16px;
@@ -224,7 +252,7 @@
         color: $ocean;
         font-weight: 700;
     }
- 
+
 
     img {
         width: 100%;
@@ -234,8 +262,8 @@
     .price {
         font-family: "open sans";
         text-transform: uppercase;
-        color: $ocre;
-        font-size: 14px;
+        color: $oladrillo;
+        font-size: 18px;
         letter-spacing: 1px;
         font-weight: 700;
         text-align: center;
@@ -250,13 +278,4 @@
         font-weight: 700;
         letter-spacing: 1;
     }
-}
-
-.pay-safe {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 55px;
-    font-family: "raleway";
 }

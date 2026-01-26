@@ -9,22 +9,25 @@
     background-position: center;
     background-attachment: fixed;
     // distribution
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
     text-align: center;
     padding: 0px 16px;
 
     h2 {
-        font-family: "caveat";
-        font-size: 21px;
+        font-family: "open sans";
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 1px;
         line-height: 55px;
         text-shadow: 5px 5px 5px black;
     }
 
     h1 {
-        font-family: "raleway";
+        font-family: "amatic sc";
         font-size: 55px;
         line-height: 55px;
         text-shadow: 5px 5px 5px black;
@@ -32,82 +35,77 @@
     }
 
     p {
-        font-family: "nunito sans";
-        font-size: 18px;
+        font-family: "open sans";
+        font-size: 16px;
         line-height: 26px;
     }
 
 }
 
 #included {
-    padding-top: 122px;
+
 
     h2 {
-        font-family: "raleway";
+        font-family: "amatic sc";
         font-size: 55px;
         line-height: 55px;
-        color: $aqua;
+        color: $opasto;
     }
 
     ul {
-        font-family: "nunito sans";
+        font-family: "open sans";
         font-size: 16px;
         line-height: 26px;
         list-style: none;
-        padding-left: 0px;
     }
 
     p {
-        font-size: "nunito-sans";
+        font-size: "open sans";
         font-size: 16px;
         line-height: 26px;
+        color: $ocean;
     }
-}
 
-#itinerary {
-    margin-top: 55px;
-    padding-top: 150px;
 }
 
 .tarjeta {
     .it {
-        font-family: "caveat";
+        font-family: "open sans";
         color: $ocre;
         font-size: 34px;
         line-height: 26px;
     }
 
     .hour {
-        color: $ocean;
+        color: $oladrillo;
         font-weight: bold;
     }
 }
 
 #pricing {
-    padding-top: 150px;
 
     h3 {
-        font-family: "caveat";
-        color: $aqua;
-        font-weight: bold;
+        font-family: "open sans";
+        color: $oladrillo;
+        font-weight: 500;
+        font-size: 16px;
     }
 
     h2 {
-        font-family: "raleway";
+        font-family: "amatic sc";
         font-size: 34px;
         line-height: 34px;
         color: $ocean;
     }
 
     p {
-        font-family: "nunito sans";
+        font-family: "open sans";
         font-size: 16px;
         line-height: 26px;
     }
 
     ul {
         list-style: none;
-        padding-left: 0px;
     }
 
     .tarjeta--color {

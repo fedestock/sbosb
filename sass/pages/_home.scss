@@ -343,26 +343,32 @@ body {
     background-color: $oarena;
 
     #yachtModalLabel {
-        
+
         font-family: "amatic sc";
         font-size: 55px;
         line-height: 55px;
         font-weight: 900;
-        color: $ocean;
+        background: linear-gradient(135deg, $ocean, $pasto);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     h3 {
         font-family: "open sans";
-        font-size: 16px;
+        font-size: 14px;
         text-transform: uppercase;
         letter-spacing: 1px;
         font-weight: bold;
-        color: $oladrillo;
+        background: linear-gradient(135deg, $pasto, $opasto);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
     }
 
     h4 {
+        padding-top: 16px;
         font-family: "open sans";
-        font-size: 21px;
+        font-size: 16px;
         font-weight: bold;
         color: $ocean;
     }
@@ -370,7 +376,7 @@ body {
     .material-icons {
         font-size: 34px;
         line-height: 32px;
-        color: $opasto;
+        color: $ocean;
         vertical-align: middle;
     }
 
@@ -384,7 +390,7 @@ body {
 
     .bi {
         font-size: 26px;
-        color: $opasto;
+        color: $ocean;
         vertical-align: middle;
     }
 
@@ -417,11 +423,13 @@ body {
 
     .card {
         padding: 16px 0;
+       
+      
     }
 
     .offer {
         font-family: "amatic sc";
-        font-size: 55px;
+        font-size: 34px;
         line-height: 55px;
     }
 
@@ -429,8 +437,8 @@ body {
         font-size: 16px;
         text-transform: uppercase;
         letter-spacing: 1px;
-        color: $ocean;
-        align-self: center;
+        color: $opasto;
+        text-align: center;
         font-weight: 700;
     }
 
@@ -570,8 +578,18 @@ body {
         text-align: center;
         font-family: "amatic sc";
         font-size: 34px;
-        font-weight: 700;
+        font-weight: 900;
         color: $oladrillo;
+    }
+
+    h3 {
+        font-family: "open sans";
+        font-size: 12px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $opasto;
+        font-weight: 700;
+        letter-spacing: 1px;
     }
 }
 

@@ -414,26 +414,31 @@ body {
   font-size: 55px;
   line-height: 55px;
   font-weight: 900;
-  color: #20373B;
+  background: linear-gradient(135deg, #20373B, #197359);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .modal-content h3 {
   font-family: "open sans";
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
-  color: #E27D60;
+  background: linear-gradient(135deg, #197359, #6B8F8B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .modal-content h4 {
+  padding-top: 16px;
   font-family: "open sans";
-  font-size: 21px;
+  font-size: 16px;
   font-weight: bold;
   color: #20373B;
 }
 .modal-content .material-icons {
   font-size: 34px;
   line-height: 32px;
-  color: #6B8F8B;
+  color: #20373B;
   vertical-align: middle;
 }
 .modal-content p {
@@ -444,7 +449,7 @@ body {
 }
 .modal-content .bi {
   font-size: 26px;
-  color: #6B8F8B;
+  color: #20373B;
   vertical-align: middle;
 }
 .modal-content .lucide {
@@ -476,15 +481,15 @@ body {
 }
 .modal-content .offer {
   font-family: "amatic sc";
-  font-size: 55px;
+  font-size: 34px;
   line-height: 55px;
 }
 .modal-content .price {
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #20373B;
-  align-self: center;
+  color: #6B8F8B;
+  text-align: center;
   font-weight: 700;
 }
 .modal-content .card h3 {
@@ -596,8 +601,17 @@ body {
   text-align: center;
   font-family: "amatic sc";
   font-size: 34px;
-  font-weight: 700;
+  font-weight: 900;
   color: #E27D60;
+}
+.testis h3 {
+  font-family: "open sans";
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #6B8F8B;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .footer {

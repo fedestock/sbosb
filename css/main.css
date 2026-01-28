@@ -979,6 +979,11 @@ body {
   align-items: center;
   padding-bottom: 84px;
 }
+.activities a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
 .activities h3 {
   font-family: "amatic sc";
   color: white;

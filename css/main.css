@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  border-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul {
@@ -981,8 +981,6 @@ body {
 }
 .activities a {
   text-decoration: none;
-  padding: 0;
-  margin: 0;
 }
 .activities h3 {
   font-family: "amatic sc";

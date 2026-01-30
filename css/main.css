@@ -1277,6 +1277,17 @@ article h3.night {
   justify-content: center;
 }
 
+.tarjeta h2 {
+  font-family: "amatic sc";
+  font-size: 34px;
+  color: #6B8F8B;
+}
+.tarjeta p {
+  font-family: "open sans";
+  font-size: 16px;
+  line-height: 26px;
+}
+
 .community {
   padding: 55px 16px;
   text-align: center;

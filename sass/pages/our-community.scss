@@ -100,6 +100,21 @@
   justify-content: center;
 }
 
+// Colaboradores
+.tarjeta {
+  h2 {
+    font-family: "amatic sc";
+    font-size: 34px;
+    color: $opasto;
+  }
+
+  p {
+    font-family: "open sans";
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
 // community
 .community {
   padding: 55px 16px;

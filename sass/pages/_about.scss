@@ -42,26 +42,12 @@
   }
 }
 
-// section intro about
-#captain {
-  padding-top: 160px;
-}
-
 .intro-bio {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 16px;
-
-  img {
-    width: 75%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 16px;
-    margin-bottom: 16px;
-    border-radius: 555px
-  }
 
   h3 {
     font-family: "open sans";
@@ -74,7 +60,7 @@
 
   h2 {
     font-family: "amatic sc";
-    font-size: 55px;
+    font-size: 34px;
     font-weight: 800;
   }
 
@@ -96,6 +82,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-bottom: 34px;
 }
 
 // community
@@ -113,9 +100,10 @@
 
   h2 {
     font-family: "amatic sc";
-    font-size: 55px;
+    font-size: 34px;
     font-weight: 800;
     color: $oladrillo;
+
   }
 
   .description {
@@ -124,5 +112,63 @@
     font-size: 16px;
     margin-top: 1rem;
     color: $ocean;
+  }
+}
+
+#sailingGuada,
+#sailingGuada .carousel-inner,
+#sailingGuada .carousel-item {
+  height: 450px;
+  /* elegí el alto que quieras */
+}
+
+#sailingGuada img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* clave */
+}
+
+#sailingSlider,
+#sailingSlider .carousel-inner,
+#sailingSlider .carousel-item {
+  height: 30vh;
+  min-height: 320px;
+  max-height: 600px;
+}
+
+#sailingSlider img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.aboutg {
+  text-align: center;
+
+  h3.aboutg-title {
+    font-family: "amatic sc";
+    font-size: 21px;
+    font-weight: 900 !important;
+    color: $ocean;
+  }
+
+  h2 {
+    color: $oladrillo;
+    padding-top: 21px;
+  }
+}
+
+.aboutk {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .btn--accent {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+    margin-top: 16px;
+    margin-left: 34px;
+    margin-right: 34px;
   }
 }

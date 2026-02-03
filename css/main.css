@@ -69,6 +69,7 @@ ul {
 }
 .btn--accent:hover {
   background-color: #BF5841;
+  color: white;
 }
 
 .tarjeta {
@@ -812,24 +813,12 @@ body {
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
 }
 
-#captain {
-  padding-top: 160px;
-}
-
 .intro-bio {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 16px;
-}
-.intro-bio img {
-  width: 75%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 16px;
-  margin-bottom: 16px;
-  border-radius: 555px;
 }
 .intro-bio h3 {
   font-family: "open sans";
@@ -841,7 +830,7 @@ body {
 }
 .intro-bio h2 {
   font-family: "amatic sc";
-  font-size: 55px;
+  font-size: 34px;
   font-weight: 800;
 }
 .intro-bio h4 {
@@ -860,6 +849,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-bottom: 34px;
 }
 
 .community {
@@ -875,7 +865,7 @@ body {
 }
 .community h2 {
   font-family: "amatic sc";
-  font-size: 55px;
+  font-size: 34px;
   font-weight: 800;
   color: #E27D60;
 }
@@ -885,6 +875,61 @@ body {
   font-size: 16px;
   margin-top: 1rem;
   color: #20373B;
+}
+
+#sailingGuada,
+#sailingGuada .carousel-inner,
+#sailingGuada .carousel-item {
+  height: 450px;
+  /* elegí el alto que quieras */
+}
+
+#sailingGuada img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* clave */
+}
+
+#sailingSlider,
+#sailingSlider .carousel-inner,
+#sailingSlider .carousel-item {
+  height: 30vh;
+  min-height: 320px;
+  max-height: 600px;
+}
+
+#sailingSlider img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.aboutg {
+  text-align: center;
+}
+.aboutg h3.aboutg-title {
+  font-family: "amatic sc";
+  font-size: 21px;
+  font-weight: 900 !important;
+  color: #20373B;
+}
+.aboutg h2 {
+  color: #E27D60;
+  padding-top: 21px;
+}
+
+.aboutk {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.aboutk .btn--accent {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+  margin-top: 16px;
+  margin-left: 34px;
+  margin-right: 34px;
 }
 
 .hero {
@@ -957,7 +1002,6 @@ body {
 }
 
 .container .flavor {
-  padding-top: 55px;
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -985,12 +1029,13 @@ body {
 .activities h3 {
   font-family: "amatic sc";
   color: white;
-  font-size: 55px;
-  line-height: 44px;
+  font-size: 21px;
+  line-height: 21px;
   font-weight: 900;
   text-align: center;
   padding: 0 7px;
   z-index: 3;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
 }
 .activities h2 {
   font-family: "amatic sc";
@@ -1020,20 +1065,37 @@ body {
   text-align: center;
   color: #20373B;
 }
-.activities .tarjeta-fullbg--yoga {
-  background-image: url("../../img/yoga-san-blas-on-sailboats.jpg");
+.activities .tarjeta-fullbg--coral {
+  background-image: url("../../img/coral-reef.JPG");
 }
 .activities .tarjeta-fullbg--snork {
-  background-image: url("../../img/snorkeling-sanblasonsailboats.jpg");
+  background-image: url("../../img/friends-archipielago-sanblas-on-sailboats.jpg");
+}
+.activities .tarjeta-fullbg--reef {
+  background-image: url("../../img/san-blas-on-sailboats-snorkel-benefits.jpeg");
+}
+.activities .tarjeta-fullbg--kayak {
+  background-image: url("../../img/couple-kayak-sanblas-on-sailboats.jpg");
 }
 .activities .tarjeta-fullbg--jungle {
   background-image: url("../../img/jungle-jumping-sanblas-on-sailboats.png");
+}
+.activities .tarjeta-fullbg--sunset {
+  background-image: url("../../img/sail-sun-sanblas-on-sailboats.jpg");
+}
+.activities .tarjeta-fullbg--guna {
+  background-image: url("../../img/kuna-sanblasonsailboats.jpg");
+}
+.activities .tarjeta-fullbg--yoga {
+  background-image: url("../../img/yoga-san-blas-on-sailboats.jpg");
+}
+.activities .tarjeta-fullbg--swim {
+  background-image: url("../../img/snorkeling-sanblason-sailboats.jpg");
 }
 .activities .activities-cta {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 55px;
 }
 
 .blog-hero {

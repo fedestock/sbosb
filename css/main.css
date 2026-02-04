@@ -305,18 +305,11 @@ body {
 .experiences .eco-friendly img {
   width: 70px;
 }
-.experiences .tarjeta h2 {
-  font-family: "amatic sc";
-  font-weight: 700;
-  font-size: 55px;
-  line-height: 55px;
-  color: #20373B;
-}
 .experiences .tarjeta p {
   font-family: "open sans";
   font-size: 16px;
   color: #20373B;
-  font-weight: 400;
+  font-weight: 500;
 }
 .experiences .tarjeta-fullbg p {
   font-family: "open sans";
@@ -327,7 +320,7 @@ body {
   z-index: 2;
 }
 .experiences .tarjeta-fullbg--captain {
-  background-image: url(../../img/lady-you-san-blas-sailboats-mobile.webp);
+  background-image: url(../../img/slider/lady-you-desktop-san-blas-sailboats.webp);
   background-size: cover;
   background-position: top center;
 }
@@ -337,7 +330,7 @@ body {
   background-position: top;
 }
 .experiences .tarjeta-fullbg--experiences {
-  background-image: url(../../img/san-blas-on-sailboats-snorkel-benefits.jpeg);
+  background-image: url(../../img/sanblas-community.jpeg);
   background-size: cover;
   background-position: top;
 }
@@ -397,6 +390,12 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 6px;
+}
+.interest .flex-tags h3 {
+  font-family: "amatic sc";
+  font-size: 34px;
+  color: #6B8F8B;
+  font-weight: 900;
 }
 .interest .flex-tags p {
   margin-bottom: 0px;
@@ -525,10 +524,14 @@ body {
 
 .gallery-img h2 {
   font-family: "amatic sc";
-  color: #20373B;
+  background: linear-gradient(135deg, #E27D60, #BF820F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 34px;
   text-align: center;
   font-weight: 700;
+  padding-left: 21px;
+  padding-right: 21px;
 }
 .gallery-img .row img {
   width: 100%;
@@ -637,7 +640,7 @@ body {
 .footer .faqs h2 {
   font-family: "amatic sc";
   font-size: 55px;
-  font-weight: 600;
+  font-weight: 300;
   text-align: center;
   color: white;
 }
@@ -995,7 +998,7 @@ body {
 }
 .tarjeta p {
   font-family: "open sans";
-  font-size: 16px;
+  font-size: 14px;
   line-height: 26px;
   text-align: center;
   font-weight: 500;
@@ -1016,12 +1019,12 @@ body {
 }
 
 .activities {
-  padding: 55px 16px;
+  padding-top: 55px;
+  padding-bottom: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 84px;
 }
 .activities a {
   text-decoration: none;
@@ -1029,7 +1032,7 @@ body {
 .activities h3 {
   font-family: "amatic sc";
   color: white;
-  font-size: 21px;
+  font-size: 26px;
   line-height: 21px;
   font-weight: 900;
   text-align: center;
@@ -1057,7 +1060,9 @@ body {
   z-index: 3;
 }
 .activities p {
+  font-size: 14px;
   color: white;
+  font-weight: 300;
   z-index: 3;
   text-align: center;
 }

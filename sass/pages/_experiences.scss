@@ -71,7 +71,7 @@
 
     p {
         font-family: "open sans";
-        font-size: 16px;
+        font-size: 14px;
         line-height: 26px;
         text-align: center;
         font-weight: 500;
@@ -99,12 +99,12 @@
 }
 
 .activities {
-    padding: 55px 16px;
+    padding-top: 55px;
+    padding-bottom: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 84px;
 
     a {
         text-decoration: none;
@@ -114,7 +114,7 @@
     h3 {
         font-family: "amatic sc";
         color: white;
-        font-size: 21px;
+        font-size: 26px;
         line-height: 21px;
         font-weight: 900;
         text-align: center;
@@ -145,7 +145,9 @@
     }
 
     p {
+        font-size: 14px;
         color: white;
+        font-weight: 300;
         z-index: 3;
         text-align: center;
     }

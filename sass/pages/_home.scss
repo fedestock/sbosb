@@ -217,20 +217,14 @@ body {
     }
 
     .tarjeta {
-        h2 {
-            font-family: "amatic sc";
-            font-weight: 700;
-            font-size: 55px;
-            line-height: 55px;
-            color: $ocean;
-        }
 
         p {
             font-family: "open sans";
             font-size: 16px;
             color: $ocean;
-            font-weight: 400;
+            font-weight: 500;
         }
+
     }
 
     .tarjeta-fullbg p {
@@ -243,7 +237,7 @@ body {
     }
 
     .tarjeta-fullbg--captain {
-        background-image: url(../../img/lady-you-san-blas-sailboats-mobile.webp);
+        background-image: url(../../img/slider/lady-you-desktop-san-blas-sailboats.webp);
         background-size: cover;
         background-position: top center;
     }
@@ -256,7 +250,7 @@ body {
     }
 
     .tarjeta-fullbg--experiences {
-        background-image: url(../../img/san-blas-on-sailboats-snorkel-benefits.jpeg);
+        background-image: url(../../img/sanblas-community.jpeg);
         background-size: cover;
         background-position: top;
     }
@@ -271,7 +265,6 @@ body {
     padding-bottom: 55px;
 
     h2 {
-
         font-family: "amatic sc";
         color: $opasto;
         font-size: 55px;
@@ -324,6 +317,13 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         gap: 6px;
+
+        h3 {
+            font-family: "amatic sc";
+            font-size: 34px;
+            color: $opasto;
+            font-weight: 900;
+        }
 
         p {
             margin-bottom: 0px;
@@ -489,10 +489,14 @@ body {
 
     h2 {
         font-family: "amatic sc";
-        color: $ocean;
+        background: linear-gradient(135deg, $oladrillo, $ocre);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-size: 34px;
         text-align: center;
         font-weight: 700;
+        padding-left: 21px;
+        padding-right: 21px;
     }
 
     .row {
@@ -620,7 +624,7 @@ body {
         h2 {
             font-family: "amatic sc";
             font-size: 55px;
-            font-weight: 600;
+            font-weight: 300;
             text-align: center;
             color: white;
         }

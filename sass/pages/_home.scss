@@ -484,6 +484,14 @@ body {
     }
 }
 
+#sbSlider .carousel-inner {
+    height: 550px;
+    margin-bottom: 21px;
+    img {
+        height: 550px;
+    }
+}
+
 // galeria
 .gallery-img {
 
@@ -502,7 +510,7 @@ body {
     .row {
         img {
             width: 100%;
-            height: 250px;
+            height: 500px;
             object-fit: cover;
             transition: transform .3s ease;
 

@@ -173,3 +173,16 @@
   display: block;
 }
 
+#sailingSlider .carousel-item:nth-child(3) img {
+  object-position: left center;
+}
+
+.btn-cntr {
+  display: block;
+  margin: 0 auto;
+  margin-left: 34px;
+  margin-right: 34px;
+  margin-top: 16px;
+  margin-bottom: 34px;
+}
+

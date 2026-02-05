@@ -597,10 +597,6 @@ body {
     transform: translateX(-50%);
   }
 }
-.testis {
-  padding-top: 55px;
-  padding-bottom: 55px;
-}
 .testis h2 {
   text-align: center;
   font-family: "amatic sc";

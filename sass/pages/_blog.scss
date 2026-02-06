@@ -26,10 +26,10 @@
 
     h1 {
         font-family: "amatic sc";
-        font-size: 55px;
-        line-height: 65px;
-        font-weight: 700;
-        padding-top: 55px;
+        font-size: 84px;
+        line-height: 84px;
+        font-weight: 900;
+        
         background: linear-gradient(135deg, $ocre, $lemon);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -41,6 +41,9 @@
         color: $ocean;
         line-height: 26px;
         font-weight: 400;
+        padding-bottom: 55px;
+        padding-left: 34px;
+        padding-right: 34px;
     }
 }
 
@@ -53,4 +56,14 @@
     font-weight: 600;
 }
 
-// paginacion
+// tarjetas
+.card-body {
+    .card-title {
+        font-size: 34px;
+        color: $opasto;
+    }
+
+    .card-text {
+        font-family: "open sans";
+    }
+}

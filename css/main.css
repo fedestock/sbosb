@@ -1138,10 +1138,9 @@ body {
 }
 .blog-hero h1 {
   font-family: "amatic sc";
-  font-size: 55px;
-  line-height: 65px;
-  font-weight: 700;
-  padding-top: 55px;
+  font-size: 84px;
+  line-height: 84px;
+  font-weight: 900;
   background: linear-gradient(135deg, #BF820F, #FFC64F);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1152,6 +1151,9 @@ body {
   color: #20373B;
   line-height: 26px;
   font-weight: 400;
+  padding-bottom: 55px;
+  padding-left: 34px;
+  padding-right: 34px;
 }
 
 .tagsi {
@@ -1161,6 +1163,14 @@ body {
   padding: 7px 12px;
   color: #20373B;
   font-weight: 600;
+}
+
+.card-body .card-title {
+  font-size: 34px;
+  color: #6B8F8B;
+}
+.card-body .card-text {
+  font-family: "open sans";
 }
 
 .hero-post {
@@ -1180,27 +1190,26 @@ body {
   mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
 }
 .hero-post h1 {
-  font-family: raleway;
-  font-size: 34px;
-  line-height: 44px;
-  font-weight: 700;
-  background: linear-gradient(135deg, #20373B, #2e4f54);
+  font-family: "amatic sc";
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 900;
+  background: linear-gradient(135deg, #197359, #6B8F8B);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0 16px;
 }
 .hero-post h2 {
-  font-family: raleway;
+  font-family: "open sans";
   font-size: 21px;
   line-height: 34px;
-  font-weight: 700;
-  background: linear-gradient(135deg, #2e4f54);
+  font-weight: 500;
+  background: linear-gradient(135deg, #BF820F, #FFC64F);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: #20373B;
 }
 .hero-post p {
-  font-family: "nunito sans";
-  font-size: 21px;
+  font-family: "open sans";
+  font-size: 18px;
   color: #20373B;
   line-height: 26px;
   font-weight: 400;
@@ -1208,41 +1217,42 @@ body {
 }
 
 article p {
-  font-family: "nunito sans";
+  font-family: "open sans";
   font-size: 16px;
   color: #20373B;
   line-height: 26px;
   font-weight: 400;
   padding: 0 16px;
+  text-align: center;
 }
 article h2 {
-  font-family: raleway;
-  font-size: 26px;
-  line-height: 26px;
-  font-weight: 700;
-  background: linear-gradient(35deg, #20373B, #519CAB);
+  font-family: "amatic sc";
+  font-size: 21px;
+  line-height: 34px;
+  font-weight: 900;
+  background: linear-gradient(35deg, #BF5841, #E27D60);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0 16px;
   text-align: center;
 }
 article h3 {
-  font-family: raleway;
+  font-family: "open sans";
   font-size: 18px;
   line-height: 36px;
   font-weight: 700;
-  background: linear-gradient(135deg, #2e4f54);
+  background: linear-gradient(135deg, #6B8F8B);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0 16px;
   text-align: center;
 }
 article h3.night {
-  font-family: caveat;
-  font-size: 34px;
+  font-family: "amatic sc";
+  font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  color: #BF820F;
+  color: #BF5841 !important;
 }
 
 .card {
@@ -1268,6 +1278,11 @@ article h3.night {
   padding: 0 16px;
 }
 
+.row ul {
+  text-align: center;
+  padding: 0 16px;
+  list-style: none;
+}
 .row .btn--accent {
   align-self: center;
 }

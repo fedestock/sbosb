@@ -26,29 +26,29 @@
 
 
     h1 {
-        font-family: raleway;
-        font-size: 34px;
-        line-height: 44px;
-        font-weight: 700;
-        background: linear-gradient(135deg, $ocean, $oceanb);
+        font-family: "amatic sc";
+        font-size: 55px;
+        line-height: 55px;
+        font-weight: 900;
+        background: linear-gradient(135deg, $pasto, $opasto);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         padding: 0 16px;
     }
 
     h2 {
-        font-family: raleway;
+        font-family: "open sans";
         font-size: 21px;
         line-height: 34px;
-        font-weight: 700;
-        background: linear-gradient(135deg, $oceanb);
+        font-weight: 500;
+        background: linear-gradient(135deg, $ocre, $lemon);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: $ocean;
+        
     }
 
     p {
-        font-family: "nunito sans";
-        font-size: 21px;
+        font-family: "open sans";
+        font-size: 18px;
         color: $ocean;
         line-height: 26px;
         font-weight: 400;
@@ -58,20 +58,21 @@
 
 article {
     p {
-        font-family: "nunito sans";
+        font-family: "open sans";
         font-size: 16px;
         color: $ocean;
         line-height: 26px;
         font-weight: 400;
         padding: 0 16px;
+        text-align: center;
     }
 
     h2 {
-        font-family: raleway;
-        font-size: 26px;
-        line-height: 26px;
-        font-weight: 700;
-        background: linear-gradient(35deg, $ocean, $aqua);
+        font-family: "amatic sc";
+        font-size: 21px;
+        line-height: 34px;
+        font-weight: 900;
+        background: linear-gradient(35deg, $ladrillo, $oladrillo);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         padding: 0 16px;
@@ -79,11 +80,11 @@ article {
     }
 
     h3 {
-        font-family: raleway;
+        font-family: "open sans";
         font-size: 18px;
         line-height: 36px;
         font-weight: 700;
-        background: linear-gradient(135deg, $oceanb);
+        background: linear-gradient(135deg, $opasto);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         padding: 0 16px;
@@ -91,11 +92,11 @@ article {
     }
 
     h3.night {
-        font-family: caveat;
-        font-size: 34px;
+        font-family: "amatic sc";
+        font-size: 21px;
         line-height: 26px;
         font-weight: 700;
-        color: $ocre;
+        color: $ladrillo !important;
     }
 }
 
@@ -125,7 +126,17 @@ article {
 }
 
 .row {
+
+    ul {
+        text-align: center;
+        padding: 0 16px;
+        list-style: none;
+    }
     .btn--accent {
         align-self: center;
     }
+}
+
+.tagsi {
+    
 }

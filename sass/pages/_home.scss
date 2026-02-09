@@ -421,25 +421,18 @@ body {
         }
     }
 
-    .card {
-        padding: 16px 0;
-       
-      
-    }
-
-    .offer {
-        font-family: "amatic sc";
-        font-size: 34px;
-        line-height: 55px;
-    }
-
-    .price {
-        font-size: 16px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
+    .card-price {
+        padding-top: 34px;
+        padding-bottom: 34px;
+        background: transparent;
         color: $opasto;
-        text-align: center;
-        font-weight: 700;
+
+        .offer {
+            font-family: "amatic sc";
+            font-size: 34px;
+            line-height: 34px;
+            font-weight: 700;
+        }
     }
 
     .card h3 {
@@ -487,6 +480,7 @@ body {
 #sbSlider .carousel-inner {
     height: 550px;
     margin-bottom: 21px;
+
     img {
         height: 550px;
     }

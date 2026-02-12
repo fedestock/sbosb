@@ -82,17 +82,17 @@
             }
         }
 
-         .tarjetasfulbg {
+        .tarjetasfulbg {
             display: flex;
             flex-direction: row;
             gap: 16px;
         }
     }
 
-    
+
 
     section.interest {
-         
+
         .div-tarjeta {
             margin-left: 150px;
             margin-right: 150px;
@@ -106,57 +106,61 @@
 
     .modal-content {
 
-    #yachtSlidermodal {
-    height: 500px;
-    }
-
-}
-
-.experiences {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 84px;
-
-    img {
-        height: 300px;
+        #yachtSlidermodal {
+            height: 500px;
+        }
 
     }
-}
 
-.gallery-img {
-    h2 {
-        font-size: 55px;
-    }
-}
-
-.footer {
-    
-
-    .ftblock-top {
-        margin-left: 84px;
-        margin-right: 84px;
+    .experiences {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        text-align: left;
-        gap: 21px;
+        justify-content: center;
+        margin: 84px;
 
-        .divone {
-            width: 50%;
-            display: flex;
-            flex-direction: row;
-            img {
-                display: flex;
-                justify-content: left;
-                width: 250px;
-            }
-            p {
-                text-align: left;
-                width: 70%;
-                align-content: center;
-            }
+        img {
+            height: 300px;
+
         }
     }
 
-}}
+    .gallery-img {
+        h2 {
+            font-size: 55px;
+        }
+    }
+
+    .footer {
+
+
+        .ftblock-top {
+            margin-left: 84px;
+            margin-right: 84px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: left;
+            gap: 21px;
+
+            .divone {
+                width: 50%;
+                display: flex;
+                flex-direction: row;
+
+                img {
+                    display: flex;
+                    justify-content: left;
+                    width: 250px;
+                }
+
+                p {
+                    text-align: left;
+                    width: 70%;
+                    align-content: center;
+                }
+            }
+        }
+
+    }
+
+}

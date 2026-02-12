@@ -2,7 +2,11 @@
 * {
   margin: 0;
   padding: 0;
-  border-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul {
+  padding-left: 0;
 }
 
 .btn-div {
@@ -65,6 +69,7 @@
 }
 .btn--accent:hover {
   background-color: #BF5841;
+  color: white;
 }
 
 .tarjeta {
@@ -119,13 +124,19 @@ body {
 }
 
 .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 16px;
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%);
   font-family: "open sans";
   font-size: 16px;
   font-weight: 400;
-  width: 100%;
   padding: 5px 16px;
   background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 0px 0px 7px 7px;
+  border-radius: 7px;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
   /* blur */
   backdrop-filter: blur(12px);
@@ -257,14 +268,14 @@ body {
   font-weight: 600;
 }
 
-.experiences {
+.benefits {
   padding: 55px 3px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.experiences h2 {
+.benefits h2 {
   font-family: "amatic sc";
   color: #E27D60;
   font-size: 34px;
@@ -273,7 +284,7 @@ body {
   text-align: center;
   padding: 0 7px;
 }
-.experiences h3 {
+.benefits h3 {
   font-family: "amatic sc";
   color: white;
   font-size: 34px;
@@ -283,37 +294,42 @@ body {
   z-index: 2;
   text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.7);
 }
-.experiences p {
+.benefits p {
   font-family: "open sans";
   font-size: 16px;
   line-height: 26px;
   text-align: center;
-  color: black;
+  color: #6B8F8B;
   padding: 0 6px;
+  font-weight: 500;
 }
-.experiences .eco-friendly {
+.benefits .eco-friendly {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.experiences .eco-friendly img {
+.benefits .eco-friendly img {
   width: 70px;
 }
-.experiences .tarjeta h2 {
-  font-family: "amatic sc";
-  font-weight: 700;
-  font-size: 55px;
-  line-height: 55px;
-  color: #20373B;
+.benefits .eco-friendly .eco-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
 }
-.experiences .tarjeta p {
+.benefits .tarjeta p {
   font-family: "open sans";
   font-size: 16px;
   color: #20373B;
-  font-weight: 400;
+  font-weight: 500;
 }
-.experiences .tarjeta-fullbg p {
+.benefits .tarjetasfulbg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.benefits .tarjeta-fullbg p {
   font-family: "open sans";
   font-size: 16px;
   line-height: 24px;
@@ -321,18 +337,18 @@ body {
   color: white;
   z-index: 2;
 }
-.experiences .tarjeta-fullbg--captain {
-  background-image: url(../../img/lady-you-san-blas-sailboats-mobile.webp);
+.benefits .tarjeta-fullbg--captain {
+  background-image: url(../../img/slider/lady-you-desktop-san-blas-sailboats.webp);
   background-size: cover;
   background-position: top center;
 }
-.experiences .tarjeta-fullbg--yatch {
+.benefits .tarjeta-fullbg--yatch {
   background-image: url(../../img/san-blas-on-sailboats-food-sandia.jpeg);
   background-size: cover;
   background-position: top;
 }
-.experiences .tarjeta-fullbg--experiences {
-  background-image: url(../../img/san-blas-on-sailboats-snorkel-benefits.jpeg);
+.benefits .tarjeta-fullbg--experiences {
+  background-image: url(../../img/sanblas-community.jpeg);
   background-size: cover;
   background-position: top;
 }
@@ -393,6 +409,12 @@ body {
   justify-content: center;
   gap: 6px;
 }
+.interest .flex-tags h3 {
+  font-family: "amatic sc";
+  font-size: 34px;
+  color: #6B8F8B;
+  font-weight: 900;
+}
 .interest .flex-tags p {
   margin-bottom: 0px;
   text-align: center;
@@ -402,26 +424,34 @@ body {
 }
 
 .modal-content {
-  font-family: "nunito sans";
+  font-family: "open sans";
+  background-color: #FFFCF7;
 }
 .modal-content #yachtModalLabel {
-  font-family: "raleway";
-  font-size: 34px;
-  line-height: 34px;
-  font-weight: bold;
-  color: #20373B;
+  font-family: "amatic sc";
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 900;
+  background: linear-gradient(135deg, #20373B, #197359);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .modal-content h3 {
-  font-family: "caveat";
-  font-size: 26px;
+  font-family: "open sans";
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   font-weight: bold;
-  color: #BF820F;
+  background: linear-gradient(135deg, #197359, #6B8F8B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .modal-content h4 {
-  font-family: "raleway";
-  font-size: 21px;
+  padding-top: 16px;
+  font-family: "open sans";
+  font-size: 16px;
   font-weight: bold;
-  color: #519CAB;
+  color: #20373B;
 }
 .modal-content .material-icons {
   font-size: 34px;
@@ -464,24 +494,21 @@ body {
   background-color: #20373B;
   color: white;
 }
-.modal-content .card {
-  padding: 16px 0;
+.modal-content .card-price {
+  padding-top: 34px;
+  padding-bottom: 34px;
+  background: transparent;
+  color: #6B8F8B;
 }
-.modal-content .offer {
-  font-family: "raleway";
-  font-size: 21px;
-}
-.modal-content .price {
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #BF820F;
-  align-self: center;
+.modal-content .card-price .offer {
+  font-family: "amatic sc";
+  font-size: 34px;
+  line-height: 34px;
   font-weight: 700;
 }
 .modal-content .card h3 {
   align-self: center;
-  color: #519CAB;
+  color: #E27D60;
 }
 .modal-content h5 {
   margin: 0;
@@ -509,16 +536,28 @@ body {
   display: none;
 }
 
+#sbSlider .carousel-inner {
+  height: 550px;
+  margin-bottom: 21px;
+}
+#sbSlider .carousel-inner img {
+  height: 550px;
+}
+
 .gallery-img h2 {
   font-family: "amatic sc";
-  color: #20373B;
+  background: linear-gradient(135deg, #E27D60, #BF820F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 34px;
   text-align: center;
   font-weight: 700;
+  padding-left: 21px;
+  padding-right: 21px;
 }
 .gallery-img .row img {
   width: 100%;
-  height: 250px;
+  height: 500px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -580,16 +619,21 @@ body {
     transform: translateX(-50%);
   }
 }
-.testis {
-  padding-top: 55px;
-  padding-bottom: 55px;
-}
 .testis h2 {
   text-align: center;
   font-family: "amatic sc";
   font-size: 34px;
-  font-weight: 700;
+  font-weight: 900;
   color: #E27D60;
+}
+.testis h3 {
+  font-family: "open sans";
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #6B8F8B;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .footer {
@@ -614,7 +658,7 @@ body {
 .footer .faqs h2 {
   font-family: "amatic sc";
   font-size: 55px;
-  font-weight: 600;
+  font-weight: 300;
   text-align: center;
   color: white;
 }
@@ -790,24 +834,12 @@ body {
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
 }
 
-#captain {
-  padding-top: 160px;
-}
-
 .intro-bio {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 16px;
-}
-.intro-bio img {
-  width: 75%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 16px;
-  margin-bottom: 16px;
-  border-radius: 555px;
 }
 .intro-bio h3 {
   font-family: "open sans";
@@ -819,7 +851,7 @@ body {
 }
 .intro-bio h2 {
   font-family: "amatic sc";
-  font-size: 55px;
+  font-size: 34px;
   font-weight: 800;
 }
 .intro-bio h4 {
@@ -838,6 +870,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-bottom: 34px;
 }
 
 .community {
@@ -853,7 +886,7 @@ body {
 }
 .community h2 {
   font-family: "amatic sc";
-  font-size: 55px;
+  font-size: 34px;
   font-weight: 800;
   color: #E27D60;
 }
@@ -863,6 +896,74 @@ body {
   font-size: 16px;
   margin-top: 1rem;
   color: #20373B;
+}
+
+#sailingGuada,
+#sailingGuada .carousel-inner,
+#sailingGuada .carousel-item {
+  height: 450px;
+  /* elegí el alto que quieras */
+}
+
+#sailingGuada img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* clave */
+}
+
+.aboutg {
+  text-align: center;
+}
+.aboutg h3.aboutg-title {
+  font-family: "amatic sc";
+  font-size: 21px;
+  font-weight: 900 !important;
+  color: #20373B;
+}
+.aboutg h2 {
+  color: #E27D60;
+  padding-top: 21px;
+}
+
+.aboutk {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.aboutk .btn--accent {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+  margin-top: 16px;
+  margin-left: 34px;
+  margin-right: 34px;
+}
+
+#sailingSlider {
+  height: 550px;
+  overflow: hidden;
+  margin-bottom: 21px;
+}
+
+#sailingSlider img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  display: block;
+}
+
+#sailingSlider .carousel-item:nth-child(3) img {
+  object-position: left center;
+}
+
+.btn-cntr {
+  display: block;
+  margin: 0 auto;
+  margin-left: 34px;
+  margin-right: 34px;
+  margin-top: 16px;
+  margin-bottom: 34px;
 }
 
 .hero {
@@ -928,14 +1029,13 @@ body {
 }
 .tarjeta p {
   font-family: "open sans";
-  font-size: 16px;
+  font-size: 14px;
   line-height: 26px;
   text-align: center;
   font-weight: 500;
 }
 
 .container .flavor {
-  padding-top: 55px;
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -950,22 +1050,26 @@ body {
 }
 
 .activities {
-  padding: 55px 16px;
+  padding-top: 55px;
+  padding-bottom: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 84px;
+}
+.activities a {
+  text-decoration: none;
 }
 .activities h3 {
   font-family: "amatic sc";
   color: white;
-  font-size: 55px;
-  line-height: 44px;
+  font-size: 26px;
+  line-height: 21px;
   font-weight: 900;
   text-align: center;
   padding: 0 7px;
   z-index: 3;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
 }
 .activities h2 {
   font-family: "amatic sc";
@@ -987,7 +1091,9 @@ body {
   z-index: 3;
 }
 .activities p {
+  font-size: 14px;
   color: white;
+  font-weight: 300;
   z-index: 3;
   text-align: center;
 }
@@ -995,20 +1101,37 @@ body {
   text-align: center;
   color: #20373B;
 }
-.activities .tarjeta-fullbg--yoga {
-  background-image: url("../../img/yoga-san-blas-on-sailboats.jpg");
+.activities .tarjeta-fullbg--coral {
+  background-image: url("../../img/coral-reef.JPG");
 }
 .activities .tarjeta-fullbg--snork {
-  background-image: url("../../img/snorkeling-sanblasonsailboats.jpg");
+  background-image: url("../../img/friends-archipielago-sanblas-on-sailboats.jpg");
+}
+.activities .tarjeta-fullbg--reef {
+  background-image: url("../../img/san-blas-on-sailboats-snorkel-benefits.jpeg");
+}
+.activities .tarjeta-fullbg--kayak {
+  background-image: url("../../img/couple-kayak-sanblas-on-sailboats.jpg");
 }
 .activities .tarjeta-fullbg--jungle {
   background-image: url("../../img/jungle-jumping-sanblas-on-sailboats.png");
+}
+.activities .tarjeta-fullbg--sunset {
+  background-image: url("../../img/sail-sun-sanblas-on-sailboats.jpg");
+}
+.activities .tarjeta-fullbg--guna {
+  background-image: url("../../img/kuna-sanblasonsailboats.jpg");
+}
+.activities .tarjeta-fullbg--yoga {
+  background-image: url("../../img/yoga-san-blas-on-sailboats.jpg");
+}
+.activities .tarjeta-fullbg--swim {
+  background-image: url("../../img/snorkeling-sanblason-sailboats.jpg");
 }
 .activities .activities-cta {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 55px;
 }
 
 .blog-hero {
@@ -1029,10 +1152,9 @@ body {
 }
 .blog-hero h1 {
   font-family: "amatic sc";
-  font-size: 55px;
-  line-height: 65px;
-  font-weight: 700;
-  padding-top: 55px;
+  font-size: 84px;
+  line-height: 84px;
+  font-weight: 900;
   background: linear-gradient(135deg, #BF820F, #FFC64F);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1043,6 +1165,9 @@ body {
   color: #20373B;
   line-height: 26px;
   font-weight: 400;
+  padding-bottom: 55px;
+  padding-left: 34px;
+  padding-right: 34px;
 }
 
 .tagsi {
@@ -1052,6 +1177,14 @@ body {
   padding: 7px 12px;
   color: #20373B;
   font-weight: 600;
+}
+
+.card-body .card-title {
+  font-size: 34px;
+  color: #6B8F8B;
+}
+.card-body .card-text {
+  font-family: "open sans";
 }
 
 .hero-post {
@@ -1071,27 +1204,26 @@ body {
   mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
 }
 .hero-post h1 {
-  font-family: raleway;
-  font-size: 34px;
-  line-height: 44px;
-  font-weight: 700;
-  background: linear-gradient(135deg, #20373B, #2e4f54);
+  font-family: "amatic sc";
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 900;
+  background: linear-gradient(135deg, #197359, #6B8F8B);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0 16px;
 }
 .hero-post h2 {
-  font-family: raleway;
+  font-family: "open sans";
   font-size: 21px;
   line-height: 34px;
-  font-weight: 700;
-  background: linear-gradient(135deg, #2e4f54);
+  font-weight: 500;
+  background: linear-gradient(135deg, #BF820F, #FFC64F);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: #20373B;
 }
 .hero-post p {
-  font-family: "nunito sans";
-  font-size: 21px;
+  font-family: "open sans";
+  font-size: 18px;
   color: #20373B;
   line-height: 26px;
   font-weight: 400;
@@ -1099,41 +1231,42 @@ body {
 }
 
 article p {
-  font-family: "nunito sans";
+  font-family: "open sans";
   font-size: 16px;
   color: #20373B;
   line-height: 26px;
   font-weight: 400;
   padding: 0 16px;
+  text-align: center;
 }
 article h2 {
-  font-family: raleway;
-  font-size: 26px;
-  line-height: 26px;
-  font-weight: 700;
-  background: linear-gradient(35deg, #20373B, #519CAB);
+  font-family: "amatic sc";
+  font-size: 21px;
+  line-height: 34px;
+  font-weight: 900;
+  background: linear-gradient(35deg, #BF5841, #E27D60);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0 16px;
   text-align: center;
 }
 article h3 {
-  font-family: raleway;
+  font-family: "open sans";
   font-size: 18px;
   line-height: 36px;
   font-weight: 700;
-  background: linear-gradient(135deg, #2e4f54);
+  background: linear-gradient(135deg, #6B8F8B);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0 16px;
   text-align: center;
 }
 article h3.night {
-  font-family: caveat;
-  font-size: 34px;
+  font-family: "amatic sc";
+  font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  color: #BF820F;
+  color: #BF5841 !important;
 }
 
 .card {
@@ -1159,8 +1292,21 @@ article h3.night {
   padding: 0 16px;
 }
 
+.row ul {
+  text-align: center;
+  padding: 0 16px;
+  list-style: none;
+}
 .row .btn--accent {
   align-self: center;
+}
+
+.blogimage {
+  width: 85%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  margin: 0 auto;
 }
 
 .our-hero {
@@ -1250,6 +1396,17 @@ article h3.night {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.tarjeta h2 {
+  font-family: "amatic sc";
+  font-size: 34px;
+  color: #6B8F8B;
+}
+.tarjeta p {
+  font-family: "open sans";
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .community {
@@ -1454,92 +1611,84 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: white;
   text-align: center;
   padding: 0px 16px;
 }
 .jungle-hero h2 {
-  font-family: "caveat";
-  font-size: 21px;
+  font-family: "open sans";
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
   line-height: 55px;
   text-shadow: 5px 5px 5px black;
 }
 .jungle-hero h1 {
-  font-family: "raleway";
+  font-family: "amatic sc";
   font-size: 55px;
   line-height: 55px;
   text-shadow: 5px 5px 5px black;
   font-weight: 700.3;
 }
 .jungle-hero p {
-  font-family: "nunito sans";
-  font-size: 18px;
+  font-family: "open sans";
+  font-size: 16px;
   line-height: 26px;
 }
 
-#included {
-  padding-top: 122px;
-}
 #included h2 {
-  font-family: "raleway";
+  font-family: "amatic sc";
   font-size: 55px;
   line-height: 55px;
-  color: #519CAB;
+  color: #6B8F8B;
 }
 #included ul {
-  font-family: "nunito sans";
+  font-family: "open sans";
   font-size: 16px;
   line-height: 26px;
   list-style: none;
-  padding-left: 0px;
 }
 #included p {
-  font-size: "nunito-sans";
+  font-size: "open sans";
   font-size: 16px;
   line-height: 26px;
-}
-
-#itinerary {
-  margin-top: 55px;
-  padding-top: 150px;
+  color: #20373B;
 }
 
 .tarjeta .it {
-  font-family: "caveat";
+  font-family: "open sans";
   color: #BF820F;
   font-size: 34px;
   line-height: 26px;
 }
 .tarjeta .hour {
-  color: #20373B;
+  color: #E27D60;
   font-weight: bold;
 }
 
-#pricing {
-  padding-top: 150px;
-}
 #pricing h3 {
-  font-family: "caveat";
-  color: #519CAB;
-  font-weight: bold;
+  font-family: "open sans";
+  color: #E27D60;
+  font-weight: 500;
+  font-size: 16px;
 }
 #pricing h2 {
-  font-family: "raleway";
+  font-family: "amatic sc";
   font-size: 34px;
   line-height: 34px;
   color: #20373B;
 }
 #pricing p {
-  font-family: "nunito sans";
+  font-family: "open sans";
   font-size: 16px;
   line-height: 26px;
 }
 #pricing ul {
   list-style: none;
-  padding-left: 0px;
 }
 #pricing .tarjeta--color {
   background-color: linear-gradient(135deg, #20373B, #519CAB 100%);
@@ -1697,7 +1846,7 @@ a {
   padding-bottom: 55px;
 }
 .includes .material-icons {
-  color: #519CAB;
+  color: #6B8F8B;
   vertical-align: center;
   font-size: 28px;
 }
@@ -1785,6 +1934,25 @@ a {
   color: white;
 }
 
+#yachtSlidermodal {
+  margin-top: 34px;
+  height: 45vh;
+  overflow: hidden;
+}
+#yachtSlidermodal .carousel-inner {
+  height: 100%;
+}
+#yachtSlidermodal .carousel-item {
+  height: 100%;
+}
+#yachtSlidermodal .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
 .pricing-card {
   padding: 16px;
   display: flex;
@@ -1802,7 +1970,7 @@ a {
 .pricing-card .price {
   font-family: "open sans";
   text-transform: uppercase;
-  color: #BF820F;
+  color: #E27D60;
   font-size: 18px;
   letter-spacing: 1px;
   font-weight: 700;
@@ -1816,15 +1984,6 @@ a {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1;
-}
-
-.pay-safe {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 55px;
-  font-family: "raleway";
 }
 
 .herosuccess {
@@ -1877,6 +2036,131 @@ a {
 
 .container-padding {
   padding-top: 160px;
+}
+
+@media (min-width: 1025px) {
+  .navbar {
+    border-radius: 16px;
+    justify-content: space-between;
+  }
+  .navbar .navbar-brand img {
+    width: 140px;
+  }
+  .navbar .navbar-nav {
+    gap: 24px;
+  }
+  .navbar .nav-link {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #6B8F8B;
+  }
+  .hero .hero__videobg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+  .hero__content h3 {
+    font-size: 21px !important;
+    line-height: 55px;
+  }
+  .hero__content h1 {
+    font-size: 144px !important;
+    padding-bottom: 21px;
+  }
+  .hero__content p {
+    font-size: 18px;
+    line-height: 28px;
+    width: 45%;
+  }
+  .benefits {
+    padding: 80px 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+  }
+  .benefits .eco-friendly {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 21px;
+  }
+  .benefits .eco-friendly .eco-icon {
+    display: flex;
+    flex-direction: row;
+  }
+  .benefits .eco-friendly h2 {
+    font-size: 84px;
+    line-height: 94px;
+  }
+  .benefits .eco-friendly p {
+    width: 30%;
+    padding-top: 6px;
+    font-size: 18px;
+    text-align: left;
+  }
+  .benefits .tarjetasfulbg {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  section.interest .div-tarjeta {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  section.interest .flex-tags {
+    margin-left: 222px;
+    margin-right: 222px;
+  }
+  .modal-content #yachtSlidermodal {
+    height: 500px;
+  }
+  .experiences {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 84px;
+  }
+  .experiences img {
+    height: 300px;
+  }
+  .gallery-img h2 {
+    font-size: 55px;
+  }
+  .footer .ftblock-top {
+    margin-left: 84px;
+    margin-right: 84px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    gap: 21px;
+  }
+  .footer .ftblock-top .divone {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+  }
+  .footer .ftblock-top .divone img {
+    display: flex;
+    justify-content: left;
+    width: 250px;
+  }
+  .footer .ftblock-top .divone p {
+    text-align: left;
+    width: 70%;
+    align-content: center;
+  }
+}
+@media (min-width: 1025px) {
+  .about-hero h1 {
+    font-size: 144px;
+  }
+  .about-hero p {
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

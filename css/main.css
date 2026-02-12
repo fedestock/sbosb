@@ -2154,5 +2154,188 @@ a {
     align-content: center;
   }
 }
+@media (min-width: 1025px) {
+  .about-hero h1 {
+    font-size: 144px;
+    line-height: 144px;
+  }
+  .about-hero p {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .aboutg {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+  .aboutg #sailingGuada {
+    flex: 1;
+    max-width: 50%;
+    height: 600px;
+    overflow: hidden;
+  }
+  .aboutg {
+    /* obligamos a todos los niveles a ocupar el 100% */
+  }
+  .aboutg #sailingGuada .carousel-inner,
+  .aboutg #sailingGuada .carousel-item {
+    height: 100%;
+  }
+  .aboutg {
+    /* la imagen se adapta */
+  }
+  .aboutg #sailingGuada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .aboutg .about-meet-captain {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  .aboutg .about-meet-captain h2 {
+    color: #E27D60;
+    margin-bottom: 10px;
+  }
+  .aboutg .about-meet-captain h3.aboutg-title {
+    font-family: "amatic sc";
+    font-size: 21px;
+    font-weight: 900 !important;
+    color: #20373B;
+    margin-bottom: 5px;
+  }
+  .aboutg .about-meet-captain h4 {
+    margin-bottom: 25px;
+    opacity: 0.7;
+  }
+  .aboutg .about-meet-captain p {
+    width: 75%;
+    margin-bottom: 18px;
+    line-height: 1.6;
+    text-align: left;
+  }
+  .aboutg .about-meet-captain .letschat {
+    margin-top: 25px;
+    align-self: flex-start;
+    padding-bottom: 84px;
+  }
+  /* ==============================
+     ABOUT K - Slider + Accordion
+  ================================= */
+  .aboutk {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 100px 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* ==============================
+     SLIDER
+  ================================= */
+  #sailingSlider {
+    flex: 0 0 45%;
+    height: 800px;
+    overflow: hidden;
+    border-radius: 16px;
+  }
+  #sailingSlider .carousel-inner,
+  #sailingSlider .carousel-item {
+    height: 100%;
+  }
+  #sailingSlider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  /* ==============================
+     ACCORDION
+  ================================= */
+  /* ==============================
+     CUSTOM ACCORDION STYLE
+  ================================= */
+  .kunay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  /* Item */
+  .kunay .accordion-item {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    align-self: flex-start;
+  }
+  /* Header button */
+  .kunay .accordion-button {
+    background: transparent;
+    padding: 24px 0;
+    font-size: 26px;
+    font-weight: 600;
+    color: #E27D60;
+    letter-spacing: 0.3px;
+    font-family: "amatic sc";
+    box-shadow: none;
+    transition: all 0.3s ease;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Hover */
+  .kunay .accordion-button:hover {
+    color: #20373B;
+  }
+  /* Remove default blue focus */
+  .kunay .accordion-button:focus {
+    box-shadow: none;
+    border-color: transparent;
+  }
+  /* Active state */
+  .kunay .accordion-button:not(.collapsed) {
+    background: transparent;
+    color: #20373B;
+  }
+  /* Remove default arrow background */
+  .kunay .accordion-button::after {
+    background-image: none;
+    content: "+";
+    font-size: 22px;
+    font-weight: 300;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+  }
+  /* When open */
+  .kunay .accordion-button:not(.collapsed)::after {
+    content: "–";
+    transform: rotate(180deg);
+  }
+  /* Body */
+  .kunay .accordion-body {
+    width: 100%;
+    padding: 0 0 25px 0;
+  }
+  .kunay .accordion-body p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+  }
+  /* ==============================
+     CTA BUTTON
+  ================================= */
+  a.btn {
+    margin: 0;
+  }
+  .btn-cntr {
+    display: block;
+    margin-top: 60px;
+    align-self: flex-start;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

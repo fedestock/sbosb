@@ -2,10 +2,9 @@
 
 @media (min-width: 1025px) {
     .navbar {
-        margin: 16px;
-        width: calc(100% - 32px);
         border-radius: 16px;
-        
+        justify-content: space-between;
+
 
         .navbar-brand img {
             width: 140px;
@@ -16,8 +15,11 @@
         }
 
         .nav-link {
-            font-size: 16px;
-            font-weight: 400;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 12px;
+            letter-spacing: 1px;
+            color: $opasto;
         }
     }
 
@@ -47,41 +49,114 @@
             width: 45%;
         }
     }
-}
 
 
-        .experiences {
-            padding: 80px 48px;
+    .benefits {
+        padding: 80px 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
+
+        // ----- eco friendly -----
+        .eco-friendly {
             display: flex;
-            flex-direction: column;
-            gap: 56px; // separación eco-friendly / tarjetas
+            flex-direction: row;
+            justify-content: center;
+            gap: 21px;
 
-            // ----- eco friendly -----
-            .eco-friendly {
+            .eco-icon {
                 display: flex;
                 flex-direction: row;
-                justify-content: center;
-                gap: 21px;
+            }
 
-                .eco-icon {
-                    display: flex;
-                    flex-direction: row;
-                }
+            h2 {
+                font-size: 84px;
+                line-height: 94px;
+            }
 
-                h2 {
-                    font-size: 84px;
-                    line-height: 94px;
-                }
-                p {
-                    width: 30%;
-                    padding-top: 6px;
-                    font-size: 18px;
-                    text-align: left;
-                }
-
-                .tarjetasfullbg {
-                    display: grid;
-                   grid-template-rows: 1fr 1fr 1fr;
-                }
+            p {
+                width: 30%;
+                padding-top: 6px;
+                font-size: 18px;
+                text-align: left;
             }
         }
+
+         .tarjetasfulbg {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+        }
+    }
+
+    
+
+    section.interest {
+         
+        .div-tarjeta {
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+
+        .flex-tags {
+            margin-left: 222px;
+            margin-right: 222px;
+        }
+    }
+
+    .modal-content {
+
+    #yachtSlidermodal {
+    height: 500px;
+    }
+
+}
+
+.experiences {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 84px;
+
+    img {
+        height: 300px;
+
+    }
+}
+
+.gallery-img {
+    h2 {
+        font-size: 55px;
+    }
+}
+
+.footer {
+    
+
+    .ftblock-top {
+        margin-left: 84px;
+        margin-right: 84px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        gap: 21px;
+
+        .divone {
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            img {
+                display: flex;
+                justify-content: left;
+                width: 250px;
+            }
+            p {
+                text-align: left;
+                width: 70%;
+                align-content: center;
+            }
+        }
+    }
+
+}}

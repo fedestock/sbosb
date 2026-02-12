@@ -9,13 +9,19 @@ body {
 
 // header
 .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 16px;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%);
     font-family: "open sans";
     font-size: 16px;
     font-weight: 400;
-    width: 100%;
     padding: 5px 16px;
     background-color: rgba(white, 0.3);
-    border-radius: 0px 0px 7px 7px;
+    border-radius: 7px;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
 
     /* blur */
@@ -167,7 +173,7 @@ body {
     }
 }
 
-.experiences {
+.benefits {
     padding: 55px 3px;
     display: flex;
     flex-direction: column;
@@ -200,20 +206,26 @@ body {
         font-size: 16px;
         line-height: 26px;
         text-align: center;
-        color: black;
+        color: $opasto;
         padding: 0 6px;
+        font-weight: 500;
     }
-
     .eco-friendly {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 
-    }
+        img {
+            width: 70px;
+        }
 
-    .eco-friendly img {
-        width: 70px;
+        .eco-icon {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+        }
+
     }
 
     .tarjeta {
@@ -225,6 +237,13 @@ body {
             font-weight: 500;
         }
 
+    }
+
+    .tarjetasfulbg {
+        display: flex;
+        flex-direction: column;     
+        justify-content: center;
+        align-items: center;
     }
 
     .tarjeta-fullbg p {
@@ -255,6 +274,7 @@ body {
         background-position: top;
     }
 }
+
 
 
 // interes

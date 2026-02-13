@@ -1,0 +1,35 @@
+@use "../utilities/variables" as *;
+@use "../base/reset" as *;
+@media (min-width: 1025px) {
+
+    .hero-post {
+        h1 {
+            font-size: 84px;
+            line-height: 84px;
+            color:$opasto;
+        }
+    }
+
+    article {
+        .intro-blog{
+            width: 55%;
+            margin: 0 auto;
+            padding: 34px;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        p {
+             width: 55%;
+            margin: 0 auto;
+        }
+
+        img {
+            width: 300px;       /* Ancho fijo */
+    height: auto;       /* Ajusta la altura automáticamente */
+    display: block;     /* Para que no haya espacio extra debajo de la imagen */
+    margin: 20px auto;  /* Centra la imagen horizontalmente */
+    border-radius: 8px
+        }
+    }
+}

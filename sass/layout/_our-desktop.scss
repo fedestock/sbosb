@@ -1,0 +1,78 @@
+@use "../utilities/variables" as *;
+@use "../base/reset" as *;
+
+@media (min-width: 1025px) {
+
+    .our-hero {
+
+        section {
+            h2 {
+                font-size: 144px;
+                line-height: 144px;
+            }
+
+            p {
+                width: 70%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+
+    #sailingSlider {
+        flex: 1;
+        max-width: 50%;
+        height: 600px; // 🔥 altura fija o min-height
+        overflow: hidden;
+    }
+
+    /* obligamos a todos los niveles a ocupar el 100% */
+    #sailingSlider .carousel-inner,
+    #sailingSlider .carousel-item {
+        height: 100%;
+    }
+
+    /* la imagen se adapta */
+    #sailingSlider img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block; // evita micro espacios
+    }
+
+    .colaboradores {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+        align-items: start;
+        padding: 0 84px;
+    }
+
+    .intro-bio {
+        p {
+            width: 30%;
+            margin: 0 auto;
+            padding-bottom: 16px;
+        }
+    }
+
+    .community {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        img {
+            width: 300px;
+        }
+
+        div {
+        padding-left: 16px;
+            text-align: left;
+            align-content: center;
+
+            li {
+                padding: 0;
+            }
+        } 
+    }
+
+}

@@ -1,0 +1,39 @@
+@use "../utilities/variables" as *;
+@use "../base/reset" as *;
+@media (min-width: 1025px) {
+
+    .intro-experiences {
+        p {
+            width: 37%;
+            margin: 0 auto;
+        }
+
+        .benefits {
+            padding-top: 21px;
+            padding-bottom: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            div {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 0;
+
+                p {
+                    font-weight: 900;
+                    font-size: 36;
+                    text-align: left;
+                    background: linear-gradient(135deg, $pasto, $opasto);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+            }
+        }
+    }
+
+         
+    }

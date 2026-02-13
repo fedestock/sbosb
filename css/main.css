@@ -2337,5 +2337,248 @@ a {
     align-self: flex-start;
   }
 }
+@media (min-width: 1025px) {
+  .activities {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 84px;
+  }
+  .activities h2,
+  .activities .act {
+    grid-column: 1/-1;
+    text-align: center;
+  }
+  .activities .activities-cta {
+    grid-column: 1/-1;
+  }
+  p.act {
+    font-size: 21px;
+    width: 35%;
+    margin: 0 auto;
+  }
+  .flavor p {
+    width: 30%;
+    margin: 0 auto;
+  }
+  .tira-wrapper {
+    width: 100%;
+    overflow: hidden;
+    padding: 16px;
+  }
+  .tira {
+    display: flex;
+    gap: 20px;
+  }
+  .tira img {
+    height: 350px;
+    object-fit: cover;
+    width: 350px;
+  }
+}
+@media (min-width: 1025px) {
+  .our-hero section h2 {
+    font-size: 144px;
+    line-height: 144px;
+  }
+  .our-hero section p {
+    width: 70%;
+    margin: 0 auto;
+  }
+  #sailingSlider {
+    flex: 1;
+    max-width: 50%;
+    height: 600px;
+    overflow: hidden;
+  }
+  /* obligamos a todos los niveles a ocupar el 100% */
+  #sailingSlider .carousel-inner,
+  #sailingSlider .carousel-item {
+    height: 100%;
+  }
+  /* la imagen se adapta */
+  #sailingSlider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .colaboradores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    align-items: start;
+    padding: 0 84px;
+  }
+  .intro-bio p {
+    width: 30%;
+    margin: 0 auto;
+    padding-bottom: 16px;
+  }
+  .community {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .community img {
+    width: 300px;
+  }
+  .community div {
+    padding-left: 16px;
+    text-align: left;
+    align-content: center;
+  }
+  .community div li {
+    padding: 0;
+  }
+}
+@media (min-width: 1025px) {
+  .hero-post h1 {
+    font-size: 84px;
+    line-height: 84px;
+    color: #6B8F8B;
+  }
+  article .intro-blog {
+    width: 55%;
+    margin: 0 auto;
+    padding: 34px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  article p {
+    width: 55%;
+    margin: 0 auto;
+  }
+  article img {
+    width: 300px; /* Ancho fijo */
+    height: auto; /* Ajusta la altura automáticamente */
+    display: block; /* Para que no haya espacio extra debajo de la imagen */
+    margin: 20px auto; /* Centra la imagen horizontalmente */
+    border-radius: 8px;
+  }
+}
+@media (min-width: 1025px) {
+  .intro {
+    padding-top: 84px;
+  }
+  .intro img {
+    width: 250px;
+  }
+  .intro h3 {
+    font-size: 21px;
+  }
+  .intro h1 {
+    font-size: 122px;
+    line-height: 122px;
+  }
+  .gallery-reserve .tira-wrapper {
+    width: 100%;
+  }
+  .includes {
+    display: flex;
+    flex-direction: row;
+  }
+  .includes img {
+    width: 333px;
+    animation: float 4s ease-in-out infinite;
+  }
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .includes div ul li {
+    padding: 0;
+    line-height: 55px;
+  }
+  .includes div li {
+    padding: 0;
+  }
+  .includes div h2 {
+    text-align: left;
+  }
+  .nt {
+    background-color: white;
+    padding: 34px;
+    margin: 0 144px;
+    border-radius: 16px;
+    text-align: center;
+  }
+  .nt p {
+    color: #6B8F8B;
+  }
+  .nt li {
+    color: #E27D60;
+  }
+  .nt .not-included p {
+    color: #E27D60;
+    font-weight: 900;
+    font-family: "amatic sc";
+    font-size: 34px;
+  }
+  #yachtSlidermodal {
+    height: 600px;
+    margin: 55px 84px;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  }
+  .pricing-c {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 84px;
+  }
+  .pricing-c .pricing-card {
+    background-color: transparent;
+  }
+  .pricing-c .pricing-card h5 {
+    font-size: 34px;
+  }
+  .pricing-c .pricing-card img {
+    height: 250px;
+  }
+  .pricing-c .pricing-card p {
+    font-weight: 500;
+  }
+  div {
+    text-align: center;
+    font-family: "open sans";
+    font-weight: 500;
+    color: #6B8F8B;
+  }
+}
+@media (min-width: 1025px) {
+  .intro-experiences p {
+    width: 37%;
+    margin: 0 auto;
+  }
+  .intro-experiences .benefits {
+    padding-top: 21px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .intro-experiences .benefits div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+  .intro-experiences .benefits div p {
+    font-weight: 900;
+    font-size: 36;
+    text-align: left;
+    background: linear-gradient(135deg, #197359, #6B8F8B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

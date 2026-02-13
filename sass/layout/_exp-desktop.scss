@@ -1,0 +1,53 @@
+@use "../utilities/variables" as *;
+@use "../base/reset" as *;
+@media (min-width: 1025px) {
+
+    // hero
+    .activities {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        padding: 84px;
+    }
+
+    .activities h2,
+    .activities .act {
+        grid-column: 1 / -1; // título y párrafo ocupan todo el ancho
+        text-align: center;
+    }
+
+    .activities .activities-cta {
+        grid-column: 1 / -1; // botón abajo ocupando todo el ancho
+    }
+
+    p.act {
+        font-size: 21px;
+        width: 35%;
+        margin: 0 auto;
+    }
+
+    .flavor {
+        p {
+            width: 30%;
+            margin: 0 auto;
+        }
+    }
+
+     .tira-wrapper {
+            width: 100%;
+            overflow: hidden; // evita desbordes accidentales
+            padding: 16px;
+        }
+
+        .tira {
+            display: flex;
+            gap: 20px;
+        }
+
+        .tira img {
+            height: 350px; // 👈 controlás el tamaño acá
+            object-fit: cover; // la imagen se adapta sin deformarse
+            width: 350px;
+
+        }
+}

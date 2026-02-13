@@ -1,0 +1,129 @@
+@use "../utilities/variables" as *;
+@use "../base/reset" as *;
+@media (min-width: 1025px) {
+
+    .intro {
+        padding-top: 84px;
+
+        img {
+            width: 250px;
+        }
+
+        h3 {
+            font-size: 21px;
+        }
+
+        h1 {
+            font-size: 122px;
+            line-height: 122px;
+        }
+    }
+
+    .gallery-reserve {
+        .tira-wrapper {
+            width: 100%;
+        }
+
+    }
+
+    .includes {
+        display: flex;
+        flex-direction: row;
+
+        img {
+            width: 333px;
+
+            animation: float 4s ease-in-out infinite;
+
+            @keyframes float {
+                0% {
+                    transform: translateY(0);
+                }
+
+                50% {
+                    transform: translateY(-10px);
+                }
+
+                100% {
+                    transform: translateY(0);
+                }
+            }
+        }
+
+        div {
+            ul li {
+                padding: 0;
+                line-height: 55px;
+            }
+
+            li {
+                padding: 0;
+            }
+
+            h2 {
+                text-align: left;
+            }
+        }
+    }
+
+    .nt {
+        background-color: white;
+        padding: 34px;
+        margin: 0 144px;
+        border-radius: 16px;
+        text-align: center;
+
+        p {
+            color: $opasto;
+        }
+
+        li {
+            color: $oladrillo;
+        }
+
+        .not-included {
+            p {
+                color: $oladrillo;
+                font-weight: 900;
+                font-family: "amatic sc";
+                font-size: 34px;
+            }
+        }
+    }
+
+    #yachtSlidermodal {
+        height: 600px; // 👈 elegí la altura que quieras
+
+        margin: 55px 84px;
+        border-radius: 16px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+    }
+
+    .pricing-c {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        padding: 0 84px;
+        .pricing-card {
+            background-color: transparent;
+            h5 {
+                font-size: 34px;
+            }
+            img {
+                height: 250px;
+            }
+
+            p {
+                font-weight: 500;
+            }
+        }
+    }
+
+    div {
+        text-align: center;
+        font-family: "open sans";
+        font-weight: 500;
+        color: $opasto;
+    }
+
+}

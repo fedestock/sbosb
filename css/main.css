@@ -126,7 +126,6 @@ body {
 .navbar {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   margin-top: 16px;
   width: 90%;
   left: 50%;
@@ -183,11 +182,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #519CAB;
+  background-color: #6B8F8B;
   border: none;
 }
 .lang-float .lang-btn:hover {
-  background-color: #20373B;
+  background-color: #197359;
 }
 .lang-float .lang-btn:active {
   background-color: #BF820F;
@@ -268,14 +267,14 @@ body {
   font-weight: 600;
 }
 
-.benefits {
+.benefits-col {
   padding: 55px 3px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.benefits h2 {
+.benefits-col h2 {
   font-family: "amatic sc";
   color: #E27D60;
   font-size: 34px;
@@ -284,7 +283,7 @@ body {
   text-align: center;
   padding: 0 7px;
 }
-.benefits h3 {
+.benefits-col h3 {
   font-family: "amatic sc";
   color: white;
   font-size: 34px;
@@ -294,7 +293,7 @@ body {
   z-index: 2;
   text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.7);
 }
-.benefits p {
+.benefits-col p {
   font-family: "open sans";
   font-size: 16px;
   line-height: 26px;
@@ -303,33 +302,33 @@ body {
   padding: 0 6px;
   font-weight: 500;
 }
-.benefits .eco-friendly {
+.benefits-col .eco-friendly {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.benefits .eco-friendly img {
+.benefits-col .eco-friendly img {
   width: 70px;
 }
-.benefits .eco-friendly .eco-icon {
+.benefits-col .eco-friendly .eco-icon {
   display: flex;
   flex-direction: row;
   gap: 16px;
 }
-.benefits .tarjeta p {
+.benefits-col .tarjeta p {
   font-family: "open sans";
   font-size: 16px;
   color: #20373B;
   font-weight: 500;
 }
-.benefits .tarjetasfulbg {
+.benefits-col .tarjetasfulbg {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.benefits .tarjeta-fullbg p {
+.benefits-col .tarjeta-fullbg p {
   font-family: "open sans";
   font-size: 16px;
   line-height: 24px;
@@ -337,17 +336,17 @@ body {
   color: white;
   z-index: 2;
 }
-.benefits .tarjeta-fullbg--captain {
+.benefits-col .tarjeta-fullbg--captain {
   background-image: url(../../img/slider/lady-you-desktop-san-blas-sailboats.webp);
   background-size: cover;
   background-position: top center;
 }
-.benefits .tarjeta-fullbg--yatch {
+.benefits-col .tarjeta-fullbg--yatch {
   background-image: url(../../img/san-blas-on-sailboats-food-sandia.jpeg);
   background-size: cover;
   background-position: top;
 }
-.benefits .tarjeta-fullbg--experiences {
+.benefits-col .tarjeta-fullbg--experiences {
   background-image: url(../../img/sanblas-community.jpeg);
   background-size: cover;
   background-position: top;
@@ -2159,10 +2158,6 @@ a {
     font-size: 144px;
     line-height: 144px;
   }
-  .about-hero p {
-    width: 50%;
-    margin: 0 auto;
-  }
   .aboutg {
     display: flex;
     align-items: center;
@@ -2218,6 +2213,7 @@ a {
     margin-bottom: 18px;
     line-height: 1.6;
     text-align: left;
+    margin: 0;
   }
   .aboutg .about-meet-captain .letschat {
     margin-top: 25px;
@@ -2385,24 +2381,6 @@ a {
     width: 70%;
     margin: 0 auto;
   }
-  #sailingSlider {
-    flex: 1;
-    max-width: 50%;
-    height: 600px;
-    overflow: hidden;
-  }
-  /* obligamos a todos los niveles a ocupar el 100% */
-  #sailingSlider .carousel-inner,
-  #sailingSlider .carousel-item {
-    height: 100%;
-  }
-  /* la imagen se adapta */
-  #sailingSlider img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
   .colaboradores {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -2410,10 +2388,33 @@ a {
     align-items: start;
     padding: 0 84px;
   }
+  .intro-bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
   .intro-bio p {
     width: 30%;
-    margin: 0 auto;
+    margin: 0;
     padding-bottom: 16px;
+    text-align: left;
+  }
+  .intro-bio #sailingSlider {
+    max-width: 50%;
+    height: 300px;
+    overflow: hidden;
+  }
+  .intro-bio #sailingSlider .carousel-inner,
+  .intro-bio #sailingSlider .carousel-item {
+    height: 100%;
+  }
+  .intro-bio #sailingSlider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
   .community {
     display: flex;

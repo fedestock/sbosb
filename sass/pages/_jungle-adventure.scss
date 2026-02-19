@@ -1,8 +1,9 @@
 @use "../utilities/variables" as *;
+@use "../base/reset" as *;
 
 // hero
 .jungle-hero {
-    background-image: url(../img/jungle-jumping-sanblas-on-sailboats.png);
+    background-image: url(../../img/jungle-san-blas-onsailboats.jpg);
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -28,7 +29,7 @@
 
     h1 {
         font-family: "amatic sc";
-        font-size: 55px;
+        font-size: 84px;
         line-height: 55px;
         text-shadow: 5px 5px 5px black;
         font-weight: 700+0.3;
@@ -66,6 +67,33 @@
         color: $ocean;
     }
 
+    .nt {
+        text-align: center;
+        padding: 0 16px;
+
+        .not-include {
+            .material-icons {
+                color: $oladrillo;
+            }
+        }
+
+        h3 {
+            color: $oladrillo;
+            font-family: "amatic sc";
+            font-size: 34px;
+            font-weight: 700;
+        }
+
+        p {
+            font-family: "open sans";
+            font-size: 21px;
+            line-height: 21px;
+            color: $opasto;
+        }
+
+
+    }
+
 }
 
 .tarjeta {
@@ -83,33 +111,58 @@
 }
 
 #pricing {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
 
-    h3 {
-        font-family: "open sans";
-        color: $oladrillo;
-        font-weight: 500;
-        font-size: 16px;
+    div {
+        h3 {
+            font-family: "amatic sc";
+            text-align: center;
+            font-size: 34px;
+            font-weight: 700;
+            color: $arena;
+            padding-top: 55px;
+        }
+
+        iframe {
+            height: 85vh;
+            width: 100%;
+        }
     }
 
-    h2 {
-        font-family: "amatic sc";
-        font-size: 34px;
-        line-height: 34px;
-        color: $ocean;
-    }
+    .tarjeta {
+        width: 100%;
 
-    p {
-        font-family: "open sans";
-        font-size: 16px;
-        line-height: 26px;
-    }
+        h3 {
+            font-family: "open sans";
+            color: $oladrillo;
+            font-weight: 500;
+            font-size: 16px;
+        }
 
-    ul {
-        list-style: none;
-    }
+        h2 {
+            font-family: "amatic sc";
+            font-size: 34px;
+            line-height: 34px;
+            color: $ocean;
+        }
 
-    .tarjeta--color {
-        background-color: linear-gradient(135deg, $ocean, $aqua 100%);
+        p {
+            font-family: "open sans";
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .tarjeta--color {
+            background-color: linear-gradient(135deg, $ocean, $aqua 100%);
+        }
     }
 }
 
@@ -134,12 +187,34 @@
 .gallery-img {
     img {
         width: 100%;
-        height: 250px; // ajusta
+        height: 550px; // ajusta
         object-fit: cover; // 🔥 siempre usar en galerías
         transition: transform .3s ease;
 
         &:hover {
             transform: scale(1.05);
         }
+    }
+
+}
+
+#yachtSlidermodal .carousel-inner {
+    height: 550px;
+}
+
+.itprice {
+    
+    .imge {
+        display: none !important;
+    }
+
+    .it {
+        font-family: "open sans";
+        font-size: 21px;
+        color: $pasto;
+    }
+
+    ul {
+        list-style: none;
     }
 }

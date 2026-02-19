@@ -1604,7 +1604,7 @@ a {
 }
 
 .jungle-hero {
-  background-image: url(../img/jungle-jumping-sanblas-on-sailboats.png);
+  background-image: url(../../img/jungle-san-blas-onsailboats.jpg);
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1628,7 +1628,7 @@ a {
 }
 .jungle-hero h1 {
   font-family: "amatic sc";
-  font-size: 55px;
+  font-size: 84px;
   line-height: 55px;
   text-shadow: 5px 5px 5px black;
   font-weight: 700.3;
@@ -1657,6 +1657,25 @@ a {
   line-height: 26px;
   color: #20373B;
 }
+#included .nt {
+  text-align: center;
+  padding: 0 16px;
+}
+#included .nt .not-include .material-icons {
+  color: #E27D60;
+}
+#included .nt h3 {
+  color: #E27D60;
+  font-family: "amatic sc";
+  font-size: 34px;
+  font-weight: 700;
+}
+#included .nt p {
+  font-family: "open sans";
+  font-size: 21px;
+  line-height: 21px;
+  color: #6B8F8B;
+}
 
 .tarjeta .it {
   font-family: "open sans";
@@ -1669,27 +1688,49 @@ a {
   font-weight: bold;
 }
 
-#pricing h3 {
+#pricing {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+}
+#pricing div h3 {
+  font-family: "amatic sc";
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  color: #D9BB96;
+  padding-top: 55px;
+}
+#pricing div iframe {
+  height: 85vh;
+  width: 100%;
+}
+#pricing .tarjeta {
+  width: 100%;
+}
+#pricing .tarjeta h3 {
   font-family: "open sans";
   color: #E27D60;
   font-weight: 500;
   font-size: 16px;
 }
-#pricing h2 {
+#pricing .tarjeta h2 {
   font-family: "amatic sc";
   font-size: 34px;
   line-height: 34px;
   color: #20373B;
 }
-#pricing p {
+#pricing .tarjeta p {
   font-family: "open sans";
   font-size: 16px;
   line-height: 26px;
 }
-#pricing ul {
+#pricing .tarjeta ul {
   list-style: none;
 }
-#pricing .tarjeta--color {
+#pricing .tarjeta .tarjeta--color {
   background-color: linear-gradient(135deg, #20373B, #519CAB 100%);
 }
 
@@ -1712,12 +1753,25 @@ a {
 
 .gallery-img img {
   width: 100%;
-  height: 250px;
+  height: 550px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 .gallery-img img:hover {
   transform: scale(1.05);
+}
+
+#yachtSlidermodal .carousel-inner {
+  height: 550px;
+}
+
+.itprice .it {
+  font-family: "open sans";
+  font-size: 21px;
+  color: #197359;
+}
+.itprice ul {
+  list-style: none;
 }
 
 .gallery {
@@ -2456,6 +2510,185 @@ a {
     display: block; /* Para que no haya espacio extra debajo de la imagen */
     margin: 20px auto; /* Centra la imagen horizontalmente */
     border-radius: 8px;
+  }
+}
+@media (min-width: 1025px) {
+  .jungle-hero {
+    background-image: url(../../img/jungle-san-blas-onsailboats.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 16px;
+  }
+  .jungle-hero h2 {
+    font-family: "open sans";
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 55px;
+    text-shadow: 5px 5px 5px black;
+  }
+  .jungle-hero h1 {
+    font-family: "amatic sc";
+    font-size: 150px;
+    line-height: 155px;
+    text-shadow: 5px 5px 5px black;
+    font-weight: 700.3;
+  }
+  .jungle-hero p {
+    font-family: "open sans";
+    font-size: 16px;
+    line-height: 26px;
+  }
+  #included h2 {
+    font-family: "amatic sc";
+    font-size: 55px;
+    line-height: 55px;
+    color: #6B8F8B;
+  }
+  #included ul {
+    font-family: "open sans";
+    font-size: 16px;
+    line-height: 26px;
+    list-style: none;
+  }
+  #included p {
+    font-size: "open sans";
+    font-size: 16px;
+    line-height: 26px;
+    color: #20373B;
+  }
+  #included .nt {
+    text-align: center;
+    width: 555px;
+    padding: 55px;
+    margin: 0 auto;
+  }
+  #included .nt .not-include .material-icons {
+    color: #E27D60;
+  }
+  #included .nt h3 {
+    color: #E27D60;
+    font-family: "amatic sc";
+    font-size: 34px;
+    font-weight: 700;
+  }
+  #included .nt p {
+    font-family: "open sans";
+    font-size: 21px;
+    line-height: 31px;
+    color: #6B8F8B;
+  }
+  .tarjeta .it {
+    font-family: "open sans";
+    color: #BF820F;
+    font-size: 34px;
+    line-height: 26px;
+  }
+  .tarjeta .hour {
+    color: #E27D60;
+    font-weight: bold;
+  }
+  #pricing {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 84px;
+    gap: 16px;
+  }
+  #pricing div h3 {
+    display: none;
+  }
+  #pricing div iframe {
+    height: 65vh;
+    width: 290px;
+    border-radius: 16px;
+  }
+  #pricing .tarjeta {
+    width: 333px;
+  }
+  #pricing .tarjeta h3 {
+    font-family: "open sans";
+    color: #E27D60;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  #pricing .tarjeta h2 {
+    font-family: "amatic sc";
+    font-size: 34px;
+    line-height: 34px;
+    color: #20373B;
+  }
+  #pricing .tarjeta p {
+    font-family: "open sans";
+    font-size: 16px;
+    line-height: 26px;
+  }
+  #pricing .tarjeta ul {
+    list-style: none;
+  }
+  #pricing .tarjeta .tarjeta--color {
+    background-color: linear-gradient(135deg, #20373B, #519CAB 100%);
+  }
+  .benefits {
+    padding-top: 34px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    font-family: "caveat";
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #20373B;
+    gap: 20px;
+  }
+  .benefits img {
+    width: 50px;
+  }
+  .gallery-img img {
+    width: 100%;
+    height: 490px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  .gallery-img img:hover {
+    transform: scale(1.05);
+  }
+  #yachtSlidermodal .carousel-inner {
+    height: 666px;
+  }
+  .itprice {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 84px;
+    margin-bottom: 55px;
+  }
+  .itprice img {
+    width: 444px;
+    height: 444px;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+  .itprice .it {
+    font-family: "open sans";
+    font-size: 21px;
+    color: #197359;
+  }
+  .itprice ul {
+    list-style: none;
   }
 }
 @media (min-width: 1025px) {

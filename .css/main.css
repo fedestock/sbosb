@@ -126,7 +126,6 @@ body {
 .navbar {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   margin-top: 16px;
   width: 90%;
   left: 50%;
@@ -183,11 +182,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #519CAB;
+  background-color: #6B8F8B;
   border: none;
 }
 .lang-float .lang-btn:hover {
-  background-color: #20373B;
+  background-color: #197359;
 }
 .lang-float .lang-btn:active {
   background-color: #BF820F;
@@ -268,14 +267,14 @@ body {
   font-weight: 600;
 }
 
-.benefits {
+.benefits-col {
   padding: 55px 3px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.benefits h2 {
+.benefits-col h2 {
   font-family: "amatic sc";
   color: #E27D60;
   font-size: 34px;
@@ -284,7 +283,7 @@ body {
   text-align: center;
   padding: 0 7px;
 }
-.benefits h3 {
+.benefits-col h3 {
   font-family: "amatic sc";
   color: white;
   font-size: 34px;
@@ -294,7 +293,7 @@ body {
   z-index: 2;
   text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.7);
 }
-.benefits p {
+.benefits-col p {
   font-family: "open sans";
   font-size: 16px;
   line-height: 26px;
@@ -303,33 +302,33 @@ body {
   padding: 0 6px;
   font-weight: 500;
 }
-.benefits .eco-friendly {
+.benefits-col .eco-friendly {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.benefits .eco-friendly img {
+.benefits-col .eco-friendly img {
   width: 70px;
 }
-.benefits .eco-friendly .eco-icon {
+.benefits-col .eco-friendly .eco-icon {
   display: flex;
   flex-direction: row;
   gap: 16px;
 }
-.benefits .tarjeta p {
+.benefits-col .tarjeta p {
   font-family: "open sans";
   font-size: 16px;
   color: #20373B;
   font-weight: 500;
 }
-.benefits .tarjetasfulbg {
+.benefits-col .tarjetasfulbg {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.benefits .tarjeta-fullbg p {
+.benefits-col .tarjeta-fullbg p {
   font-family: "open sans";
   font-size: 16px;
   line-height: 24px;
@@ -337,17 +336,17 @@ body {
   color: white;
   z-index: 2;
 }
-.benefits .tarjeta-fullbg--captain {
+.benefits-col .tarjeta-fullbg--captain {
   background-image: url(../../img/slider/lady-you-desktop-san-blas-sailboats.webp);
   background-size: cover;
   background-position: top center;
 }
-.benefits .tarjeta-fullbg--yatch {
+.benefits-col .tarjeta-fullbg--yatch {
   background-image: url(../../img/san-blas-on-sailboats-food-sandia.jpeg);
   background-size: cover;
   background-position: top;
 }
-.benefits .tarjeta-fullbg--experiences {
+.benefits-col .tarjeta-fullbg--experiences {
   background-image: url(../../img/sanblas-community.jpeg);
   background-size: cover;
   background-position: top;
@@ -1605,7 +1604,7 @@ a {
 }
 
 .jungle-hero {
-  background-image: url(../img/jungle-jumping-sanblas-on-sailboats.png);
+  background-image: url(../../img/jungle-san-blas-onsailboats.jpg);
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1629,7 +1628,7 @@ a {
 }
 .jungle-hero h1 {
   font-family: "amatic sc";
-  font-size: 55px;
+  font-size: 84px;
   line-height: 55px;
   text-shadow: 5px 5px 5px black;
   font-weight: 700.3;
@@ -1658,6 +1657,25 @@ a {
   line-height: 26px;
   color: #20373B;
 }
+#included .nt {
+  text-align: center;
+  padding: 0 16px;
+}
+#included .nt .not-include .material-icons {
+  color: #E27D60;
+}
+#included .nt h3 {
+  color: #E27D60;
+  font-family: "amatic sc";
+  font-size: 34px;
+  font-weight: 700;
+}
+#included .nt p {
+  font-family: "open sans";
+  font-size: 21px;
+  line-height: 21px;
+  color: #6B8F8B;
+}
 
 .tarjeta .it {
   font-family: "open sans";
@@ -1670,27 +1688,49 @@ a {
   font-weight: bold;
 }
 
-#pricing h3 {
+#pricing {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+}
+#pricing div h3 {
+  font-family: "amatic sc";
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  color: #D9BB96;
+  padding-top: 55px;
+}
+#pricing div iframe {
+  height: 85vh;
+  width: 100%;
+}
+#pricing .tarjeta {
+  width: 100%;
+}
+#pricing .tarjeta h3 {
   font-family: "open sans";
   color: #E27D60;
   font-weight: 500;
   font-size: 16px;
 }
-#pricing h2 {
+#pricing .tarjeta h2 {
   font-family: "amatic sc";
   font-size: 34px;
   line-height: 34px;
   color: #20373B;
 }
-#pricing p {
+#pricing .tarjeta p {
   font-family: "open sans";
   font-size: 16px;
   line-height: 26px;
 }
-#pricing ul {
+#pricing .tarjeta ul {
   list-style: none;
 }
-#pricing .tarjeta--color {
+#pricing .tarjeta .tarjeta--color {
   background-color: linear-gradient(135deg, #20373B, #519CAB 100%);
 }
 
@@ -1713,12 +1753,28 @@ a {
 
 .gallery-img img {
   width: 100%;
-  height: 250px;
+  height: 550px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 .gallery-img img:hover {
   transform: scale(1.05);
+}
+
+#yachtSlidermodal .carousel-inner {
+  height: 550px;
+}
+
+.itprice .imge {
+  display: none !important;
+}
+.itprice .it {
+  font-family: "open sans";
+  font-size: 21px;
+  color: #197359;
+}
+.itprice ul {
+  list-style: none;
 }
 
 .gallery {
@@ -2157,9 +2213,608 @@ a {
 @media (min-width: 1025px) {
   .about-hero h1 {
     font-size: 144px;
+    line-height: 144px;
   }
-  .about-hero p {
-    width: 50%;
+  .aboutg {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+  .aboutg #sailingGuada {
+    flex: 1;
+    max-width: 50%;
+    height: 600px;
+    overflow: hidden;
+  }
+  .aboutg {
+    /* obligamos a todos los niveles a ocupar el 100% */
+  }
+  .aboutg #sailingGuada .carousel-inner,
+  .aboutg #sailingGuada .carousel-item {
+    height: 100%;
+  }
+  .aboutg {
+    /* la imagen se adapta */
+  }
+  .aboutg #sailingGuada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .aboutg .about-meet-captain {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  .aboutg .about-meet-captain h2 {
+    color: #E27D60;
+    margin-bottom: 10px;
+  }
+  .aboutg .about-meet-captain h3.aboutg-title {
+    font-family: "amatic sc";
+    font-size: 21px;
+    font-weight: 900 !important;
+    color: #20373B;
+    margin-bottom: 5px;
+  }
+  .aboutg .about-meet-captain h4 {
+    margin-bottom: 25px;
+    opacity: 0.7;
+  }
+  .aboutg .about-meet-captain p {
+    width: 75%;
+    margin-bottom: 18px;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0;
+  }
+  .aboutg .about-meet-captain .letschat {
+    margin-top: 25px;
+    align-self: flex-start;
+    padding-bottom: 84px;
+  }
+  /* ==============================
+     ABOUT K - Slider + Accordion
+  ================================= */
+  .aboutk {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 100px 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* ==============================
+     SLIDER
+  ================================= */
+  #sailingSlider {
+    flex: 0 0 45%;
+    height: 800px;
+    overflow: hidden;
+    border-radius: 16px;
+  }
+  #sailingSlider .carousel-inner,
+  #sailingSlider .carousel-item {
+    height: 100%;
+  }
+  #sailingSlider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  /* ==============================
+     ACCORDION
+  ================================= */
+  /* ==============================
+     CUSTOM ACCORDION STYLE
+  ================================= */
+  .kunay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  /* Item */
+  .kunay .accordion-item {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    align-self: flex-start;
+  }
+  /* Header button */
+  .kunay .accordion-button {
+    background: transparent;
+    padding: 24px 0;
+    font-size: 26px;
+    font-weight: 600;
+    color: #E27D60;
+    letter-spacing: 0.3px;
+    font-family: "amatic sc";
+    box-shadow: none;
+    transition: all 0.3s ease;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Hover */
+  .kunay .accordion-button:hover {
+    color: #20373B;
+  }
+  /* Remove default blue focus */
+  .kunay .accordion-button:focus {
+    box-shadow: none;
+    border-color: transparent;
+  }
+  /* Active state */
+  .kunay .accordion-button:not(.collapsed) {
+    background: transparent;
+    color: #20373B;
+  }
+  /* Remove default arrow background */
+  .kunay .accordion-button::after {
+    background-image: none;
+    content: "+";
+    font-size: 22px;
+    font-weight: 300;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+  }
+  /* When open */
+  .kunay .accordion-button:not(.collapsed)::after {
+    content: "–";
+    transform: rotate(180deg);
+  }
+  /* Body */
+  .kunay .accordion-body {
+    width: 100%;
+    padding: 0 0 25px 0;
+  }
+  .kunay .accordion-body p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+  }
+  /* ==============================
+     CTA BUTTON
+  ================================= */
+  a.btn {
+    margin: 0;
+  }
+  .btn-cntr {
+    display: block;
+    margin-top: 60px;
+    align-self: flex-start;
+  }
+}
+@media (min-width: 1025px) {
+  .activities {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 84px;
+  }
+  .activities h2,
+  .activities .act {
+    grid-column: 1/-1;
+    text-align: center;
+  }
+  .activities .activities-cta {
+    grid-column: 1/-1;
+  }
+  p.act {
+    font-size: 21px;
+    width: 35%;
+    margin: 0 auto;
+  }
+  .flavor p {
+    width: 30%;
+    margin: 0 auto;
+  }
+  .tira-wrapper {
+    width: 100%;
+    overflow: hidden;
+    padding: 16px;
+  }
+  .tira {
+    display: flex;
+    gap: 20px;
+  }
+  .tira img {
+    height: 350px;
+    object-fit: cover;
+    width: 350px;
+  }
+}
+@media (min-width: 1025px) {
+  .our-hero section h2 {
+    font-size: 144px;
+    line-height: 144px;
+  }
+  .our-hero section p {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .colaboradores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    align-items: start;
+    padding: 0 84px;
+  }
+  .intro-bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .intro-bio p {
+    width: 30%;
+    margin: 0;
+    padding-bottom: 16px;
+    text-align: left;
+  }
+  .intro-bio #sailingSlider {
+    max-width: 50%;
+    height: 300px;
+    overflow: hidden;
+  }
+  .intro-bio #sailingSlider .carousel-inner,
+  .intro-bio #sailingSlider .carousel-item {
+    height: 100%;
+  }
+  .intro-bio #sailingSlider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .community {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .community img {
+    width: 300px;
+  }
+  .community div {
+    padding-left: 16px;
+    text-align: left;
+    align-content: center;
+  }
+  .community div li {
+    padding: 0;
+  }
+}
+@media (min-width: 1025px) {
+  .hero-post h1 {
+    font-size: 84px;
+    line-height: 84px;
+    color: #6B8F8B;
+  }
+  article .intro-blog {
+    width: 55%;
+    margin: 0 auto;
+    padding: 34px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  article p {
+    width: 55%;
+    margin: 0 auto;
+  }
+  article img {
+    width: 300px; /* Ancho fijo */
+    height: auto; /* Ajusta la altura automáticamente */
+    display: block; /* Para que no haya espacio extra debajo de la imagen */
+    margin: 20px auto; /* Centra la imagen horizontalmente */
+    border-radius: 8px;
+  }
+}
+@media (min-width: 1025px) {
+  .jungle-hero {
+    background-image: url(../../img/jungle-san-blas-onsailboats.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 16px;
+  }
+  .jungle-hero h2 {
+    font-family: "open sans";
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 55px;
+    text-shadow: 5px 5px 5px black;
+  }
+  .jungle-hero h1 {
+    font-family: "amatic sc";
+    font-size: 150px;
+    line-height: 155px;
+    text-shadow: 5px 5px 5px black;
+    font-weight: 700.3;
+  }
+  .jungle-hero p {
+    font-family: "open sans";
+    font-size: 16px;
+    line-height: 26px;
+  }
+  #included h2 {
+    font-family: "amatic sc";
+    font-size: 55px;
+    line-height: 55px;
+    color: #6B8F8B;
+  }
+  #included ul {
+    font-family: "open sans";
+    font-size: 16px;
+    line-height: 26px;
+    list-style: none;
+  }
+  #included p {
+    font-size: "open sans";
+    font-size: 16px;
+    line-height: 26px;
+    color: #20373B;
+  }
+  #included .nt {
+    text-align: center;
+    width: 555px;
+    padding: 55px;
+    margin: 0 auto;
+  }
+  #included .nt .not-include .material-icons {
+    color: #E27D60;
+  }
+  #included .nt h3 {
+    color: #E27D60;
+    font-family: "amatic sc";
+    font-size: 34px;
+    font-weight: 700;
+  }
+  #included .nt p {
+    font-family: "open sans";
+    font-size: 21px;
+    line-height: 31px;
+    color: #6B8F8B;
+  }
+  .tarjeta .it {
+    font-family: "open sans";
+    color: #BF820F;
+    font-size: 34px;
+    line-height: 26px;
+  }
+  .tarjeta .hour {
+    color: #E27D60;
+    font-weight: bold;
+  }
+  #pricing {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 84px;
+    gap: 16px;
+  }
+  #pricing div h3 {
+    display: none;
+  }
+  #pricing div iframe {
+    height: 65vh;
+    width: 290px;
+    border-radius: 16px;
+  }
+  #pricing .tarjeta {
+    width: 333px;
+  }
+  #pricing .tarjeta h3 {
+    font-family: "open sans";
+    color: #E27D60;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  #pricing .tarjeta h2 {
+    font-family: "amatic sc";
+    font-size: 34px;
+    line-height: 34px;
+    color: #20373B;
+  }
+  #pricing .tarjeta p {
+    font-family: "open sans";
+    font-size: 16px;
+    line-height: 26px;
+  }
+  #pricing .tarjeta ul {
+    list-style: none;
+  }
+  #pricing .tarjeta .tarjeta--color {
+    background-color: linear-gradient(135deg, #20373B, #519CAB 100%);
+  }
+  .benefits {
+    padding-top: 34px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    font-family: "caveat";
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #20373B;
+    gap: 20px;
+  }
+  .benefits img {
+    width: 50px;
+  }
+  .gallery-img img {
+    width: 100%;
+    height: 490px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  .gallery-img img:hover {
+    transform: scale(1.05);
+  }
+  #yachtSlidermodal .carousel-inner {
+    height: 666px;
+  }
+  .itprice {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 84px;
+    margin-bottom: 55px;
+  }
+  .itprice img {
+    width: 444px;
+    height: 444px;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+  .itprice .it {
+    font-family: "open sans";
+    font-size: 21px;
+    color: #197359;
+  }
+  .itprice ul {
+    list-style: none;
+  }
+}
+@media (min-width: 1025px) {
+  .intro {
+    padding-top: 84px;
+  }
+  .intro img {
+    width: 250px;
+  }
+  .intro h3 {
+    font-size: 21px;
+  }
+  .intro h1 {
+    font-size: 122px;
+    line-height: 122px;
+  }
+  .gallery-reserve .tira-wrapper {
+    width: 100%;
+  }
+  .includes {
+    display: flex;
+    flex-direction: row;
+  }
+  .includes img {
+    width: 333px;
+    animation: float 4s ease-in-out infinite;
+  }
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .includes div ul li {
+    padding: 0;
+    line-height: 55px;
+  }
+  .includes div li {
+    padding: 0;
+  }
+  .includes div h2 {
+    text-align: left;
+  }
+  .nt {
+    background-color: white;
+    padding: 34px;
+    margin: 0 144px;
+    border-radius: 16px;
+    text-align: center;
+  }
+  .nt p {
+    color: #6B8F8B;
+  }
+  .nt li {
+    color: #E27D60;
+  }
+  .nt .not-included p {
+    color: #E27D60;
+    font-weight: 900;
+    font-family: "amatic sc";
+    font-size: 34px;
+  }
+  #yachtSlidermodal {
+    height: 600px;
+    margin: 55px 84px;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  }
+  .pricing-c {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 84px;
+  }
+  .pricing-c .pricing-card {
+    background-color: transparent;
+  }
+  .pricing-c .pricing-card h5 {
+    font-size: 34px;
+  }
+  .pricing-c .pricing-card img {
+    height: 250px;
+  }
+  .pricing-c .pricing-card p {
+    font-weight: 500;
+  }
+  div {
+    text-align: center;
+    font-family: "open sans";
+    font-weight: 500;
+    color: #6B8F8B;
+  }
+}
+@media (min-width: 1025px) {
+  .intro-experiences p {
+    width: 37%;
+    margin: 0 auto;
+  }
+  .intro-experiences .benefits {
+    padding-top: 21px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .intro-experiences .benefits div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+  .intro-experiences .benefits div p {
+    font-weight: 900;
+    font-size: 36;
+    text-align: left;
+    background: linear-gradient(135deg, #197359, #6B8F8B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 

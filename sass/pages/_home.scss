@@ -11,14 +11,14 @@ body {
 .navbar {
     display: flex;
     flex-direction: row;
-    
+
     margin-top: 16px;
     width: 90%;
     left: 50%;
     transform: translate(-50%);
     font-family: "open sans";
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     padding: 5px 16px;
     background-color: rgba(white, 0.3);
     border-radius: 7px;
@@ -209,6 +209,7 @@ body {
         padding: 0 6px;
         font-weight: 500;
     }
+
     .eco-friendly {
         display: flex;
         flex-direction: column;
@@ -240,7 +241,7 @@ body {
 
     .tarjetasfulbg {
         display: flex;
-        flex-direction: column;     
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -628,60 +629,228 @@ body {
 
     text-align: center;
 
+    // ==========================================
+    // FAQS SECTION - ESTILOS MODERNOS
+    // ==========================================
     .faqs {
-        padding: 34px 16px;
+        max-width: 900px;
+        margin: 4rem auto;
+        padding: 0 2rem;
 
         h3 {
-            font-family: "open sans";
+            font-family: "Open Sans", sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 2px;
-            font-size: 12px;
             color: white;
-            font-weight: 700;
+            margin: 0 0 0.5rem;
+            text-align: center;
         }
 
         h2 {
-            font-family: "amatic sc";
-            font-size: 55px;
-            font-weight: 300;
-            text-align: center;
+            font-family: "Amatic SC", cursive;
+            font-size: 3.2rem;
+            font-weight: 900;
             color: white;
+            margin: 0 0 3rem;
+            text-align: center;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -0.8rem;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80px;
+                height: 3px;
+                border-radius: 2px;
+            }
         }
 
+        // ==========================================
+        // ACCORDION PERSONALIZADO
+        // ==========================================
         .accordion {
-            border-radius: 16px;
-            background-color: $ocean;
+            background: transparent;
+            border-radius: 20px;
             overflow: hidden;
-        }
 
-        .accordion-item {
-            border: none;
-            background-color: $ocean;
+            &-item {
+                background: white;
+                border: none;
+                margin-bottom: 1rem;
+                border-radius: 16px !important;
+                box-shadow: 0 5px 15px -5px rgba($ocean, 0.1);
+                transition: all 0.3s ease;
+
+                &:hover {
+                    box-shadow: 0 10px 25px -8px rgba($ocean, 0.2);
+                    transform: translateY(-2px);
+                }
+            }
+
+            &-header {
+                margin: 0;
+
+                .accordion-button {
+                    font-family: "Open Sans", sans-serif;
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    color: $ocean;
+                    background: white;
+                    padding: 1.2rem 1.8rem;
+                    border: none;
+                    border-radius: 16px !important;
+                    box-shadow: none;
+                    transition: all 0.3s ease;
+
+                    &:not(.collapsed) {
+                        background: linear-gradient(135deg, rgba($pasto, 0.05), rgba($opasto, 0.05));
+                        color: $ladrillo;
+                        border-bottom-left-radius: 0 !important;
+                        border-bottom-right-radius: 0 !important;
+
+                        &::after {
+                            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23c44536'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+                        }
+                    }
+
+                    &:focus {
+                        box-shadow: none;
+                        border-color: transparent;
+                    }
+
+                    &:hover {
+                        background: rgba($pasto, 0.03);
+                    }
+
+                    &::after {
+                        background-size: 1.2rem;
+                        transition: transform 0.3s ease;
+                    }
+                }
+            }
+
+            &-collapse {
+                background: white;
+                border-bottom-left-radius: 16px;
+                border-bottom-right-radius: 16px;
+            }
+
+            &-body {
+                padding: 1.5rem 1.8rem;
+
+                p {
+                    font-family: "Open Sans", sans-serif;
+                    font-size: 1.1rem;
+                    line-height: 1.7;
+                    color: $ocean;
+                    margin: 0 0 1rem;
+                    text-align: left;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    strong {
+                        color: $ladrillo;
+                        font-weight: 600;
+                    }
+                }
+
+                // Estilo para listas dentro de las respuestas
+                ul,
+                ol {
+                    margin: 1rem 0;
+                    padding-left: 1.5rem;
+
+                    li {
+                        font-family: "Open Sans", sans-serif;
+                        font-size: 1.1rem;
+                        line-height: 1.7;
+                        color: $ocean;
+                        margin-bottom: 0.5rem;
+
+                        &::marker {
+                            color: $pasto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // ==========================================
+    // MEDIA QUERIES PARA RESPONSIVE
+    // ==========================================
+    @media (max-width: 768px) {
+        .faqs {
+            margin: 3rem auto;
+            padding: 0 1.5rem;
 
             h2 {
-                font-family: "open sans";
+                font-size: 2.5rem;
+            }
+
+            .accordion {
+                &-header .accordion-button {
+                    font-size: 1.1rem;
+                    padding: 1rem 1.5rem;
+                }
+
+                &-body {
+                    padding: 1.2rem 1.5rem;
+
+                    p,
+                    ul li {
+                        font-size: 1rem;
+                    }
+                }
             }
         }
+    }
 
-        .accordion-body {
-            background-color: $oladrillo;
+    // ==========================================
+    // VARIANTE CON FONDO (OPCIONAL)
+    // ==========================================
+    .faqs--with-bg {
+        background: linear-gradient(135deg, rgba($pasto, 0.03), rgba($aqua, 0.03));
+        border-radius: 40px;
+        padding: 3rem 2rem;
 
-            p {
-                font-family: "open sans";
-                color: white;
-                text-align: left;
+        .accordion-item {
+            background: rgba(white, 0.9);
+            backdrop-filter: blur(5px);
+        }
+    }
+
+    // ==========================================
+    // ANIMACIÓN DE ENTRADA PARA LAS FAQS
+    // ==========================================
+    @keyframes slideInFaq {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .faqs {
+        .accordion-item {
+            animation: slideInFaq 0.5s ease forwards;
+            opacity: 0;
+
+            @for $i from 1 through 14 {
+                &:nth-child(#{$i}) {
+                    animation-delay: #{$i * 0.05}s;
+                }
             }
-        }
-
-        .accordion-button:not(.collapsed) {
-            background-color: $oladrillo;
-            color: white;
-        }
-
-        .accordion-button:focus {
-            border-color: transparent !important;
-            box-shadow: none !important;
-            outline: none !important;
         }
     }
 

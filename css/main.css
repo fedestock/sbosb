@@ -2294,35 +2294,34 @@ a {
     margin: 0 auto;
     padding-bottom: 21px;
   }
-  .navbar .benefits {
+  .navbar .benefits-col {
     padding: 80px 48px;
     display: flex;
-    flex-direction: column;
     gap: 56px;
   }
-  .navbar .benefits .eco-friendly {
+  .navbar .benefits-col .eco-friendly {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 21px;
   }
-  .navbar .benefits .eco-friendly .eco-icon {
+  .navbar .benefits-col .eco-friendly .eco-icon {
     display: flex;
     flex-direction: row;
   }
-  .navbar .benefits .eco-friendly h2 {
+  .navbar .benefits-col .eco-friendly h2 {
     font-size: 84px;
     line-height: 94px;
   }
-  .navbar .benefits .eco-friendly p {
+  .navbar .benefits-col .eco-friendly p {
     width: 30%;
     padding-top: 6px;
     font-size: 18px;
     text-align: left;
   }
-  .navbar .benefits .tarjetasfulbg {
+  .navbar .benefits-col .tarjetasfulbg {
     display: flex;
-    flex-direction: row;
+    flex-direction: row !important;
     gap: 16px;
   }
   .navbar section.interest .div-tarjeta {

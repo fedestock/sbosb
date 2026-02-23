@@ -52,10 +52,10 @@
         }
 
 
-        .benefits {
+        .benefits-col {
             padding: 80px 48px;
             display: flex;
-            flex-direction: column;
+            
             gap: 56px;
 
             // ----- eco friendly -----
@@ -85,7 +85,7 @@
 
             .tarjetasfulbg {
                 display: flex;
-                flex-direction: row;
+                flex-direction: row !important;
                 gap: 16px;
             }
         }

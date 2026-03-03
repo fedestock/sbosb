@@ -1,6 +1,7 @@
 @use "../utilities/variables" as *;
 
 @media (min-width: 1025px) {
+
     .navbar {
         border-radius: 16px;
         justify-content: space-between;
@@ -22,16 +23,19 @@
             color: white;
 
         }
+    }
 
 
-        .hero {
-            .hero__videobg video {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: center center;
-            }
+
+    .hero {
+
+        .hero__videobg video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
         }
+
 
         .hero__content {
             h3 {
@@ -50,132 +54,136 @@
                 padding-bottom: 21px;
             }
         }
+    }
 
 
-        .benefits-col {
-            padding: 80px 48px;
-            display: flex;
-            
-            gap: 56px;
+    .benefits-col {
+        padding: 80px 48px;
+        display: flex;
+        flex-direction: column;
 
-            // ----- eco friendly -----
-            .eco-friendly {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                gap: 21px;
+        gap: 56px;
 
-                .eco-icon {
-                    display: flex;
-                    flex-direction: row;
-                }
-
-                h2 {
-                    font-size: 84px;
-                    line-height: 94px;
-                }
-
-                p {
-                    width: 30%;
-                    padding-top: 6px;
-                    font-size: 18px;
-                    text-align: left;
-                }
-            }
-
-            .tarjetasfulbg {
-                display: flex;
-                flex-direction: row !important;
-                gap: 16px;
-            }
-        }
-
-
-
-        section.interest {
-
-            .div-tarjeta {
-                margin-left: 150px;
-                margin-right: 150px;
-            }
-
-            .flex-tags {
-                margin-left: 222px;
-                margin-right: 222px;
-            }
-        }
-
-        .modal-content {
-
-            #yachtSlidermodal {
-                height: 500px;
-            }
-
-        }
-
-        .experiences {
+        // ----- eco friendly -----
+        .eco-friendly {
             display: flex;
             flex-direction: row;
             justify-content: center;
-            margin: 84px;
+            gap: 21px;
 
-            img {
-                height: 300px;
-
+            .eco-icon {
+                display: flex;
+                flex-direction: row;
             }
-        }
 
-        .gallery-img {
             h2 {
-                font-size: 55px;
-            }
-        }
-    }
-
-        .footer {
-
-            img {
-                margin: 0 auto;
-                width: 150px;
-
+                font-size: 84px;
+                line-height: 94px;
             }
 
             p {
-                color: white;
-                width: 555px;
-                margin: 0 auto;
-                text-align: center;
+                width: 30%;
+                padding-top: 6px;
+                font-size: 18px;
+                text-align: left;
             }
+        }
 
-            a{
-                img{
-                    width: 25px;
-                }
-            }            
+        .tarjetasfulbg {
+            display: flex;
+            flex-direction: row !important;
+            gap: 16px;
+        }
+    }
 
 
-            .ftblock-top {
-                border-top: solid 1px rgba($color: white, $alpha: 0.1);
-                margin-top: 34px;
-                margin-left: 84px;
-                margin-right: 84px;
-                padding-top: 34px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                gap: 21px;
 
-                .divtwo {
-                      text-align: left;
-                }
-                .divthree {
-                      text-align: left;
-                }
-                .divfour {
-                      text-align: left;
-                }
-            }
+    section.interest {
 
+        .div-tarjeta {
+            min-height: 450px;
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+
+        .flex-tags {
+            margin-left: 222px;
+            margin-right: 222px;
+        }
+    }
+
+    .modal-content {
+
+        #yachtSlidermodal {
+            height: 500px;
         }
 
     }
+
+    .experiences {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 84px;
+
+        img {
+            height: 300px;
+
+        }
+    }
+
+    .gallery-img {
+        h2 {
+            font-size: 55px;
+        }
+    }
+
+    .sustainable {
+        width: 50%;
+        margin: 34px auto;
+    }
+
+
+    .footer {
+
+        p {
+            color: white;
+            width: 555px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        a {
+            img {
+                width: 25px;
+            }
+        }
+
+
+        .ftblock-top {
+            border-top: solid 1px rgba($color: white, $alpha: 0.1);
+     
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 21px;
+
+
+            .divtwo {
+                text-align: right;
+                
+        
+            }
+
+            .divthree {
+                text-align: center;
+            }
+
+            .divfour {
+                text-align: left;
+            }
+        }
+
+    }
+}

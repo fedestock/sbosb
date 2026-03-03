@@ -600,7 +600,7 @@ body {
   display: flex;
   gap: 20px;
   width: max-content;
-  animation: scroll 11s linear infinite;
+  animation: scroll 7s linear infinite;
 }
 
 .tira img {
@@ -643,6 +643,19 @@ body {
   border-radius: 16px 16px 0 0;
   background: linear-gradient(135deg, #6B8F8B, #197359);
   text-align: center;
+}
+.footer img {
+  width: 150px !important;
+  margin: 0 auto;
+}
+.footer p {
+  color: white;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer a img {
+  width: 25px !important;
 }
 .footer .faqs {
   max-width: 900px;
@@ -2275,81 +2288,83 @@ a {
     font-size: 16px;
     color: white;
   }
-  .navbar .hero .hero__videobg video {
+  .hero .hero__videobg video {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center center;
   }
-  .navbar .hero__content h3 {
+  .hero .hero__content h3 {
     font-size: 21px !important;
     line-height: 55px;
   }
-  .navbar .hero__content h1 {
+  .hero .hero__content h1 {
     font-size: 84px;
     line-height: 84px;
   }
-  .navbar .hero__content p {
+  .hero .hero__content p {
     width: 555px;
     margin: 0 auto;
     padding-bottom: 21px;
   }
-  .navbar .benefits-col {
+  .benefits-col {
     padding: 80px 48px;
     display: flex;
+    flex-direction: column;
     gap: 56px;
   }
-  .navbar .benefits-col .eco-friendly {
+  .benefits-col .eco-friendly {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 21px;
   }
-  .navbar .benefits-col .eco-friendly .eco-icon {
+  .benefits-col .eco-friendly .eco-icon {
     display: flex;
     flex-direction: row;
   }
-  .navbar .benefits-col .eco-friendly h2 {
+  .benefits-col .eco-friendly h2 {
     font-size: 84px;
     line-height: 94px;
   }
-  .navbar .benefits-col .eco-friendly p {
+  .benefits-col .eco-friendly p {
     width: 30%;
     padding-top: 6px;
     font-size: 18px;
     text-align: left;
   }
-  .navbar .benefits-col .tarjetasfulbg {
+  .benefits-col .tarjetasfulbg {
     display: flex;
     flex-direction: row !important;
     gap: 16px;
   }
-  .navbar section.interest .div-tarjeta {
+  section.interest .div-tarjeta {
+    min-height: 450px;
     margin-left: 150px;
     margin-right: 150px;
   }
-  .navbar section.interest .flex-tags {
+  section.interest .flex-tags {
     margin-left: 222px;
     margin-right: 222px;
   }
-  .navbar .modal-content #yachtSlidermodal {
+  .modal-content #yachtSlidermodal {
     height: 500px;
   }
-  .navbar .experiences {
+  .experiences {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 84px;
   }
-  .navbar .experiences img {
+  .experiences img {
     height: 300px;
   }
-  .navbar .gallery-img h2 {
+  .gallery-img h2 {
     font-size: 55px;
   }
-  .footer img {
-    margin: 0 auto;
-    width: 150px;
+  .sustainable {
+    width: 50%;
+    margin: 34px auto;
   }
   .footer p {
     color: white;
@@ -2362,20 +2377,17 @@ a {
   }
   .footer .ftblock-top {
     border-top: solid 1px rgba(255, 255, 255, 0.1);
-    margin-top: 34px;
-    margin-left: 84px;
-    margin-right: 84px;
-    padding-top: 34px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     gap: 21px;
   }
   .footer .ftblock-top .divtwo {
-    text-align: left;
+    text-align: right;
   }
   .footer .ftblock-top .divthree {
-    text-align: left;
+    text-align: center;
   }
   .footer .ftblock-top .divfour {
     text-align: left;

@@ -575,7 +575,7 @@ body {
     display: flex;
     gap: 20px;
     width: max-content;
-    animation: scroll 11s linear infinite;
+    animation: scroll 7s linear infinite;
 }
 
 .tira img {
@@ -618,7 +618,6 @@ body {
 }
 
 
-
 // Footer
 .footer {
     padding: 16px;
@@ -629,6 +628,26 @@ body {
 
     text-align: center;
 
+
+    img {
+        width: 150px !important;
+        margin: 0 auto;
+
+    }
+
+    p {
+        color: white;
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    a {
+        img {
+            width: 25px !important;
+        }
+    }
+
     // ==========================================
     // FAQS SECTION - ESTILOS MODERNOS
     // ==========================================
@@ -636,6 +655,7 @@ body {
         max-width: 900px;
         margin: 4rem auto;
         padding: 0 2rem;
+
 
         h3 {
             font-family: "Open Sans", sans-serif;

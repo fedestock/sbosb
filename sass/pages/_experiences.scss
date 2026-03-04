@@ -79,23 +79,36 @@
 }
 
 .container {
-   
+
     .flavor {
 
-         padding-left:  16px;
-         padding-right: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
 
         h2 {
+            padding-top: 55px;
             text-align: center;
             color: $ocre;
             font-family: "amatic sc";
             font-size: 55px;
+            line-height: 55px;
         }
 
         p {
             text-align: center;
         }
+
+
     }
+
+    .tira-flavor {
+            .tira {
+                img {
+                    height: 356px;
+                    padding-bottom: 55px;
+                }
+            }
+        }
 }
 
 .activities {
@@ -158,22 +171,24 @@
     }
 
     .tarjeta-fullbg--coral {
-        background-image: url("../../img/coral-reef.JPG");
+        background-image: url("../../img/sbcoral.webp");
     }
 
     .tarjeta-fullbg--snork {
-        background-image: url("../../img/friends-archipielago-sanblas-on-sailboats.jpg");
+        background-image: url("../../img/pelicanoisland.jpg");
+        background-position: bottom center;
+        background-size: 644px;
     }
 
     .tarjeta-fullbg--reef {
         background-image: url("../../img/san-blas-on-sailboats-snorkel-benefits.jpeg");
     }
 
-     .tarjeta-fullbg--kayak {
+    .tarjeta-fullbg--kayak {
         background-image: url("../../img/couple-kayak-sanblas-on-sailboats.jpg");
     }
 
-     .tarjeta-fullbg--jungle {
+    .tarjeta-fullbg--jungle {
         background-image: url("../../img/jungle-jumping-sanblas-on-sailboats.png");
     }
 
@@ -184,7 +199,7 @@
     .tarjeta-fullbg--guna {
         background-image: url("../../img/kuna-sanblasonsailboats.jpg");
     }
-    
+
     .tarjeta-fullbg--yoga {
         background-image: url("../../img/yoga-san-blas-on-sailboats.jpg");
     }

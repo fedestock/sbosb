@@ -30,7 +30,7 @@
     h1 {
         font-family: "amatic sc";
         font-size: 84px;
-        line-height: 55px;
+        line-height: 84px;
         text-shadow: 5px 5px 5px black;
         font-weight: 700+0.3;
     }
@@ -45,12 +45,16 @@
 
 #included {
 
+     background-image: url(../../img/jungles-sanblas.jpg);
+    background-attachment: fixed;
+    color: white;
+    
 
     h2 {
         font-family: "amatic sc";
         font-size: 55px;
         line-height: 55px;
-        color: $opasto;
+        color: white;
     }
 
     ul {
@@ -58,27 +62,34 @@
         font-size: 16px;
         line-height: 26px;
         list-style: none;
+        
+    }
+
+    ul li {
+        color: white;
     }
 
     p {
         font-size: "open sans";
         font-size: 16px;
         line-height: 26px;
-        color: $ocean;
+        color: white;
     }
 
     .nt {
         text-align: center;
         padding: 0 16px;
+        padding-bottom: 55px;
 
         .not-include {
+             text-shadow: 2px 2px 4px #000000;
             .material-icons {
-                color: $oladrillo;
+                color: $arena;
             }
         }
 
         h3 {
-            color: $oladrillo;
+            color: $oarena;
             font-family: "amatic sc";
             font-size: 34px;
             font-weight: 700;
@@ -87,14 +98,45 @@
         p {
             font-family: "open sans";
             font-size: 21px;
-            line-height: 21px;
-            color: $opasto;
+            line-height: 34px;
+            color: white;
         }
 
 
     }
 
+    .counter {
+        font-family: "open sans";
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+         text-shadow: 2px 2px 4px #000000;
+
+        h3 {
+            font-weight: 600;
+        }
+
+        h2 {
+            font-weight: 900;
+        }
+
+        p {
+            font-weight: 600;
+        }
+
+        .counter-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 34px;
+          
+        }
+    }
+
 }
+
+
 
 .tarjeta {
     .it {
@@ -111,6 +153,8 @@
 }
 
 #pricing {
+    background-image: url(../../img/jungles-sanblas.jpg);
+    background-attachment: fixed;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -123,7 +167,7 @@
             text-align: center;
             font-size: 34px;
             font-weight: 700;
-            color: $arena;
+            color: white;
             padding-top: 55px;
         }
 
@@ -216,5 +260,24 @@
 
     ul {
         list-style: none;
+    }
+}
+
+#itinerary {
+    
+     background-image: url(../../img/jungles-sanblas.jpg);
+    background-attachment: fixed;
+    color: white;
+
+    ul li {
+        color: white;
+    }
+
+    h2 {
+        color: white;
+    }
+
+    p {
+        color:white;
     }
 }

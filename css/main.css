@@ -338,9 +338,9 @@ body {
   z-index: 2;
 }
 .benefits-col .tarjeta-fullbg--captain {
-  background-image: url(../../img/slider/lady-you-desktop-san-blas-sailboats.webp);
+  background-image: url(../../img/ourboat.png);
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
 }
 .benefits-col .tarjeta-fullbg--yatch {
   background-image: url(../../img/san-blas-on-sailboats-food-sandia.jpeg);
@@ -537,11 +537,11 @@ body {
 }
 
 #sbSlider .carousel-inner {
-  height: 550px;
+  height: 450px;
   margin-bottom: 21px;
 }
 #sbSlider .carousel-inner img {
-  height: 550px;
+  height: 450px;
 }
 
 .gallery-img h2 {
@@ -1118,14 +1118,14 @@ body {
 }
 
 #sailingSlider {
-  height: 550px;
+  height: 450px;
   overflow: hidden;
   margin-bottom: 21px;
 }
 
 #sailingSlider img {
   width: 100%;
-  height: 550px;
+  height: 450px;
   object-fit: cover;
   display: block;
 }
@@ -1217,13 +1217,19 @@ body {
   padding-right: 16px;
 }
 .container .flavor h2 {
+  padding-top: 55px;
   text-align: center;
   color: #BF820F;
   font-family: "amatic sc";
   font-size: 55px;
+  line-height: 55px;
 }
 .container .flavor p {
   text-align: center;
+}
+.container .tira-flavor .tira img {
+  height: 356px;
+  padding-bottom: 55px;
 }
 
 .activities {
@@ -1279,10 +1285,12 @@ body {
   color: #20373B;
 }
 .activities .tarjeta-fullbg--coral {
-  background-image: url("../../img/coral-reef.JPG");
+  background-image: url("../../img/sbcoral.webp");
 }
 .activities .tarjeta-fullbg--snork {
-  background-image: url("../../img/friends-archipielago-sanblas-on-sailboats.jpg");
+  background-image: url("../../img/pelicanoisland.jpg");
+  background-position: bottom center;
+  background-size: 644px;
 }
 .activities .tarjeta-fullbg--reef {
   background-image: url("../../img/san-blas-on-sailboats-snorkel-benefits.jpeg");
@@ -1807,7 +1815,7 @@ a {
 .jungle-hero h1 {
   font-family: "amatic sc";
   font-size: 84px;
-  line-height: 55px;
+  line-height: 84px;
   text-shadow: 5px 5px 5px black;
   font-weight: 700.3;
 }
@@ -1817,11 +1825,16 @@ a {
   line-height: 26px;
 }
 
+#included {
+  background-image: url(../../img/jungles-sanblas.jpg);
+  background-attachment: fixed;
+  color: white;
+}
 #included h2 {
   font-family: "amatic sc";
   font-size: 55px;
   line-height: 55px;
-  color: #6B8F8B;
+  color: white;
 }
 #included ul {
   font-family: "open sans";
@@ -1829,21 +1842,28 @@ a {
   line-height: 26px;
   list-style: none;
 }
+#included ul li {
+  color: white;
+}
 #included p {
   font-size: "open sans";
   font-size: 16px;
   line-height: 26px;
-  color: #20373B;
+  color: white;
 }
 #included .nt {
   text-align: center;
   padding: 0 16px;
+  padding-bottom: 55px;
+}
+#included .nt .not-include {
+  text-shadow: 2px 2px 4px #000000;
 }
 #included .nt .not-include .material-icons {
-  color: #E27D60;
+  color: #D9BB96;
 }
 #included .nt h3 {
-  color: #E27D60;
+  color: #FFFCF7;
   font-family: "amatic sc";
   font-size: 34px;
   font-weight: 700;
@@ -1851,8 +1871,31 @@ a {
 #included .nt p {
   font-family: "open sans";
   font-size: 21px;
-  line-height: 21px;
-  color: #6B8F8B;
+  line-height: 34px;
+  color: white;
+}
+#included .counter {
+  font-family: "open sans";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+}
+#included .counter h3 {
+  font-weight: 600;
+}
+#included .counter h2 {
+  font-weight: 900;
+}
+#included .counter p {
+  font-weight: 600;
+}
+#included .counter .counter-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 34px;
 }
 
 .tarjeta .it {
@@ -1867,6 +1910,8 @@ a {
 }
 
 #pricing {
+  background-image: url(../../img/jungles-sanblas.jpg);
+  background-attachment: fixed;
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
@@ -1878,7 +1923,7 @@ a {
   text-align: center;
   font-size: 34px;
   font-weight: 700;
-  color: #D9BB96;
+  color: white;
   padding-top: 55px;
 }
 #pricing div iframe {
@@ -1953,6 +1998,21 @@ a {
 }
 .itprice ul {
   list-style: none;
+}
+
+#itinerary {
+  background-image: url(../../img/jungles-sanblas.jpg);
+  background-attachment: fixed;
+  color: white;
+}
+#itinerary ul li {
+  color: white;
+}
+#itinerary h2 {
+  color: white;
+}
+#itinerary p {
+  color: white;
 }
 
 .gallery {

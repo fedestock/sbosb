@@ -2963,6 +2963,9 @@ a {
     margin: 0 auto;
     padding: 3rem 2rem;
   }
+  article img {
+    width: 50%;
+  }
   article p {
     width: 666px;
     margin: 0 auto;

@@ -1285,7 +1285,8 @@ body {
   color: #20373B;
 }
 .activities .tarjeta-fullbg--coral {
-  background-image: url("../../img/sbcoral.webp");
+  background-image: url("../../img/ourboat.png");
+  background-position: 0% 70%;
 }
 .activities .tarjeta-fullbg--snork {
   background-image: url("../../img/pelicanoisland.jpg");

@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 ul {
   padding-left: 0;
 }
@@ -423,6 +427,11 @@ body {
   color: #20373B;
 }
 
+.sustainable {
+  background-color: #20373B;
+  color: white;
+}
+
 .modal-content {
   font-family: "open sans";
   background-color: #FFFCF7;
@@ -636,6 +645,76 @@ body {
   letter-spacing: 1px;
 }
 
+.accordion.kunay {
+  background: #0f1e2e;
+  border: 1px solid rgba(224, 217, 192, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+  color: #e0d9c0;
+}
+.accordion.kunay .accordion-item {
+  background: transparent;
+  border: none;
+}
+.accordion.kunay .accordion-item:not(:last-child) {
+  border-bottom: 1px solid rgba(224, 217, 192, 0.12);
+}
+.accordion.kunay .accordion-button {
+  padding: 1.25rem 1.5rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #e0d9c0;
+  background: transparent;
+  border: none;
+  transition: all 0.28s ease;
+}
+.accordion.kunay .accordion-button:not(.collapsed) {
+  color: #D9BB96;
+  background: rgba(77, 208, 200, 0.12);
+  box-shadow: inset 0 -1px 0 rgba(224, 217, 192, 0.15);
+}
+.accordion.kunay .accordion-button:hover {
+  background: transparent;
+  border: none;
+}
+.accordion.kunay .accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e0d9c0'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  opacity: 0.65;
+  transition: all 0.28s ease;
+}
+.accordion.kunay .accordion-button:not(.collapsed)::after {
+  transform: rotate(-180deg);
+  opacity: 0.9;
+}
+.accordion.kunay .accordion-collapse {
+  transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.accordion.kunay .accordion-body {
+  padding: 1.5rem 1.75rem 1.75rem;
+  color: rgba(224, 217, 192, 0.92);
+  font-size: 1.03rem;
+  line-height: 1.68;
+}
+.accordion.kunay .accordion-body p {
+  margin-bottom: 1.25rem;
+}
+.accordion.kunay .accordion-body p:last-child {
+  margin-bottom: 0.5rem;
+}
+.accordion.kunay .accordion-body p strong {
+  color: #D9BB96;
+  font-weight: 650;
+  display: block;
+  margin: 1.6rem 0 0.6rem;
+  font-size: 1.12rem;
+}
+
+.accordion.kunay .accordion-button:hover,
+.accordion.kunay .accordion-button:not(.collapsed) {
+  border-color: rgba(77, 208, 200, 0.3);
+}
+
 .footer {
   padding: 16px;
   width: 100vw;
@@ -649,6 +728,7 @@ body {
   margin: 0 auto;
 }
 .footer p {
+  padding-bottom: 21px;
   color: white;
   width: 70%;
   margin: 0 auto;
@@ -664,7 +744,7 @@ body {
 }
 .footer .faqs h3 {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.2rem;
+  font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -701,11 +781,11 @@ body {
   border: none;
   margin-bottom: 1rem;
   border-radius: 16px !important;
-  box-shadow: 0 5px 15px -5px rgba(32, 55, 59, 0.1);
+  box-shadow: 0 5px 15px -5px rgba(15, 30, 46, 0.1);
   transition: all 0.3s ease;
 }
 .footer .faqs .accordion-item:hover {
-  box-shadow: 0 10px 25px -8px rgba(32, 55, 59, 0.2);
+  box-shadow: 0 10px 25px -8px rgba(15, 30, 46, 0.2);
   transform: translateY(-2px);
 }
 .footer .faqs .accordion-header {
@@ -715,7 +795,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
-  color: #20373B;
+  color: #0f1e2e;
   background: white;
   padding: 1.2rem 1.8rem;
   border: none;
@@ -744,7 +824,7 @@ body {
   transition: transform 0.3s ease;
 }
 .footer .faqs .accordion-collapse {
-  background: white;
+  background: #e0d9c0;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 }
@@ -755,7 +835,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #20373B;
+  color: #0f1e2e;
   margin: 0 0 1rem;
   text-align: left;
 }
@@ -776,7 +856,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #20373B;
+  color: #0f1e2e;
   margin-bottom: 0.5rem;
 }
 .footer .faqs .accordion-body ul li::marker,
@@ -804,7 +884,7 @@ body {
   }
 }
 .footer .faqs--with-bg {
-  background: linear-gradient(135deg, rgba(25, 115, 89, 0.03), rgba(81, 156, 171, 0.03));
+  background: linear-gradient(135deg, rgba(25, 115, 89, 0.03), rgba(77, 208, 200, 0.03));
   border-radius: 40px;
   padding: 3rem 2rem;
 }
@@ -886,7 +966,7 @@ body {
   font-family: "open sans";
   font-weight: bold;
   font-size: 34px;
-  background: linear-gradient(135deg, #519CAB, #20373B);
+  background: linear-gradient(135deg, #4dd0c8, #0f1e2e);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -942,11 +1022,19 @@ body {
   font-weight: 700;
   color: white;
 }
-.footer img {
-  width: 26px;
+.footer .payoneer {
+  justify-content: start;
+}
+.footer .payoneer img {
+  max-width: 80px;
   padding-top: 6px;
+  filter: brightness(0) invert(1);
+  gap: 25px;
 }
 .footer .ftblock-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   color: rgba(255, 255, 255, 0.3);
   padding-top: 16px;
   text-align: center;
@@ -964,6 +1052,10 @@ body {
   flex-direction: row;
   justify-content: center;
   gap: 16px;
+}
+.ft-social img {
+  max-width: 26px;
+  padding-top: 6px;
 }
 .ft-social i {
   font-size: 26px;
@@ -1023,7 +1115,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 12px;
-  color: #20373B;
+  color: #0f1e2e;
   font-weight: 700;
 }
 .intro-bio h2 {
@@ -1036,7 +1128,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 12px;
-  color: #20373B;
+  color: #0f1e2e;
   font-weight: 700;
 }
 .intro-bio p {
@@ -1072,7 +1164,7 @@ body {
   line-height: 26px;
   font-size: 16px;
   margin-top: 1rem;
-  color: #20373B;
+  color: #0f1e2e;
 }
 
 #sailingGuada,
@@ -1096,7 +1188,7 @@ body {
   font-family: "amatic sc";
   font-size: 21px;
   font-weight: 900 !important;
-  color: #20373B;
+  color: #0f1e2e;
 }
 .aboutg h2 {
   color: #E27D60;
@@ -1265,7 +1357,7 @@ body {
 }
 .activities .act {
   font-family: "open sans";
-  color: #20373B;
+  color: #0f1e2e;
   font-size: 16px;
   line-height: 26px;
   font-weight: 500;
@@ -1282,7 +1374,7 @@ body {
 }
 .activities .build {
   text-align: center;
-  color: #20373B;
+  color: #0f1e2e;
 }
 .activities .tarjeta-fullbg--coral {
   background-image: url("../../img/ourboat.png");
@@ -1294,7 +1386,7 @@ body {
   background-size: 644px;
 }
 .activities .tarjeta-fullbg--reef {
-  background-image: url("../../img/brain-coral.jpg");
+  background-image: url("../../img/san-blas-on.sailboats-girls-sit.jpg");
 }
 .activities .tarjeta-fullbg--kayak {
   background-image: url("../../img/couple-kayak-sanblas-on-sailboats.jpg");
@@ -1348,7 +1440,7 @@ body {
 .blog-hero p {
   font-family: "open sans";
   font-size: 16px;
-  color: #20373B;
+  color: #0f1e2e;
   line-height: 26px;
   font-weight: 400;
   padding-bottom: 55px;
@@ -1361,7 +1453,7 @@ body {
   background-color: #D9BB96;
   border-radius: 16px;
   padding: 7px 12px;
-  color: #20373B;
+  color: #0f1e2e;
   font-weight: 600;
 }
 
@@ -1410,7 +1502,7 @@ body {
 .hero-post p {
   font-family: "open sans";
   font-size: 18px;
-  color: #20373B;
+  color: #0f1e2e;
   line-height: 26px;
   font-weight: 400;
   padding-top: 7px;
@@ -1419,7 +1511,7 @@ body {
 article p {
   font-family: "open sans";
   font-size: 16px;
-  color: #20373B;
+  color: #0f1e2e;
   line-height: 26px;
   font-weight: 400;
   padding: 0 16px;
@@ -1463,7 +1555,7 @@ article h3.night {
   font-size: 26px;
   line-height: 36px;
   font-weight: 700;
-  background: linear-gradient(35deg, #20373B, #519CAB);
+  background: linear-gradient(35deg, #0f1e2e, #4dd0c8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0 16px;
@@ -1472,7 +1564,7 @@ article h3.night {
 .card p {
   font-family: "nunito sans";
   font-size: 16px;
-  color: #20373B;
+  color: #0f1e2e;
   line-height: 26px;
   font-weight: 400;
   padding: 0 16px;
@@ -1558,7 +1650,7 @@ article h3.night {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 12px;
-  color: #20373B;
+  color: #0f1e2e;
   font-weight: 700;
 }
 .intro-bio h2 {
@@ -1571,7 +1663,7 @@ article h3.night {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 12px;
-  color: #20373B;
+  color: #0f1e2e;
   font-weight: 700;
 }
 .intro-bio p {
@@ -1626,7 +1718,7 @@ article h3.night {
   line-height: 26px;
   font-size: 16px;
   margin-top: 1rem;
-  color: #20373B;
+  color: #0f1e2e;
 }
 
 .hero {
@@ -1718,7 +1810,7 @@ article h3.night {
   font-size: 84px;
   line-height: 84px;
   padding: 0 34px;
-  background: linear-gradient(135deg, #519CAB, #20373B);
+  background: linear-gradient(135deg, #4dd0c8, #0f1e2e);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -1864,7 +1956,7 @@ a {
   color: #D9BB96;
 }
 #included .nt h3 {
-  color: #FFFCF7;
+  color: #e0d9c0;
   font-family: "amatic sc";
   font-size: 34px;
   font-weight: 700;
@@ -1944,7 +2036,7 @@ a {
   font-family: "amatic sc";
   font-size: 34px;
   line-height: 34px;
-  color: #20373B;
+  color: #0f1e2e;
 }
 #pricing .tarjeta p {
   font-family: "open sans";
@@ -1955,7 +2047,7 @@ a {
   list-style: none;
 }
 #pricing .tarjeta .tarjeta--color {
-  background-color: linear-gradient(135deg, #20373B, #519CAB 100%);
+  background-color: linear-gradient(135deg, #0f1e2e, #4dd0c8 100%);
 }
 
 .benefits {
@@ -1968,7 +2060,7 @@ a {
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
-  color: #20373B;
+  color: #0f1e2e;
   gap: 20px;
 }
 .benefits img {
@@ -2035,7 +2127,7 @@ a {
   font-family: "raleway";
   font-size: 21px;
   font-weight: bold;
-  color: #519CAB;
+  color: #4dd0c8;
 }
 
 .eco-friendly {
@@ -2117,7 +2209,7 @@ a {
   line-height: 26px;
   text-align: center;
   font-weight: 500;
-  color: #20373B;
+  color: #0f1e2e;
   padding: 0 21px;
 }
 
@@ -2177,14 +2269,14 @@ a {
   /* quitar el background antiguo */
   background: none;
   padding-left: 0;
-  color: rgba(32, 55, 59, 0.8);
+  color: rgba(15, 30, 46, 0.8);
 }
 .includes .not-included p {
   font-family: "open sans";
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #20373B;
+  color: #0f1e2e;
   text-align: center;
   font-weight: 700;
   margin: 0;
@@ -2225,7 +2317,7 @@ a {
   transition: all 0.3s ease-in-out;
 }
 .cta .cta-btn:hover {
-  background-color: #519CAB;
+  background-color: #4dd0c8;
   color: white;
 }
 
@@ -2255,7 +2347,7 @@ a {
   justify-content: center;
 }
 .pricing-card p {
-  color: #20373B;
+  color: #0f1e2e;
   font-weight: 700;
 }
 .pricing-card img {
@@ -2291,7 +2383,7 @@ a {
 }
 .herosuccess h1 {
   font-family: "raleway";
-  color: #20373B;
+  color: #0f1e2e;
   font-size: 55px;
   line-height: 55px;
   font-weight: 700;
@@ -2424,6 +2516,7 @@ a {
     font-size: 55px;
   }
   .sustainable {
+    background-color: #0f1e2e;
     width: 50%;
     margin: 34px auto;
   }
@@ -2507,7 +2600,7 @@ a {
     font-family: "amatic sc";
     font-size: 21px;
     font-weight: 900 !important;
-    color: #20373B;
+    color: #0f1e2e;
     margin-bottom: 5px;
   }
   .aboutg .about-meet-captain h4 {
@@ -2591,7 +2684,7 @@ a {
   }
   /* Hover */
   .kunay .accordion-button:hover {
-    color: #20373B;
+    color: #0f1e2e;
   }
   /* Remove default blue focus */
   .kunay .accordion-button:focus {
@@ -2601,7 +2694,7 @@ a {
   /* Active state */
   .kunay .accordion-button:not(.collapsed) {
     background: transparent;
-    color: #20373B;
+    color: #0f1e2e;
   }
   /* Remove default arrow background */
   .kunay .accordion-button::after {
@@ -2734,7 +2827,7 @@ a {
   .colaboradores .tarjeta--collab p {
     margin: 8px 20px;
     line-height: 1.6;
-    color: #20373B;
+    color: #0f1e2e;
     /* Aseguramos que los párrafos no se desborden */
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -2785,15 +2878,15 @@ a {
     padding-bottom: 18px;
     text-align: left;
     line-height: 34px;
-    color: #20373B;
+    color: #0f1e2e;
   }
   .intro-bio #sailingSlider {
     max-width: 50%;
     height: 300px;
     overflow: hidden;
-    box-shadow: 0 15px 30px -8px rgba(32, 55, 59, 0.1);
+    box-shadow: 0 15px 30px -8px rgba(15, 30, 46, 0.1);
     transition: box-shadow 0.3s ease;
-    box-shadow: 0 25px 50px -12px rgba(32, 55, 59, 0.25);
+    box-shadow: 0 25px 50px -12px rgba(15, 30, 46, 0.25);
     border-radius: 555px;
   }
   .intro-bio #sailingSlider .carousel-inner,
@@ -2819,7 +2912,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: #20373B !important;
+    color: #0f1e2e !important;
   }
   .community img {
     width: 300px;
@@ -2868,7 +2961,7 @@ a {
     font-size: 1.5rem;
     max-width: 555px;
     line-height: 1.48;
-    color: #20373B;
+    color: #0f1e2e;
     font-weight: 400;
     margin: 0 auto;
     margin-bottom: 84px;
@@ -2948,7 +3041,7 @@ a {
   .hero-post p {
     font-family: "Open Sans", sans-serif;
     font-size: 1.2rem;
-    color: #20373B;
+    color: #0f1e2e;
     line-height: 1.7;
     font-weight: 400;
     max-width: 800px;
@@ -2956,7 +3049,7 @@ a {
     padding: 1.2rem 2rem;
     position: relative;
     z-index: 2;
-    border: solid 1px #20373B;
+    border: solid 1px #0f1e2e;
     border-radius: 12px;
   }
   article {
@@ -2972,7 +3065,7 @@ a {
     margin: 0 auto;
     font-family: "Open Sans", sans-serif;
     font-size: 1.1rem;
-    color: #20373B;
+    color: #0f1e2e;
     line-height: 1.7;
     font-weight: 400;
     margin-bottom: 1.5rem;
@@ -3026,7 +3119,7 @@ a {
   article ul li, article ol li {
     font-family: "Open Sans", sans-serif;
     font-size: 1.1rem;
-    color: #20373B;
+    color: #0f1e2e;
     line-height: 1.7;
     margin-bottom: 0.7rem;
     position: relative;
@@ -3066,7 +3159,7 @@ a {
   }
   .blogimage:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px -10px rgba(32, 55, 59, 0.3);
+    box-shadow: 0 20px 40px -10px rgba(15, 30, 46, 0.3);
   }
   .card {
     margin: 1.5rem 0;
@@ -3079,7 +3172,7 @@ a {
     max-width: 350px;
   }
   .card:hover {
-    box-shadow: 0 15px 30px -5px rgba(32, 55, 59, 0.15);
+    box-shadow: 0 15px 30px -5px rgba(15, 30, 46, 0.15);
     transform: translateY(-3px);
   }
   .card h5 {
@@ -3087,7 +3180,7 @@ a {
     font-size: 2rem;
     line-height: 1.3;
     font-weight: 700;
-    background: linear-gradient(135deg, #20373B, #519CAB);
+    background: linear-gradient(135deg, #0f1e2e, #4dd0c8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1.2rem 1.2rem 0.3rem;
@@ -3096,7 +3189,7 @@ a {
   .card p {
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
-    color: #20373B;
+    color: #0f1e2e;
     line-height: 1.6;
     padding: 0 1.2rem 1.2rem;
     margin: 0;
@@ -3116,7 +3209,7 @@ a {
   .row ul li {
     font-family: "Open Sans", sans-serif;
     font-size: 1.1rem;
-    color: #20373B;
+    color: #0f1e2e;
     line-height: 1.7;
     margin-bottom: 0.8rem;
     padding-left: 1.8rem;
@@ -3139,7 +3232,7 @@ a {
   }
   .tagsi span {
     background: rgba(25, 115, 89, 0.1);
-    color: #20373B;
+    color: #0f1e2e;
     padding: 0.4rem 1.2rem;
     border-radius: 40px;
     font-size: 0.85rem;
@@ -3286,7 +3379,7 @@ a {
     font-size: "open sans";
     font-size: 16px;
     line-height: 26px;
-    color: #20373B;
+    color: #0f1e2e;
   }
   #included .nt {
     text-align: center;
@@ -3320,7 +3413,6 @@ a {
     font-weight: bold;
   }
   #pricing {
-    margin-top: 55px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -3349,7 +3441,7 @@ a {
     font-family: "amatic sc";
     font-size: 34px;
     line-height: 34px;
-    color: #20373B;
+    color: #0f1e2e;
   }
   #pricing .tarjeta p {
     font-family: "open sans";
@@ -3360,7 +3452,7 @@ a {
     list-style: none;
   }
   #pricing .tarjeta .tarjeta--color {
-    background-color: linear-gradient(135deg, #20373B, #519CAB 100%);
+    background-color: linear-gradient(135deg, #0f1e2e, #4dd0c8 100%);
   }
   .benefits {
     padding-top: 34px;
@@ -3372,7 +3464,7 @@ a {
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;
-    color: #20373B;
+    color: #0f1e2e;
     gap: 20px;
   }
   .benefits img {

@@ -355,6 +355,11 @@ body {
     }
 }
 
+ .sustainable {
+        background-color: $ocean;
+        color: white;
+ }
+
 
 // modal pop-up
 // header
@@ -617,6 +622,112 @@ body {
     }
 }
 
+// ============================================================================
+//  VARIABLES - Modo Oscuro Kunay
+// ============================================================================
+
+// Colores base modo oscuro (ajusta los valores hex según tu paleta exacta)
+$ocean:       #0f1e2e;      // fondo oscuro profundo (azul océano noche)
+$oarena:      #e0d9c0;      // texto claro arena/beige cálido
+$aqua:        #4dd0c8;      // acento intermedio / títulos (aqua-turquesa luminoso)
+
+$ocean-darker:  darken($ocean, 8%);
+$ocean-lighter: lighten($ocean, 6%);
+
+$kunay-radius:        12px;
+$kunay-shadow-sm:     0 4px 20px rgba(black, 0.35);
+$kunay-transition:    all 0.28s ease;
+
+// ============================================================================
+//  ACCORDION KUNAY - MODO OSCURO
+// ============================================================================
+
+.accordion.kunay {
+   background: $ocean;
+  border: 1px solid rgba($oarena, 0.15);
+  border-radius: $kunay-radius;
+  overflow: hidden;
+  box-shadow: $kunay-shadow-sm;
+  color: $oarena;
+
+  .accordion-item {
+    background: transparent;
+    border: none;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba($oarena, 0.12);
+    }
+  }
+
+  .accordion-button {
+    padding: 1.25rem 1.5rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: $oarena;
+    background: transparent;
+    border: none;
+    transition: $kunay-transition;
+
+    &:not(.collapsed) {
+      color: $arena;
+      background: rgba($aqua, 0.12);
+      box-shadow: inset 0 -1px 0 rgba($oarena, 0.15);
+    }
+
+    &:hover {
+      background: transparent;
+      border: none;
+    }
+
+
+
+    // Icono chevron adaptado al modo oscuro
+    &::after {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e0d9c0'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+      opacity: 0.65;
+      transition: $kunay-transition;
+    }
+
+    &:not(.collapsed)::after {
+      transform: rotate(-180deg);
+      opacity: 0.9;
+    }
+  }
+
+  .accordion-collapse {
+    transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .accordion-body {
+    padding: 1.5rem 1.75rem 1.75rem;
+    color: rgba($oarena, 0.92);
+    font-size: 1.03rem;
+    line-height: 1.68;
+
+    p {
+      margin-bottom: 1.25rem;
+
+      &:last-child {
+        margin-bottom: 0.5rem;
+      }
+
+      strong {
+        color: $arena;
+        font-weight: 650;
+        display: block;
+        margin: 1.6rem 0 0.6rem;
+        font-size: 1.12rem;
+      }
+    }
+  }
+}
+
+// Opcional: borde sutil más luminoso en hover/focus
+.accordion.kunay .accordion-button:hover,
+.accordion.kunay .accordion-button:not(.collapsed) {
+  border-color: rgba($aqua, 0.3);
+}
+
 
 // Footer
 .footer {
@@ -636,6 +747,7 @@ body {
     }
 
     p {
+        padding-bottom: 21px ;
         color: white;
         width: 70%;
         margin: 0 auto;
@@ -659,7 +771,7 @@ body {
 
         h3 {
             font-family: "Open Sans", sans-serif;
-            font-size: 1.2rem;
+            font-size: 16px;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -692,6 +804,8 @@ body {
         // ==========================================
         // ACCORDION PERSONALIZADO
         // ==========================================
+  
+
         .accordion {
             background: transparent;
             border-radius: 20px;
@@ -754,13 +868,14 @@ body {
             }
 
             &-collapse {
-                background: white;
+                background: $oarena;
                 border-bottom-left-radius: 16px;
                 border-bottom-right-radius: 16px;
             }
 
             &-body {
                 padding: 1.5rem 1.8rem;
+    
 
                 p {
                     font-family: "Open Sans", sans-serif;
@@ -963,17 +1078,32 @@ body {
             font-weight: 700;
             color: white;
         }
+
     }
 
-    img {
-        width: 26px;
-        padding-top: 6px;
+    .payoneer {
+        justify-content: start;
+
+        img {
+            max-width: 80px;
+            padding-top: 6px;
+            filter: brightness(0) invert(1);
+            gap: 25px;
+
+        }
     }
+
+
 
     .ftblock-bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         color: rgba(white, 0.3);
         padding-top: 16px;
         text-align: center;
+
+
     }
 
     a,
@@ -990,6 +1120,11 @@ body {
     flex-direction: row;
     justify-content: center;
     gap: 16px;
+
+    img {
+        max-width: 26px;
+        padding-top: 6px;
+    }
 
     i {
         font-size: 26px;

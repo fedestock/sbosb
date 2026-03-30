@@ -2697,7 +2697,6 @@ a {
     gap: 60px;
     padding: 100px 0;
     flex-direction: row;
-    justify-content: space-between;
   }
   /* ==============================
      SLIDER
